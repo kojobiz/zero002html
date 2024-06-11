@@ -1,0 +1,44 @@
+<svg id="コンポーネント_1_2" data-name="コンポーネント 1 – 2" xmlns="http://www.w3.org/2000/svg" width="1920" height="816" viewBox="0 0 1920 816">
+  <g id="グループ_415" data-name="グループ 415">
+    <path id="パス_7" data-name="パス 7" d="M0,0,963.917,67.636,1920,0V751H0Z" transform="translate(0 48)" fill="#f2f2f2"/>
+    <g id="グループ_438" data-name="グループ 438">
+      <g id="グループ_439" data-name="グループ 439">
+        <path id="パス_5" data-name="パス 5" d="M0-80,960,0l960-80v50L960,50,0-30Z" transform="translate(0 130)" fill="#2fc996"/>
+        <path id="パス_6" data-name="パス 6" d="M0-80,960,0l960-80v50L960,50,0-30Z" transform="translate(0 80)" fill="#204d47"/>
+      </g>
+    </g>
+  </g>
+  <rect id="長方形_31" data-name="長方形 31" width="1920" height="53" transform="translate(0 763)" fill="#30554c"/>
+  <g id="グループ_70" data-name="グループ 70" transform="translate(587.283 14.838)">
+    <g id="グループ_24" data-name="グループ 24" transform="translate(346.73 389.162)">
+      <text id="_03-3342-9620" data-name="03-3342-9620" transform="translate(50.519 55)" fill="#30554c" font-size="47" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="0" y="0">03-3342-9620</tspan></text>
+      <path id="call_FILL1_wght400_GRAD0_opsz24" d="M159.92-800.654a37.672,37.672,0,0,1-14.543-2.978,43.719,43.719,0,0,1-13.071-8.443,40.47,40.47,0,0,1-9.1-12.132A30.841,30.841,0,0,1,120-837.7a2.143,2.143,0,0,1,.707-1.639,2.5,2.5,0,0,1,1.766-.656h9.539a2.29,2.29,0,0,1,1.472.519,1.97,1.97,0,0,1,.765,1.229l1.531,7.651a3.585,3.585,0,0,1-.059,1.476,2.269,2.269,0,0,1-.648,1.038l-5.711,5.355a26.365,26.365,0,0,0,2.8,3.907,39.651,39.651,0,0,0,3.562,3.634,40.647,40.647,0,0,0,3.827,3.142,37.547,37.547,0,0,0,4.239,2.65l5.535-5.137a3.365,3.365,0,0,1,1.384-.738,4.075,4.075,0,0,1,1.678-.136l8.125,1.53a2.761,2.761,0,0,1,1.354.792,1.846,1.846,0,0,1,.53,1.284v8.853a2.144,2.144,0,0,1-.707,1.639A2.5,2.5,0,0,1,159.92-800.654Z" transform="translate(-120 860.561)" fill="#30554c"/>
+    </g>
+    <text id="電話相談受付中_" data-name="電話相談受付中！" transform="translate(181.185 441.162)" fill="#30554c" font-size="36" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700" letter-spacing="0.007em"><tspan x="-144" y="0">電話相談受付中！</tspan></text>
+  </g>
+  <text id="_System_Support_Inc." data-name="©System Support Inc." transform="translate(960 794)" fill="#fff" font-size="16" font-family="NotoSansCJKjp-Medium, Noto Sans CJK JP" font-weight="500"><tspan x="-83" y="0">©System Support Inc.</tspan></text>
+  <text id="受付時間_10:00_18:00_土日祝定休日_" data-name="受付時間  10:00~18:00【土日祝定休日】" transform="translate(770 496)" fill="#30554c" font-size="20" font-family="NotoSansCJKjp-Medium, Noto Sans CJK JP" font-weight="500" letter-spacing="0.035em"><tspan x="0" y="0" xml:space="preserve">受付時間  10:00~18:00【土日祝定休日】</tspan></text>
+  <g id="コンポーネント_3_2" data-name="コンポーネント 3 – 2" transform="translate(995.4 247)">
+    <rect id="長方形_18" data-name="長方形 18" width="467.6" height="134.344" rx="67" fill="#ff8000"/>
+    <text id="初めてでも安心_" data-name="初めてでも安心！" transform="translate(234 51)" fill="#fff" font-size="23" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="-92" y="0">初</tspan><tspan y="0">めてでも</tspan><tspan y="0">安心！</tspan></text>
+    <text id="_1週間無料_トライアル" data-name="&quot;1週間無料&quot;トライアル" transform="translate(234 94)" fill="#fff" font-size="32" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="-171" y="0">&quot;1週間無料&quot;</tspan><tspan y="0">トライアル</tspan></text>
+    <g id="長方形_99" data-name="長方形 99" transform="translate(10 10.002)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="447.6" height="114.34" rx="57.17" stroke="none"/>
+      <rect x="1.5" y="1.5" width="444.6" height="111.34" rx="55.67" fill="none"/>
+    </g>
+  </g>
+  <g id="コンポーネント_2_2" data-name="コンポーネント 2 – 2" transform="translate(457 247)">
+    <rect id="長方形_18-2" data-name="長方形 18" width="467.6" height="134.344" rx="67" fill="#159868"/>
+    <text id="_1分でカンタン入力_" data-name="1分でカンタン入力！" transform="translate(234 51)" fill="#fff" font-size="23" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="-110" y="0">1分</tspan><tspan y="0">でカンタン</tspan><tspan y="0">入力！</tspan></text>
+    <text id="サービス資料請求" transform="translate(234 94)" fill="#fff" font-size="32" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="-128" y="0">サービス</tspan><tspan y="0">資料請求</tspan></text>
+    <g id="長方形_98" data-name="長方形 98" transform="translate(10 10.002)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="447.6" height="114.34" rx="57.17" stroke="none"/>
+      <rect x="1.5" y="1.5" width="444.6" height="111.34" rx="55.67" fill="none"/>
+    </g>
+  </g>
+  <text id="株式会社システムサポート" transform="translate(526 599.558)" fill="#30554c" font-size="23" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="700"><tspan x="-138" y="0">株式会社</tspan><tspan y="0">システムサポート</tspan></text>
+  <text id="上場証券取引所_東京証券取引所_プライム市場_創業_1980年1月_資本金_7億23百万円_本社所在地_920-0853_石川県金沢市本町1-5-2_リファーレ9F" data-name="上場証券取引所	：	東京証券取引所 プライム市場
+創業	　　　　：	1980年1月
+資本金	　　　　：	7億23百万円
+本社所在地	：	〒920-0853 石川県金沢市本町1-5-2 リファーレ9F" transform="translate(388 645.9)" fill="#30554c" font-size="16" font-family="NotoSansCJKjp-Medium, Noto Sans CJK JP" font-weight="500"><tspan x="0" y="0">上場証券取引所	：	東京証券取引所 </tspan><tspan y="0">プライム</tspan><tspan y="0">市場</tspan><tspan x="0" y="26">創業	　　　　：	1980年1月</tspan><tspan x="0" y="52">資本金	　　　　：	7億23百万円</tspan><tspan x="0" y="78">本社所在地	：	〒920-0853 石川県金沢市本町1-5-2 </tspan><tspan y="78">リファーレ9</tspan><tspan y="78">F</tspan></text>
+</svg>
