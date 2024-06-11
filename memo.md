@@ -246,3 +246,209 @@ html では-- path の fill にカラー指定をせず、svg に sass コンパ
 背景色フリーとサイズとテキスト
 <img src="https://via.placeholder.com/300x200/0cf/fff/?text=textsample" alt="">
 
+<!-- memo3 -->
+
+電話アプリ起動をスマホのみ設定する
+@media (min-width: 768px) {
+    a[href^="tel:"] {
+      pointer-events: none;
+    }
+}
+
+テキストサイズの、最小、推奨、最大
+ font-size: clamp(16px, 2.5vw, 23px);
+
+ゆっくり表示される
+transition: right 0.3s ease-in-out;
+
+背景透過
+background-color: rgba(128, 128, 128, 0.5);
+
+影付きボタン、hover動き
+.aside-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px 0px 0px 8px;
+  transition: box-shadow 0.5s ease;
+}
+.aside-shadow:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: translate(3px);
+}
+
+
+背景画像処理
+.sectionHero {
+  background-image: url("../image/bgimg_hero_pc.jpg");
+  width: 100%;
+  height: 964px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+}
+
+画像のサイズ600pxかまたは80%のどちらかで
+しい裁縫に設定する
+  width: min(600px, 80%);
+
+
+プラン表のコツ
+/*================================= 
+  plan
+================================= */
+.sectionPlanTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.attention-plan {
+  list-style-type: "※";
+  list-style-position: inside;
+  text-indent: -16px !important;
+  padding-left: 20px !important;
+  line-height: 1.8rem;
+}
+section[class*="section-py"] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-content {
+  width: 100%;
+  padding: 0px 12%;
+}
+.sectionPlan {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+li[class^="planbox"] {
+  width: 100%;
+  height: 100px;
+  background: white;
+  padding: 8px 30px;
+  border-radius: 15px;
+  border: 4px solid;
+  box-sizing: border-box;
+  align-items: center;
+}
+li[class^="planbox"] h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  min-width: 225px;
+}
+li[class^="planbox"] .color3 {
+  padding: 0px 30px;
+}
+li[class^="planbox"] .amount {
+  font-size: 50px;
+  font-weight: 700;
+  align-self: center;
+}
+li[class^="planbox"] .yen {
+  font-weight: 700;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 0.2rem;
+  align-self: center;
+  line-height: 25px;
+  padding-top: 10px;
+}
+li[class^="planbox"] .tax {
+  font-weight: 500;
+  font-size: 16px;
+}
+li[class*="color1"] {
+  color: #59b5d2;
+}
+li[class*="color2"] {
+  color: #9cbc3c;
+}
+p[class*="color3"] {
+  color: #000000;
+}
+
+
+途中挿入する横幅ワイドのdecoration 100vwライン
+.decoline1 {
+  position: relative;
+  height: auto;
+}
+.decoline1::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
+    auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+
+画像を中に入れて同じ高さなどに制御するbox
+
+
+レスポンシブ画像の設定
+pictureタグ
+<!-- 3-a 画像設定sp767以下、pc768以上、他 -->
+                        <div class="p-hd__logo-img">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/common/hd_logo.png.webp 1x, 
+                                images/common/hd_logo@2x.png.webp 2x">
+                                <source media="(max-width:767px)" srcset="./images/common/hd_logo-sp.png.webp 1x, 
+                                images/common/hd_logo-sp@2x.png.webp 2x">
+                                <img src="./images/common/hd_logo.png.webp" width=145 height="42" alt="ロゴ画像：佐渡の海鮮居酒屋 | うめえっちゃ" class="-img">
+                            </picture>
+                        </div>
+media属性：メディアクエリを使用して、どの条件でその画像を使用するかを指定します。
+srcset属性：条件に合致したときに表示する画像を指定します。複数の解像度の画像を提供する場合は、1xや2xといったスケールを指定します。
+<picture>タグ内の<img>要素は、フォールバック（バックアップ）として機能します。ブラウザが<picture>タグや<source>要素をサポートしていない場合や、指定した条件に一致する画像が見つからない場合に表示されます。
+ページのパフォーマンスを向上
+
+セクションごと余白が違う時
+１：Paddingだけのクラスを設定する
+２：marignと横幅を指定したクラスを設定する
+で、セクションごとに2と1のサイズを決めて組み合わせて1つのセクションと余白をセットでニコイチで完成させるとレイアウト組がしやすい
+<section class="l-section" id="message">
+                <!-- 7　レスポンシブ対応できるc-width -->
+                <div class="p-section c-width">
+                    <h2 class="c-section-title">日本海の恵み<br> 佐渡の海鮮料理でおもてなし</h2>
+                    <div class="p-message-text">
+                        <p class="c-section-text">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="l-section" id="message">
+                <!-- 7　レスポンシブ対応できるc-width -->
+                <div class="p-section c-width2">
+                    <h2 class="c-section-title">日本海の恵み<br> 佐渡の海鮮料理でおもてなし</h2>
+                    <div class="p-message-text">
+                        <p class="c-section-text">
+                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                    </div>
+                </div>
+            </section>
+scss設計
+.c-width {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.c-width2 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+行間line-height
+XDの行サイズ60でテキストサイズが40pxであれば
+60÷40で1.5なので、line-height1.5となる
+
+文字間letter-spacing
+XDの文字間AVが4pxでテキストサイズが40pxであれば
+4÷40で0.1なので、letter-spacing0.1emとなる
