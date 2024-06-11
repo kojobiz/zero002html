@@ -452,3 +452,5 @@ XDの行サイズ60でテキストサイズが40pxであれば
 文字間letter-spacing
 XDの文字間AVが4pxでテキストサイズが40pxであれば
 4÷40で0.1なので、letter-spacing0.1emとなる
+<!-- BEM -->
+https://zenn.dev/nagan/articles/dac6fa662f4dab
