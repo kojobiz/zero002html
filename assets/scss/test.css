@@ -1,3 +1,43 @@
+@charset "UTF-8";
+/***************************
+カラー
+****************************/
+/*****************************
+フォント
+******************************/
+/*******************************
+レイアウト
+********************************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+table,
+th,
+td,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header .menu ul {
   display: flex;
 }
@@ -14,4 +54,12 @@
   background: rgb(222, 150, 150);
   padding: 8px 10px 6px;
   color: fff;
+}
+
+.right {
+  color: #191919;
+}
+
+.orange {
+  color: #FF8000;
 }/*# sourceMappingURL=test.css.map */
