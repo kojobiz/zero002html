@@ -1,0 +1,17 @@
+.header .menu ul {
+  display: flex;
+}
+.header .menu ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+.header .menu ul li.contact a {
+  background: #a00;
+  padding: 8px 10px 6px;
+  color: fff;
+}
+.header .menu ul li.document a {
+  background: rgb(222, 150, 150);
+  padding: 8px 10px 6px;
+  color: fff;
+}/*# sourceMappingURL=test.css.map */

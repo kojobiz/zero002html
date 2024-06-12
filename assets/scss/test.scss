@@ -1,0 +1,27 @@
+$mainColor:#a00;
+@mixin btn($bgColor){
+    background:$bgColor;
+    padding:8px 10px 6px;
+    color: fff;
+}
+.header {
+    .menu {
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                padding: 0 10px;
+                &.contact {
+                    a {
+                        @include btn (#a00);
+                    }
+                }
+                &.document {
+                    a {
+                        @include btn (rgb(222, 150, 150));
+                    }
+                }
+            }
+        }
+    }
+}
