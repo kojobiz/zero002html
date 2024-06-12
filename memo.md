@@ -455,4 +455,5 @@ XDの文字間AVが4pxでテキストサイズが40pxであれば
 <!-- BEM -->
 https://zenn.dev/nagan/articles/dac6fa662f4dab
 
-## 
+## 画像やカラーの設定ができたら、余白（各セクションwidth）をFigmaに落とし込み
+そこまではtemplateを使用する
