@@ -1,6 +1,9 @@
 @use "sass:math";
 @charset "utf-8";
 
+/***************************
+カラー
+****************************/
 // カラー設定：テキスト
 $siteWhite:#FFFFFF;
 $siteBlackOne:#191919;
@@ -15,12 +18,62 @@ $darkGreenThree:#183834;
 $orangeOne:#FF8000;
 $orangeTwo:#FF8102;
 $redOne:#FF0000;
-
 // カラー設定：ライン
 $planBlue:#59B5D2;
 $planGreen:#9CBC3C;
 $supportOrange:#FFBD7B;
 $supportGreen:#83DCBF;
 
+/*****************************
+フォント
+******************************/
+$fontMeiryo: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial,
+  sans-serif;
+$fontHira: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+  Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$fontMintyo: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+  "Hiragino Mincho Pro", serif;
+$fontGothic: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$fontRaleway: "Raleway", "MS PGothic", sans-serif;
+$fontNoto: "Noto Sans Japanese", serif;
+$fontLato: "Lato", "arial", sans-serif;
+$fontOpenSans: "Open Sans", Arial, sans-serif;
+$fontYuMin: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+  "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+$fontYuGothic: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+  sans-serif;
+$fontNoteMin: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+  "Noto Serif JP", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HGS明朝E",
+  serif;
+$roboto: "Roboto Condensed", sans-serif;
 
-
+/*******************************
+レイアウト
+********************************/
+body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  table,
+  th,
+  td,
+  ul,
+  li,
+  ol,
+  dl,
+  dt,
+  dd,
+  form,
+  p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
