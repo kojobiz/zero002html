@@ -457,3 +457,10 @@ https://zenn.dev/nagan/articles/dac6fa662f4dab
 
 ## 画像やカラーの設定ができたら、余白（各セクションwidth）をFigmaに落とし込み
 そこまではtemplateを使用する
+
+// .l-main {
+//   padding: 0 0 220px;
+//   @media only screen and (max-width: 767px) {
+//     padding: 0 0 96px;
+//   }
+// }

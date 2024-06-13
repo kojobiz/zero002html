@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "../setting" as *;
+@use "../common" as *;
+@use "../layout/header" as *;
+@use "../layout/footer" as *;
+
+
+
+
+
+/* トップページ共通
+======================================================= */
+section {
+    margin: 0 auto;
+}
+
+
+
+
+/* header
+=========================================== */
+
+.l-firstview {
+    width: 100%;
+}
