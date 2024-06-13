@@ -3,25 +3,20 @@
 /***************************
 カラー
 ****************************/
-// カラー設定：テキスト
+// サイト共通
 $siteWhite:#FFFFFF;
-$siteBlackOne:#191919;
-$siteBlackTwo:#000000;
-$rightGreenOne:#2FC996;
-$faqGreenOne:#91FF00;
-$homeSectionTitle:#00A99D;
-$greenTwo:#0CAF79;
-$darkGreenOne:#30554C;
-$darkGreenTwo:#204D47;
-$darkGreenThree:#183834;
-$orangeOne:#FF8000;
-$orangeTwo:#FF8102;
-$redOne:#FF0000;
-// カラー設定：ライン
-$planBlue:#59B5D2;
-$planGreen:#9CBC3C;
-$supportOrange:#FFBD7B;
-$supportGreen:#83DCBF;
+$siteBlack:#191919;
+$siteOrange:#FF8000;
+$siteGreen:#30554C;
+// タイトル特有
+$titleDarkGreen:#00A99D;
+$titleBrightGreen:#2FC996;
+// セクション特有
+$planLineBlue:#59B5D2;
+$planLineGreen:#9CBC3C;
+$supportLineOrange:#FFBD7B;
+$supportLineGreen:#83DCBF;
+$faqBgGreen:#91FF00;
 
 /*****************************
 フォント
