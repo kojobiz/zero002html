@@ -1,5 +1,48 @@
 // header
 @charset "utf-8";
+@use "../setting" as *;
 
-/* header
+/* header-layout
+======================================================= */
+.l-header {
+    width: 100%;
+    height: 117px;
+    background-color: $testone;
+}
+.l-header-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $siteWhite;
+    width: auto;
+    height: 117px;
+    margin-left: 8%;
+    margin-right: 8%;
+    &__logo img {
+        max-width: 430px;
+        max-height: auto;
+    }
+    &__menu--pc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .p-telinfo {
+            max-width: 243px;
+            display: flex;
+            flex-direction: column;
+        }
+        .p-nav {
+            max-width: auto;
+            &-listbox {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+    }
+    
+}
+
+/* header-p
 ======================================================= */
