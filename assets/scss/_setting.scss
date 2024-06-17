@@ -95,6 +95,12 @@ component テキスト
 .c-textcolor--black {
   color:$siteBlack;
 }
+.c-textcolor--white {
+  color: $siteWhite;
+}
+.c-text--12 {
+  font-size: 12px;
+}
 .c-text--28-0-40 {
   // 調整(XD28→UI23,0,40/28em)
   font-size: 23px;
