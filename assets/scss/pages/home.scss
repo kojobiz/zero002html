@@ -94,6 +94,7 @@ section {
     width: auto;
     padding-top: 105px;
     padding-bottom: 250px;
+    box-sizing: border-box;
     &-contents {
         display: flex;
         flex-direction: column;
