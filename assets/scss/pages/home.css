@@ -200,7 +200,6 @@ component 余白
 .l-header {
   width: 100%;
   height: 117px;
-  background-color: #da9191;
 }
 
 .l-header-inner {
@@ -358,7 +357,6 @@ section {
 }
 .l-reason-contents-itemsbox {
   width: 100%;
-  background-color: #da9191;
   height: auto;
   margin-top: 50px;
 }
