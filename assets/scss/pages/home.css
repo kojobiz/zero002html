@@ -439,4 +439,9 @@ section {
   height: 32px;
   margin-left: -3px;
   margin-right: -6px;
+}
+
+.l-company-info {
+  background-color: #F2F2F2;
+  color: #30554C;
 }/*# sourceMappingURL=home.css.map */
