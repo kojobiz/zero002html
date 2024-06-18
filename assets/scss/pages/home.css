@@ -98,10 +98,28 @@ component テキスト
   line-height: 2.25em;
 }
 
+.c-text--20-07-27 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.68em;
+}
+
 .c-text--16-096-30 {
   font-size: 14px;
   letter-spacing: 0.96px;
   line-height: 2.14em;
+}
+
+.c-text--36-025-44 {
+  font-size: 30px;
+  letter-spacing: 0.25px;
+  line-height: 1.29em;
+}
+
+.c-text--47-0-57 {
+  font-size: 45px;
+  letter-spacing: 0px;
+  line-height: 1.21em;
 }
 
 .c-text--20-1-29 {
@@ -144,6 +162,10 @@ component テキスト
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 1.45em;
+}
+
+.c-weight--bold {
+  font-weight: 700;
 }
 
 /*******************************
@@ -407,4 +429,14 @@ section {
 .l-cta-pc .p-cta--pc a {
   padding-left: 20px;
   padding-right: 20px;
+}
+.l-cta-pc .p-telinfo {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+.l-cta-pc .p-telinfo svg {
+  height: 32px;
+  margin-left: -3px;
+  margin-right: -6px;
 }/*# sourceMappingURL=home.css.map */

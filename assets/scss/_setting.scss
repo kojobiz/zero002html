@@ -135,12 +135,29 @@ component テキスト
   letter-spacing:0.46px;
   line-height: 2.25em;
 }
+.c-text--20-07-27 {
+  // 調整(XD20→UI16,0.47,27/16em)
+  font-size: 16px;
+  letter-spacing:0px;
+  line-height: 1.68em;
+}
 .c-text--16-096-30 {
   // 調整(XD16→UI14,0.96,30/14em)
   font-size: 14px;
   letter-spacing:0.96px;
   line-height: 2.14em;
-
+}
+.c-text--36-025-44 {
+  // 調整(XD36→UI30,0.25,44/34em)telnumber
+  font-size: 30px;
+  letter-spacing:0.25px;
+  line-height: 1.29em;
+}
+.c-text--47-0-57 {
+  // 調整(XD47→UI45,0,57/47em)
+  font-size: 45px;
+  letter-spacing:0px;
+  line-height: 1.21em;
 }
 
 
@@ -186,6 +203,9 @@ component テキスト
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 1.45em;
+}
+.c-weight--bold {
+  font-weight: 700;
 }
 
 
