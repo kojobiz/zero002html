@@ -45,6 +45,13 @@
     <main class="l-main">
         <!-- firstview -->
         <section class="l-firstview">
+            <picture class="p-responsive-picture">
+                <source media="(min-width:768px)" srcset="./images/home/pc/img_hero_pc.jpg 1x, 
+                ./images/home/pc/img_hero_pc.jpg 2x">
+                <source media="(max-width:767px)" srcset="./images/home/sp/img_hero_sp.png 1x, 
+                ./images/home/sp/img_hero_sp@2x_sp.png 2x">
+                <img src="./images/home/sp/img_hero_sp.png" width="" height="" alt="" class="-img">
+            </picture>
             <div class="l-firstview-contents">
                 <h2 class="l-firstview-contents__title">企業向けAIアシスタントの新基準</h2>
                 <p class="l-firstview-contents__text">Azure OpenAI ServiceやAmazon Bedrockを利用して、情報の安全性を確保しつつ、最新のAIテクノロジーを誰でも簡単に利用できる豊富な機能を提供。あらゆるシーンで、あなたの業務を強力にサポートします。</p>

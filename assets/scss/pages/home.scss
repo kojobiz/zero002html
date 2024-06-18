@@ -13,7 +13,25 @@
 section {
     margin: 0 auto;
 }
+.l-firstview {
+    width: 100vw;
+    height: calc(100vh - 117px);
+    overflow: hidden;
+    position: relative;
+}
+.l-firstview-contents {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
 
-
+.p-responsive-picture {
+    width: 100vw;
+    height: calc(100vh - 117px);
+}
+.p-responsive-picture img {
+    object-fit: cover;
+    object-position: bottom right;
+}
 
 
