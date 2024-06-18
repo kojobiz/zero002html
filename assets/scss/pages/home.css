@@ -310,10 +310,9 @@ section {
 }
 .l-reason-contents__title {
   font-weight: 700;
-  padding-left: 8px;
 }
 .l-reason-contents__title span {
-  padding-left: 15px;
+  padding-left: 13px;
 }
 .l-reason-contents__hr {
   width: 140px;
