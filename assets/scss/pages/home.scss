@@ -82,6 +82,37 @@ section {
             font-weight: 700;
             padding-left: 8px;
         }
-    }
-    
+    } 
 }
+
+// reason 
+.l-reason {
+    background-image: url('../../../images/home/pc/img_reason.png');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 105px 50px;
+    &-contents {
+        display: flex;
+        flex-direction: column;
+        max-width: 635px;
+        margin: 0 auto;
+        text-align: center;
+        &__title {    
+            font-weight: 700;
+            padding-left: 8px;
+            span {
+                padding-left: 15px;
+            }
+        }
+        &__hr {
+            // 微調整（親%と全体vw）
+            width: 140px;
+            border-color: $siteWhite;
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 20px;
+        }
+    }  
+} 
