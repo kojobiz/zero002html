@@ -194,7 +194,7 @@ section {
 .l-firstview-contents {
   width: 970px;
   position: absolute;
-  top: 0;
+  top: 95px;
   left: 8%;
   z-index: 100;
 }
@@ -210,6 +210,13 @@ section {
 .l-firstview-contents__text {
   padding-right: 4%;
 }
+.l-firstview-contents__icons {
+  margin: 30px 0 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
 
 .p-responsive-picture {
   width: 100vw;
@@ -223,4 +230,9 @@ section {
      object-fit: cover;
   -o-object-position: bottom right;
      object-position: bottom right;
+}
+
+.p-cta--firstview a + a {
+  padding-left: 22px;
+  text-align: center;
 }/*# sourceMappingURL=home.css.map */
