@@ -51,6 +51,14 @@ a {
   text-decoration: none;
 }
 
+.c-title__hr {
+  width: 140px;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 20px;
+}
+
 /*******************************
 component テキスト
 ********************************/
@@ -314,10 +322,42 @@ section {
 .l-reason-contents__title span {
   padding-left: 13px;
 }
-.l-reason-contents__hr {
-  width: 140px;
-  border-color: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  margin-top: 20px;
+.l-reason-contents-itemsbox {
+  width: 100%;
+  background-color: #da9191;
+  height: auto;
+  margin-top: 50px;
+}
+.l-reason-contents-itemsbox li + li {
+  margin-top: 28px;
+}
+.l-reason-contents-itemsbox .p-item--01 {
+  background-image: url("../../../images/home/pc/img_reason01.png");
+  width: auto;
+  height: 221px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 40px 70px;
+}
+.l-reason-contents-itemsbox .p-item--02 {
+  background-image: url("../../../images/home/pc/img_reason02.png");
+  width: auto;
+  height: 221px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 40px 70px;
+}
+.l-reason-contents-itemsbox .p-item--03 {
+  background-image: url("../../../images/home/pc/img_reason03.png");
+  width: auto;
+  height: 221px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 40px 70px;
 }/*# sourceMappingURL=home.css.map */
