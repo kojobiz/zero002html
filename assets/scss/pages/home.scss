@@ -23,6 +23,19 @@ section {
     top: 0;
     left: 8%;
     z-index: 100;
+    hr {
+        // 微調整（親%と全体vw）
+        width: calc(100% + (100vw * 0.08));
+        margin-left: calc((100vw * 0.08 * -1) - (30px));
+        border-color: $titleBrightGreen;
+        border-width: 1px;
+        border-style: solid;
+        padding-right: -8%;
+        margin-top: -15px;
+    }
+    &__text {
+        padding-right: 4%;
+    }
 }
 
 .p-responsive-picture {
