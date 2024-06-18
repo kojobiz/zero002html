@@ -396,4 +396,15 @@ section {
   background-color: #F2F2F2;
   height: auto;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.l-cta-pc .p-cta--pc {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.l-cta-pc .p-cta--pc a {
+  padding-left: 20px;
+  padding-right: 20px;
 }/*# sourceMappingURL=home.css.map */

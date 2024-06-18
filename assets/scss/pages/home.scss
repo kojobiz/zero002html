@@ -166,9 +166,24 @@ section {
     bottom: 0;
     }
 }
+
+// cta
 .l-cta-pc {
     background-color: $siteRightGray;
     height: auto;
     width: 100%;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .p-cta--pc {
+        max-width: 800px;
+        margin: 0 auto;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        text-align: center;
+        & a {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
 }
