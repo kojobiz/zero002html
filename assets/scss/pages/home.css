@@ -193,6 +193,8 @@ section {
 }
 
 .p-responsive-picture img {
+  width: 100%;
+  height: calc(100vh - 117px);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom right;
