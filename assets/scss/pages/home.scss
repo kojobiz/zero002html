@@ -149,4 +149,26 @@ section {
             }
         }
     }  
-} 
+}
+
+// decoration cta
+.l-divider-deco {
+    position: relative;
+    height: auto;
+    &::after {
+        content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: url("../../../images/home/pc/img_divider_deco.svg") no-repeat center top / 100%
+        auto;
+    aspect-ratio: 1 / 0.1;
+    bottom: 0;
+    }
+}
+.l-cta-pc {
+    background-color: $siteRightGray;
+    height: auto;
+    width: 100%;
+
+}

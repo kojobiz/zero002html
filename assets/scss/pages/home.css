@@ -376,4 +376,24 @@ section {
 .l-reason-contents-itemsbox .p-item__title {
   font-weight: 700;
   padding-bottom: 15px;
+}
+
+.l-divider-deco {
+  position: relative;
+  height: auto;
+}
+.l-divider-deco::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../../../images/home/pc/img_divider_deco.svg") no-repeat center top/100% auto;
+  aspect-ratio: 1/0.1;
+  bottom: 0;
+}
+
+.l-cta-pc {
+  background-color: #F2F2F2;
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=home.css.map */
