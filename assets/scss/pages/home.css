@@ -182,8 +182,10 @@ section {
 }
 
 .l-firstview-contents {
+  width: 970px;
   position: absolute;
   top: 0;
+  left: 8%;
   z-index: 100;
 }
 
