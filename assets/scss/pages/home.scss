@@ -34,6 +34,10 @@ section {
         padding-right: -8%;
         margin-top: -15px;
     }
+    &__title {
+        // bold(700)
+        font-weight: bold;
+    }
     &__text {
         padding-right: 4%;
     }
@@ -45,7 +49,6 @@ section {
         gap: 70px;
     }
 }
-
 .p-responsive-picture {
     width: 100vw;
     height: calc(100vh - 117px);
@@ -59,4 +62,26 @@ section {
 .p-cta--firstview a+a {
     padding-left: 22px;
     text-align: center;
+}
+
+// attention 
+.l-attention-contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 105px 50px;
+    picture {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 90%;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        span {
+            font-weight: 700;
+            padding-left: 8px;
+        }
+    }
+    
 }

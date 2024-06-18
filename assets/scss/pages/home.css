@@ -40,6 +40,7 @@ p {
   padding: 0px;
   list-style: none;
   list-style-type: none;
+  font-weight: 300;
 }
 
 button {
@@ -101,10 +102,22 @@ component テキスト
   line-height: 2.08em;
 }
 
+.c-h3--34-0-49 {
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 1.41em;
+}
+
 .c-text--16-0-40 {
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 2.5em;
+}
+
+.c-h3--59-0-85 {
+  font-size: 54px;
+  letter-spacing: 0px;
+  line-height: 1.57em;
 }
 
 /*******************************
@@ -116,6 +129,20 @@ component 余白
 
 .c-x-center {
   text-align: center;
+}
+
+.c-width-65per {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.c-width-86per {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.c-mtb--60 {
+  margin: 60px auto;
 }
 
 /* 共通
@@ -207,6 +234,9 @@ section {
   padding-right: -8%;
   margin-top: -15px;
 }
+.l-firstview-contents__title {
+  font-weight: bold;
+}
 .l-firstview-contents__text {
   padding-right: 4%;
 }
@@ -235,4 +265,24 @@ section {
 .p-cta--firstview a + a {
   padding-left: 22px;
   text-align: center;
+}
+
+.l-attention-contents {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 105px 50px;
+}
+.l-attention-contents picture {
+  display: flex;
+  justify-content: center;
+}
+.l-attention-contents picture img {
+  max-width: 90%;
+}
+.l-attention-contents__title {
+  font-weight: 500;
+}
+.l-attention-contents__title span {
+  font-weight: 700;
+  padding-left: 8px;
 }/*# sourceMappingURL=home.css.map */
