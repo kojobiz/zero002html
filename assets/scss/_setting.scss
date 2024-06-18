@@ -134,6 +134,15 @@ component テキスト
   letter-spacing:0.46px;
   line-height: 2.25em;
 }
+.c-text--16-096-30 {
+  // 調整(XD16→UI14,0.96,30/14em)
+  font-size: 14px;
+  letter-spacing:0.96px;
+  line-height: 2.14em;
+
+}
+
+
 .c-text--20-1-29 {
   // 調整(XD20→UI17,1,29/18em)
   font-size: 17px;
@@ -170,9 +179,13 @@ component テキスト
   font-size: 47px;
   letter-spacing: -1px;
   line-height: 1.22em;
-
 }
-
+.c-h4--35-0-51 {
+  // 調整(XD35→32,0,51/35em
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 1.45em;
+}
 
 
 /*******************************
