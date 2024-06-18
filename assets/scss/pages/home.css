@@ -255,7 +255,7 @@ component 余白
 /* トップページ
 ======================================================= */
 section {
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .l-firstview {
@@ -340,12 +340,16 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   width: auto;
-  padding: 105px 50px 250px;
+  padding-top: 105px;
+  padding-bottom: 250px;
+  box-sizing: border-box;
 }
 .l-reason-contents {
   display: flex;
   flex-direction: column;
   max-width: 635px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0 auto;
   text-align: center;
 }
