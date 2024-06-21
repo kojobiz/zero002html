@@ -587,6 +587,7 @@ section {
 }
 .l-fivefeatures-contents .p-item-imgbox img {
   max-width: 100%;
+  height: auto;
 }
 
 .l-company-info {
