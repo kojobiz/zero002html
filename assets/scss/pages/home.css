@@ -51,12 +51,20 @@ a {
   text-decoration: none;
 }
 
-.c-title__hr {
+.c-title__hr--white {
   width: 140px;
-  border-color: #FFFFFF;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.c-title__hr--green {
+  width: 140px;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 20px;
+  color: #00A99D;
 }
 
 /*******************************
@@ -80,6 +88,10 @@ component テキスト
 
 .c-titlecolor--brightgreen {
   color: #2FC996;
+}
+
+.c-titlecolor--darkgreen {
+  color: #00A99D;
 }
 
 .c-text--12 {
@@ -154,7 +166,7 @@ component テキスト
 
 .c-h3--50-0-61 {
   font-size: 47px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   line-height: 1.22em;
 }
 
@@ -231,6 +243,10 @@ component 余白
   margin: 0 auto;
 }
 
+.c-margin--b100px {
+  margin-bottom: 100px;
+}
+
 /* 共通
 ======================================================= */
 /* header-layout
@@ -297,6 +313,15 @@ component 余白
 ======================================================= */
 section {
   box-sizing: border-box;
+}
+
+.l-contents__title {
+  font-size: 50px;
+  letter-spacing: 0px;
+  line-height: 1.4em;
+  font-weight: bold;
+  color: #00A99D;
+  text-align: center;
 }
 
 .l-firstview {
@@ -591,6 +616,10 @@ section {
 .l-fivefeatures-contents .p-item-imgbox img {
   max-width: 100%;
   height: auto;
+}
+
+.l-work-contents {
+  max-width: 1200px;
 }
 
 .l-company-info {

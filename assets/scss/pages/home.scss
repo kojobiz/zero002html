@@ -11,6 +11,16 @@
 section {
     box-sizing: border-box;
 }
+.l-contents__title {
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 1.4em;
+    font-weight: bold;
+    color: $titleDarkGreen;
+    text-align: center;
+}
+
+
 // firstview
 .l-firstview {
     width: 100%;
@@ -325,7 +335,10 @@ section {
 
 
 
-
+// work
+.l-work-contents {
+    max-width: 1200px;
+}
 
 
 
