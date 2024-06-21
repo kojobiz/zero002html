@@ -193,6 +193,15 @@ component 余白
   margin: 60px auto;
 }
 
+.c-padding--y50px {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.c-margin--0auto {
+  margin: 0 auto;
+}
+
 /* 共通
 ======================================================= */
 /* header-layout
@@ -445,6 +454,11 @@ section {
 
 .l-work {
   padding-bottom: 250px;
+}
+
+.l-fivefeatures-contents {
+  max-width: 1200px;
+  background-color: #cbcbcb;
 }
 
 .l-company-info {
