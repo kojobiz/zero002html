@@ -621,6 +621,21 @@ section {
 .l-work-contents {
   max-width: 1200px;
 }
+.l-work-contents-itemsbox {
+  max-width: 100%;
+  height: auto;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+.l-work-contents-itemsbox .p-item {
+  max-width: 100%;
+}
+.l-work-contents-itemsbox .p-item img {
+  max-width: 100%;
+}
 
 .l-company-info {
   background-color: #F2F2F2;

@@ -338,6 +338,21 @@ section {
 // work
 .l-work-contents {
     max-width: 1200px;
+    &-itemsbox {
+        max-width: 100%;
+        height: auto;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        .p-item {
+            max-width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 
