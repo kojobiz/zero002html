@@ -182,12 +182,24 @@ component テキスト
 }
 
 // hタグ
-.c-h4--35-0-51 {
-  // 調整(XD35→32,0,51/35em
-  font-size: 32px;
+// .c-h4--35-0-51 {
+//   // 調整(XD35→32,0,51/35em
+//   font-size: 32px;
+//   letter-spacing: 0px;
+//   line-height: 1.45em;
+// }
+.c-h4--42-0-61 {
+  // 調整(XD42→42,0,61/42em
+  font-size: 42px;
   letter-spacing: 0px;
   line-height: 1.45em;
 }
+// .c-h4--45-45-65 {
+//   // 調整(XD45→45,0,65/45em
+//   font-size: 45px;
+//   letter-spacing: 0px;
+//   line-height: 1.44em;
+// }
 .c-h3--39-0-56 {
   // 調整(XD39→39,0,56/39em
   font-size: 39px;

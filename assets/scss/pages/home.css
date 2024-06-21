@@ -140,8 +140,8 @@ component テキスト
   line-height: 1.21em;
 }
 
-.c-h4--35-0-51 {
-  font-size: 32px;
+.c-h4--42-0-61 {
+  font-size: 42px;
   letter-spacing: 0px;
   line-height: 1.45em;
 }
@@ -551,6 +551,22 @@ section {
 }
 .l-fivefeatures-contents-itemsbox .p-item-reverse .p-item-pointbox {
   grid-area: pointbox;
+}
+.l-fivefeatures-contents .p-item-pointbox {
+  text-align: left;
+}
+.l-fivefeatures-contents .p-item-pointbox .p-item-point__title {
+  color: #2FC996;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 1.45em;
+}
+.l-fivefeatures-contents .p-item-pointbox .p-item-point__title--two {
+  color: #30554C;
+  font-size: 45px;
+  letter-spacing: 0px;
+  line-height: 1.44em;
 }
 
 .l-company-info {
