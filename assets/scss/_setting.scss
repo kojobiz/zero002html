@@ -104,6 +104,13 @@ body,
   margin-top: 20px;
   color: $titleDarkGreen;
 }
+.c-title__hr--black {
+  width: 140px;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 20px;
+  color: $siteBlack;
+}
 
 /*******************************
 component テキスト

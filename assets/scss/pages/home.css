@@ -67,6 +67,14 @@ a {
   color: #00A99D;
 }
 
+.c-title__hr--black {
+  width: 140px;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 20px;
+  color: #191919;
+}
+
 /*******************************
 component テキスト
 ********************************/
@@ -321,6 +329,15 @@ section {
   line-height: 1.4em;
   font-weight: bold;
   color: #00A99D;
+  text-align: center;
+}
+
+.l-contents__title--black {
+  font-size: 50px;
+  letter-spacing: 0px;
+  line-height: 1.4em;
+  font-weight: bold;
+  color: #191919;
   text-align: center;
 }
 
