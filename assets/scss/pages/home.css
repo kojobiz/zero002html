@@ -193,7 +193,7 @@ component 余白
   margin: 60px auto;
 }
 
-.c-padding--y50px {
+.c-padding--x50px {
   padding-left: 50px;
   padding-right: 50px;
 }
