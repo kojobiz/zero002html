@@ -227,7 +227,73 @@ section {
             margin-right: -8px;
         }
     }
+    &-itemsbox {
+        padding-top: 40px;
+        // .p-item-noreverse {
+        //     display: flex;
+        //     flex-direction: row;
+        // }
+        // .p-item-reverse {
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        // }
+    }
 }
+
+
+// t-fivefeatures
+.t-fivefeatures {
+    text-align: center;
+
+}
+.t-fivefeatures-contents {
+    
+    &-itemsbox {
+        
+        .p-itemgrid:nth-child(1) {
+            background-color: aqua;
+            grid-area: point1;
+        }
+        .p-itemgrid:nth-child(2) {
+            background-color: rgb(95, 114, 114);
+            grid-area: point2;
+        }
+        .p-itemgrid:nth-child(3) {
+            background-color: rgb(134, 143, 143);
+            grid-area: point3;
+        }
+        .p-itemgrid:nth-child(4) {
+            background-color: rgb(142, 208, 160);
+            grid-area: point4;
+        }
+        .p-itemgrid:nth-child(5) {
+            background-color: rgb(205, 216, 120);
+            grid-area: point5;
+        }
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "point1"
+            "point2"
+            "point3"
+            "point4"
+            "point5";
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 // companyinfo 
 .l-company-info {
