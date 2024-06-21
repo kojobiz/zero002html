@@ -215,6 +215,18 @@ section {
 .l-fivefeatures-contents {
     max-width: 1200px;
     background-color:#cbcbcb;
+    &__title {
+        font-weight: bold;
+    }
+    &__title--orange {
+        color: $siteOrange;
+        margin-top: -25px;
+        font-weight: bold;
+        .h3-adjust {
+            margin-left: -10px;
+            margin-right: -8px;
+        }
+    }
 }
 
 // companyinfo 
