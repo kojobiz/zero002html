@@ -511,6 +511,7 @@ section {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "point1" "point2" "point3" "point4" "point5";
+  gap: 80px;
 }
 .l-fivefeatures-contents-itemsbox .p-itemgrid:nth-child(1) {
   background-color: aqua;
