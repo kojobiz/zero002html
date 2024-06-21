@@ -302,6 +302,17 @@ section {
                 letter-spacing:0.8px;
                 line-height: 1.5em;
             }
+            &-listbox {
+                &__item {
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    line-height: 1.61em;
+                    &::before {
+                        content: "●";
+                    }
+                }
+
+            }
         }
     }
 }

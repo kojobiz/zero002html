@@ -577,6 +577,14 @@ section {
   letter-spacing: 0.8px;
   line-height: 1.5em;
 }
+.l-fivefeatures-contents .p-item-pointbox .p-item-point-listbox__item {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.61em;
+}
+.l-fivefeatures-contents .p-item-pointbox .p-item-point-listbox__item::before {
+  content: "●";
+}
 
 .l-company-info {
   background-color: #F2F2F2;
