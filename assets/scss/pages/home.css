@@ -585,6 +585,9 @@ section {
 .l-fivefeatures-contents .p-item-pointbox .p-item-point-listbox__item::before {
   content: "●";
 }
+.l-fivefeatures-contents .p-item-imgbox img {
+  max-width: 100%;
+}
 
 .l-company-info {
   background-color: #F2F2F2;
