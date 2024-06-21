@@ -228,28 +228,6 @@ section {
         }
     }
     &-itemsbox {
-        padding-top: 40px;
-        // .p-item-noreverse {
-        //     display: flex;
-        //     flex-direction: row;
-        // }
-        // .p-item-reverse {
-        //     display: flex;
-        //     flex-direction: row-reverse;
-        // }
-    }
-}
-
-
-// t-fivefeatures
-.t-fivefeatures {
-    text-align: center;
-
-}
-.t-fivefeatures-contents {
-    
-    &-itemsbox {
-        
         .p-itemgrid:nth-child(1) {
             background-color: aqua;
             grid-area: point1;
@@ -280,10 +258,26 @@ section {
             "point3"
             "point4"
             "point5";
-        
+        .p-item-noreverse {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            column-gap: 4%;
+        }
+        .p-item-reverse {
+            .p-item-imgbox {
+                grid-area: imgbox;
+            }
+            .p-item-pointbox {
+                grid-area: pointbox;
+            }
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-areas: "imgbox pointbox";
+            column-gap: 4%;
+        }
     }
-    
 }
+
 
 
 
