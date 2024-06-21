@@ -365,6 +365,34 @@ section {
 }
 
 
+// flow
+.l-flow {
+    text-align: center;
+    picture {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// plan
+.l-plan {
+    text-align: center;
+}
+
+// support
+.l-support {
+    text-align: center;
+    &-contents-imgbox {
+        // display: grid;
+        // grid-template-columns: 1fr 2fr 1fr;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    
+}
 
 
 

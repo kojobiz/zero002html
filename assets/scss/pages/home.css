@@ -654,6 +654,24 @@ section {
   max-width: 100%;
 }
 
+.l-flow {
+  text-align: center;
+}
+.l-flow picture img {
+  max-width: 100%;
+}
+
+.l-plan {
+  text-align: center;
+}
+
+.l-support {
+  text-align: center;
+}
+.l-support-contents-imgbox img {
+  max-width: 100%;
+}
+
 .l-company-info {
   background-color: #F2F2F2;
   color: #30554C;
