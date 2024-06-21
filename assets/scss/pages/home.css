@@ -198,6 +198,11 @@ component 余白
   padding-right: 50px;
 }
 
+.c-padding--y100px {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .c-margin--0auto {
   margin: 0 auto;
 }
