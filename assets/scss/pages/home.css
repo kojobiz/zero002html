@@ -456,6 +456,10 @@ section {
   padding-bottom: 250px;
 }
 
+.l-fivefeatures {
+  text-align: center;
+}
+
 .l-fivefeatures-contents {
   max-width: 1200px;
   background-color: #cbcbcb;
