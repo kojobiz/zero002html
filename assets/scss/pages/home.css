@@ -430,7 +430,7 @@ section {
 .l-reason-contents {
   display: flex;
   flex-direction: column;
-  max-width: 635px;
+  max-width: 70%;
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
@@ -453,7 +453,7 @@ section {
 .l-reason-contents-itemsbox .p-item--01 {
   background-image: url("../../../images/home/pc/img_reason01.png");
   width: auto;
-  height: 221px;
+  height: auto;
   background-size: cover;
   background-position: right bottom;
   overflow: hidden;
@@ -463,7 +463,7 @@ section {
 .l-reason-contents-itemsbox .p-item--02 {
   background-image: url("../../../images/home/pc/img_reason02.png");
   width: auto;
-  height: 221px;
+  height: auto;
   background-size: cover;
   background-position: right bottom;
   overflow: hidden;
@@ -473,7 +473,7 @@ section {
 .l-reason-contents-itemsbox .p-item--03 {
   background-image: url("../../../images/home/pc/img_reason03.png");
   width: auto;
-  height: 221px;
+  height: auto;
   background-size: cover;
   background-position: right bottom;
   overflow: hidden;
