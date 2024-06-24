@@ -400,20 +400,27 @@ section {
     &-contents-itemsbox {
         max-width: 1145px;
         margin: 0 auto;
+        dl + dl {
+            margin-top: 23px;
+        }
     }
     .p-item-plan {
         display: grid;
-        background-color: antiquewhite;
+        background-color: $siteWhite;
         grid-template-columns: 23% 39% 28% 10%;
+        grid-template-rows: 80px;
         padding: 1% 3%;
         align-items: center;
+        box-sizing: border-box;
+        border: 5px solid;
+        border-radius: 15px;
         &__name {
             font-size: 30px;
             line-height: 1.52em;
             text-align: left;
             font-weight: bold;
             &--wide {
-                letter-spacing:0.9rem;
+                letter-spacing:1.01rem;
             }
             &--tight {
                 letter-spacing: 0.1rem;
@@ -442,6 +449,14 @@ section {
             &--two {
                 text-align: end;
             }
+        }
+    }
+    .p-item {
+        &--getsugaku {
+            border-color: $planLineBlue;
+        }
+        &--syokihiyou {
+            border-color: $planLineGreen;
         }
     }
 }
