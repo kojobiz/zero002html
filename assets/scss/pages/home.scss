@@ -18,6 +18,14 @@ section {
     font-weight: bold;
     color: $titleDarkGreen;
     text-align: center;
+    &-text {
+        padding: 70px 0;
+        font-size: 20px;
+        letter-spacing: 0px;
+        line-height: 1.65em;
+        
+
+    }
 }
 .l-contents__title--black {
     font-size: 50px;

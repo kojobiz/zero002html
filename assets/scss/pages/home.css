@@ -341,6 +341,12 @@ section {
   color: #00A99D;
   text-align: center;
 }
+.l-contents__title-text {
+  padding: 70px 0;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 1.65em;
+}
 
 .l-contents__title--black {
   font-size: 50px;
