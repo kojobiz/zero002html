@@ -64,6 +64,7 @@ first ビュー、メッセージ、オーナーや人、店舗情報、予約�
 ## backgroundとして使用するとき
 ・背景ではbackground-size：cover;の指定が必要
 ## 最初からimg { max-width :100%;}の方がいいのか？
+htmlでimg max-width 100%にしたらどう？未検証
 
 ## 3-b ページ内リンク設定　　 home へ
 
