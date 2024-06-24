@@ -478,6 +478,38 @@ section {
 // support
 .l-support {
     text-align: center;
+    .l-contents__title {
+        box-sizing: border-box;
+        max-width: 790px;
+        position: relative;
+        // border-left: solid 3px $titleDarkGreen;
+        // border-right: solid 3px $titleDarkGreen;
+        margin: 0 auto;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute; 
+            left: 0; 
+            top: 0;
+            width: 10px; 
+            height: 95%; 
+            border-left: solid 4px $titleDarkGreen;
+            transform: rotate(-25deg); 
+            transform-origin: bottom
+        }        
+        &::after {
+            content: "";
+            display: block;
+            position: absolute; 
+            right: 0; 
+            top: 0;
+            width: 10px; 
+            height: 95%; 
+            border-left: solid 4px $titleDarkGreen;
+            transform: rotate(25deg); 
+            transform-origin: bottom
+        }        
+    }
     &-contents-imgbox {
         // display: grid;
         // grid-template-columns: 1fr 2fr 1fr;
