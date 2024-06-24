@@ -309,9 +309,14 @@ section {
                 padding-left: 20px;
                 &--two {
                     color: $siteGreen;
-                    font-size: 45px;
+                    font-size: 35px;
                     letter-spacing: 0px;
                     line-height: 1.44em;
+                    &-sub {
+                        font-size: 20px;
+                        // letter-spacing: 1.45px;
+                        // line-height: 0.74em;
+                    }
                 }
             }
             &__caption {

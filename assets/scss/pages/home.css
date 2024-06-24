@@ -616,9 +616,12 @@ section {
 }
 .l-fivefeatures-contents .p-item-pointbox .p-item-point__title--two {
   color: #30554C;
-  font-size: 45px;
+  font-size: 35px;
   letter-spacing: 0px;
   line-height: 1.44em;
+}
+.l-fivefeatures-contents .p-item-pointbox .p-item-point__title--two-sub {
+  font-size: 20px;
 }
 .l-fivefeatures-contents .p-item-pointbox .p-item-point__caption {
   margin-top: 30px;
