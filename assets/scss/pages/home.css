@@ -874,6 +874,47 @@ section {
   height: auto;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 250px;
+}
+@media (max-width: 768px) {
+  .l-faq .l-faq {
+    padding-bottom: 50px;
+  }
+}
+.l-faq dl + dl {
+  padding-top: 30px;
+}
+.l-faq .p-item-faq--question {
+  font-size: 25px;
+  line-height: 1.69em;
+  color: #30554C;
+  font-weight: bold;
+}
+.l-faq .p-item-faq--question-text {
+  background: linear-gradient(to bottom, rgba(255, 255, 217, 0) 65%, rgba(255, 255, 217, 0.57) 35%);
+}
+.l-faq .p-item-faq--question-text::before {
+  content: "Q";
+  font-size: 35px;
+  padding-right: 13px;
+}
+.l-faq .p-item-faq--answer {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #191919;
+}
+.l-faq .p-item-faq--answer-text::before {
+  content: "A";
+  font-size: 35px;
+  padding-right: 13px;
+  background-image: url(../../../images/home/pc/faq_a.svg);
+  width: auto;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .l-company-info {

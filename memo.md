@@ -125,10 +125,19 @@ next
 ・_setting.scssで作っている$siteColorを利用する
 　_common_first_view.scssファイルの中で_setting.scssの設定を使用する方法は、_common_first_view.scssファイル先頭に、@use "setting" as *;を記述することで利用できるようになる。カラーを変数で利用しているNext.jsのコンポーネントのような使い方
 
-## 4ナビ作成
+## 4ナビ作成 下線　ハイライト　外線
 aタグのメニューテキストをhoverしたら下線が引かれるようにする
 ・下線はaタグには指定せず、aタグの中にspanを入れてそこに下線を指定すると、テキストピッタリに下線がひかれ余白もきちんと開く設定が可能
-
+・これでもいける半分を半透明にして
+.p-item-faq {  
+        &--question {
+            font-size: 25px;
+            line-height: 1.69em;
+            color: $siteGreen;
+            font-weight: bold;
+            &-text {
+                background: linear-gradient(to bottom, rgb(255, 255, 217, 0) 65%, rgb(255, 255, 217, 0.57) 35%);
+            }
 ##　５背景とロゴ
 背景とロゴを合わせた全体枠
 ・100vw、100vhと指定する
