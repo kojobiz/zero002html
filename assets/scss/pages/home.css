@@ -279,8 +279,7 @@ component 余白
   z-index: 200;
 }
 .l-header-inner__logo img {
-  max-width: 430px;
-  max-height: auto;
+  max-width: 100%;
 }
 .l-header-inner__menu--pc {
   display: flex;

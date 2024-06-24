@@ -22,8 +22,7 @@
     position: fixed;
     z-index: 200;
     &__logo img {
-        max-width: 430px;
-        max-height: auto;
+        max-width: 100%;
     }
     &__menu--pc {
         display: flex;
