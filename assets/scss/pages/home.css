@@ -838,8 +838,22 @@ section {
 .l-support-contents-itemsbox .p-item-support--green {
   border-color: #83DCBF;
 }
-.l-support-contents-imgbox img {
-  max-width: 100%;
+.l-support-contents-imgbox {
+  display: grid;
+  grid-template-columns: 120px auto 120px;
+  margin: 0 auto;
+  max-width: 744.25px;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .l-support-contents-imgbox {
+    display: none;
+  }
+}
+.l-support-contents-imgbox__img-pc {
+  position: absolute;
+  top: 0px img;
+  top-max-width: 100%;
 }
 
 .l-company-info {
