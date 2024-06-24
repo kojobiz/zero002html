@@ -774,6 +774,7 @@ section {
 
 .l-support {
   text-align: center;
+  padding-bottom: 100px;
 }
 .l-support .l-contents__title {
   box-sizing: border-box;
@@ -865,6 +866,14 @@ section {
 }
 .l-support-contents-imgbox__img-pc img {
   max-width: 100%;
+}
+
+.l-faq {
+  background-image: url("../../../images/home/pc/img_faq_pc.png");
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
 }
 
 .l-company-info {

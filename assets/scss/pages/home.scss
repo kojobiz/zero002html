@@ -480,6 +480,7 @@ section {
 // support
 .l-support {
     text-align: center;
+    padding-bottom: 100px;
     
     .l-contents__title {
         box-sizing: border-box;
@@ -574,11 +575,17 @@ section {
             }
            
         }
-    }
-
-    
+    }    
 }
 
+// faq
+.l-faq {
+    background-image: url("../../../images/home/pc/img_faq_pc.png");
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+}
 
 
 
