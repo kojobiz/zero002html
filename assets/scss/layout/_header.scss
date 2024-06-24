@@ -22,7 +22,8 @@
     position: fixed;
     z-index: 200;
     &__logo img {
-        max-width: 100%;
+        // max-width: 100%;
+        width: clamp(220px, 100%, 430px);
     }
     &__menu--pc {
         display: flex;
@@ -41,7 +42,8 @@
                 gap: 20px;
                 &__title {
                     // 調整(XD20→UI16,1,29/16em)
-                    font-size: 16px;
+                    // 
+                    font-size: clamp(14px, 2.5vw, 16px);
                     letter-spacing: 1px;
                     line-height: 1.81em;
                     text-wrap: nowrap;

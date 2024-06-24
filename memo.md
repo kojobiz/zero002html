@@ -56,6 +56,12 @@ first ビュー、メッセージ、オーナーや人、店舗情報、予約�
 4 div l-sp-menu sp_menu
 5 div l-sp-menu-btn sp_menu_btn
 
+## headerロゴと文字サイズの最適化　最小、推奨、最大
+&__logo img {
+        // max-width: 100%;
+        width: clamp(220px, 100%, 430px);
+    }
+
 ## 3-a 画像 firstview の設定は picture タグで
 ## pictureタグとして使用するとき
 ・767 以下スマホの時、768 以上パソコンの時、どちらにも合わない時などが設定できる
