@@ -225,6 +225,11 @@ section {
 .l-work {
     padding-bottom: 250px;
 }
+@media (max-width: 768px) {
+    .l-work {
+      padding-bottom: 50px;
+    }
+}
 
 // fivefeatures
 .l-fivefeatures {
@@ -233,7 +238,7 @@ section {
 }
 .l-fivefeatures-contents {
     max-width: 1200px;
-    background-color:#cbcbcb;
+    // background-color:#cbcbcb;
     &__title {
         font-weight: bold;
     }
@@ -248,23 +253,23 @@ section {
     }
     &-itemsbox {
         .p-itemgrid:nth-child(1) {
-            background-color: aqua;
+            // background-color: aqua;
             grid-area: point1;
         }
         .p-itemgrid:nth-child(2) {
-            background-color: rgb(95, 114, 114);
+            // background-color: rgb(95, 114, 114);
             grid-area: point2;
         }
         .p-itemgrid:nth-child(3) {
-            background-color: rgb(134, 143, 143);
+            // background-color: rgb(134, 143, 143);
             grid-area: point3;
         }
         .p-itemgrid:nth-child(4) {
-            background-color: rgb(142, 208, 160);
+            // background-color: rgb(142, 208, 160);
             grid-area: point4;
         }
         .p-itemgrid:nth-child(5) {
-            background-color: rgb(205, 216, 120);
+            // background-color: rgb(205, 216, 120);
             grid-area: point5;
         }
         padding-top: 40px;
@@ -355,7 +360,7 @@ section {
     &-itemsbox {
         max-width: 100%;
         height: auto;
-        background-color: aqua;
+        // background-color: aqua;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
