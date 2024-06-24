@@ -454,6 +454,12 @@ section {
     .p-item {
         &--getsugaku {
             border-color: $planLineBlue;
+            position: relative;
+            &-attention {
+                position: absolute;
+                top: -105px;
+                right: -65px;
+            }
         }
         &--syokihiyou {
             border-color: $planLineGreen;

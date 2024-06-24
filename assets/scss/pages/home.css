@@ -743,6 +743,12 @@ section {
 }
 .l-plan .p-item--getsugaku {
   border-color: #59B5D2;
+  position: relative;
+}
+.l-plan .p-item--getsugaku-attention {
+  position: absolute;
+  top: -105px;
+  right: -65px;
 }
 .l-plan .p-item--syokihiyou {
   border-color: #9CBC3C;
