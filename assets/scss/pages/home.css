@@ -752,8 +752,8 @@ section {
 }
 .l-plan .p-item--getsugaku-attention {
   position: absolute;
-  top: -105px;
-  right: -65px;
+  top: -120px;
+  right: -20px;
 }
 .l-plan .p-item--syokihiyou {
   border-color: #9CBC3C;
@@ -838,12 +838,14 @@ section {
 .l-support-contents-itemsbox .p-item-support--green {
   border-color: #83DCBF;
 }
+.l-support-contents-position {
+  position: relative;
+}
 .l-support-contents-imgbox {
   display: grid;
   grid-template-columns: 120px auto 120px;
-  margin: 0 auto;
+  margin: 16px auto;
   max-width: 744.25px;
-  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .l-support-contents-imgbox {
@@ -852,8 +854,12 @@ section {
 }
 .l-support-contents-imgbox__img-pc {
   position: absolute;
-  top: 0px img;
-  top-max-width: 100%;
+  top: -55px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.l-support-contents-imgbox__img-pc img {
+  max-width: 100%;
 }
 
 .l-company-info {
