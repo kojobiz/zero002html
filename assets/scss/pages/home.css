@@ -52,6 +52,18 @@ a {
   text-decoration: none;
 }
 
+/*******************************
+sp-only
+********************************/
+.sp-only--paddingtop {
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .sp-only--padding-top {
+    display: none;
+  }
+}
 .c-title__hr--white {
   width: 140px;
   border-width: 2px;
