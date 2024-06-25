@@ -351,6 +351,9 @@ pointer-events: none;
 
 テキストサイズの、最小、推奨、最大
 font-size: clamp(16px, 2.5vw, 23px);
+font-size: clamp(35px, 4vw, 51px);
+font-size: clamp(22px, 3.8vw, 30px);
+font-size: clamp(12px, 1.5vw, 24px);
 
 ゆっくり表示される
 transition: right 0.3s ease-in-out;
