@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 /***************************
 テストカラー
@@ -30,25 +31,26 @@ $faqBgGreen:#91FF00;
 /*****************************
 フォント
 ******************************/
-$fontMeiryo: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial,
-  sans-serif;
-$fontHira: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
-  Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-$fontMintyo: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
-  "Hiragino Mincho Pro", serif;
-$fontGothic: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-$fontRaleway: "Raleway", "MS PGothic", sans-serif;
-$fontNoto: "Noto Sans Japanese", serif;
-$fontLato: "Lato", "arial", sans-serif;
-$fontOpenSans: "Open Sans", Arial, sans-serif;
-$fontYuMin: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
-  "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-$fontYuGothic: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
-  sans-serif;
-$fontNoteMin: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-  "Noto Serif JP", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HGS明朝E",
-  serif;
-$roboto: "Roboto Condensed", sans-serif;
+// $fontMeiryo: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial,
+//   sans-serif;
+// $fontHira: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+//   Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+// $fontMintyo: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+//   "Hiragino Mincho Pro", serif;
+// $fontGothic: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+// $fontRaleway: "Raleway", "MS PGothic", sans-serif;
+// $fontNoto: "Noto Sans Japanese", serif;
+// $fontLato: "Lato", "arial", sans-serif;
+// $fontOpenSans: "Open Sans", Arial, sans-serif;
+// $fontYuMin: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+//   "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+// $fontYuGothic: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+//   sans-serif;
+// $fontNoteMin: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+//   "Noto Serif JP", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HGS明朝E",
+//   serif;
+// $roboto: "Roboto Condensed", sans-serif;
+
 
 .bold {
   font-weight: bold;
@@ -58,6 +60,7 @@ $roboto: "Roboto Condensed", sans-serif;
 ********************************/
 body {
   overflow-x: hidden;
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
 }
 body,
   h1,

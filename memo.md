@@ -1,15 +1,18 @@
 **A:ディレクトリの作成**
-## ディレクトリを作成するとき
-・デザインデータのURLなどを管理できるウrlディレクトリを作成
-URL.txtというファイルを作成しURL管理すると開発効率が良い！
 
-**B:bodyまでのテンプレートの利用**
+## ディレクトリを作成するとき
+
+・デザインデータの URL などを管理できるウ rl ディレクトリを作成
+URL.txt というファイルを作成し URL 管理すると開発効率が良い！
+
+**B:body までのテンプレートの利用**
+
 ## body>div>
 
 body
 トップページ：class も id も home
 
-**C:レイアウト構成/mainの中身の構成/headerの中身の構成**
+**C:レイアウト構成/main の中身の構成/header の中身の構成**
 
 ## 1 大きな構成：　 5 つ class/id
 
@@ -36,10 +39,12 @@ first ビュー、メッセージ、オーナーや人、店舗情報、予約�
 4 div l-sp-menu sp_menu
 5 div l-sp-menu-btn sp_menu_btn
 
-## developer toolはresponsiveの75%が使いやすい
-　1600x3000くらいのものと併用すると使いやすい
+## developer tool は responsive の 75%が使いやすい
 
-**D:headerの作り込み/スタイル**
+1600x3000 くらいのものと併用すると使いやすい
+
+**D:header の作り込み/スタイル**
+
 ## 3 header の構成　：2 つ　
 
 ロゴ、ナビゲーション
@@ -59,54 +64,91 @@ first ビュー、メッセージ、オーナーや人、店舗情報、予約�
 4 div l-sp-menu sp_menu
 5 div l-sp-menu-btn sp_menu_btn
 
-## headerロゴと文字サイズの最適化　最小、推奨、最大
-&__logo img {
-        // max-width: 100%;
-        width: clamp(220px, 100%, 430px);
-    }
+## header ロゴと文字サイズの最適化　最小、推奨、最大
+
+&\_\_logo img {
+// max-width: 100%;
+width: clamp(220px, 100%, 430px);
+}
+
+## フォント種類
+
+$fontMeiryo: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial,
+  sans-serif;
+$fontHira: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$fontMintyo: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+  "Hiragino Mincho Pro", serif;
+$fontGothic: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$fontRaleway: "Raleway", "MS PGothic", sans-serif;
+$fontNoto: "Noto Sans Japanese", serif;
+$fontLato: "Lato", "arial", sans-serif;
+$fontOpenSans: "Open Sans", Arial, sans-serif;
+$fontYuMin: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+  "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+$fontYuGothic: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+sans-serif;
+$fontNoteMin: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+  "Noto Serif JP", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "HGS明朝E",
+  serif;
+$roboto: "Roboto Condensed", sans-serif;
+
+## フォントを link タグでも css に import でも良い（wordpress）の場合
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+</style>でも良い
+
+wordpress の場合は functions.php に変換して記述する方が良い
 
 ## 3-a 画像 firstview の設定は picture タグで
-## pictureタグとして使用するとき
+
+## picture タグとして使用するとき
+
 ・767 以下スマホの時、768 以上パソコンの時、どちらにも合わない時などが設定できる
-## imageとして使用するとき
-・画像はdivやsectionタグで挟むと途端にサイズはみ出るのでimg自体にmax-width100%(親要素サイズに対して)の指定が必要
-## backgroundとして使用するとき
-・背景ではbackground-size：cover;の指定が必要
-## 最初からimg { max-width :100%;}の方がいいのか？
-htmlでimg max-width 100%にしたらどう？未検証
+
+## image として使用するとき
+
+・画像は div や section タグで挟むと途端にサイズはみ出るので img 自体に max-width100%(親要素サイズに対して)の指定が必要
+
+## background として使用するとき
+
+・背景では background-size：cover;の指定が必要
+
+## 最初から img { max-width :100%;}の方がいいのか？
+
+html で img max-width 100%にしたらどう？未検証
 
 ## 3-b ページ内リンク設定　　 home へ
 
 ジャンプ：ページ内の異なる箇所へ移動
 遷移：異なるページへ移動
 
-
-
 ## 3-c スタイル設置　
-## assets/scss/_setting.scssのファイルを作成
+
+## assets/scss/\_setting.scss のファイルを作成
+
 その中に
-・カラー　＄siteOrange: #______
+・カラー　＄ siteOrange: #**\_\_**
 ・フォント .c-h2--65-0-121 {
-  // 調整(XD65→63,0,121/58em)
-  font-size: 63px;
-  letter-spacing: 0px;
-  line-height: 2.08em;
+// 調整(XD65→63,0,121/58em)
+font-size: 63px;
+letter-spacing: 0px;
+line-height: 2.08em;
 }
 ・余白
 .c-padding--x50px {
-  padding-left: 50px;
-  padding-right: 50px;
+padding-left: 50px;
+padding-right: 50px;
 }
 .c-padding--y100px {
-  padding-top: 100px;
-  padding-bottom: 100px;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 .c-margin--0auto {
-  margin: 0 auto;
+margin: 0 auto;
 }
 とかを一旦指定してしまうこと！
-
-
 
 これはうまくいかなかったので next で処理した
 ・sass フォルダをルート直下に作成
@@ -119,53 +161,57 @@ next
 /Users/lumi/Desktop/u_pra01_ummeccha/css/home_first_view.css.map
 /Users/lumi/Desktop/u_pra01_ummeccha/css/home_first_view.css 出来上がった
 
-## nav作成
-・li>aでリンクさせる
-・main内のidを利用してnavlistにahrefでジャンプさせる
-・_setting.scssで作っている$siteColorを利用する
-　_common_first_view.scssファイルの中で_setting.scssの設定を使用する方法は、_common_first_view.scssファイル先頭に、@use "setting" as *;を記述することで利用できるようになる。カラーを変数で利用しているNext.jsのコンポーネントのような使い方
+## nav 作成
 
-## 4ナビ作成 下線　ハイライト　外線
-aタグのメニューテキストをhoverしたら下線が引かれるようにする
-・下線はaタグには指定せず、aタグの中にspanを入れてそこに下線を指定すると、テキストピッタリに下線がひかれ余白もきちんと開く設定が可能
+・li>a でリンクさせる
+・main 内の id を利用して navlist に ahref でジャンプさせる
+・\_setting.scss で作っている$siteColor を利用する
+　\_common_first_view.scss ファイルの中で\_setting.scss の設定を使用する方法は、\_common_first_view.scss ファイル先頭に、@use "setting" as \*;を記述することで利用できるようになる。カラーを変数で利用している Next.js のコンポーネントのような使い方
+
+## 4 ナビ作成 下線　ハイライト　外線
+
+a タグのメニューテキストを hover したら下線が引かれるようにする
+・下線は a タグには指定せず、a タグの中に span を入れてそこに下線を指定すると、テキストピッタリに下線がひかれ余白もきちんと開く設定が可能
 ・これでもいける半分を半透明にして
 .p-item-faq {  
-        &--question {
-            font-size: 25px;
-            line-height: 1.69em;
-            color: $siteGreen;
-            font-weight: bold;
-            &-text {
-                background: linear-gradient(to bottom, rgb(255, 255, 217, 0) 65%, rgb(255, 255, 217, 0.57) 35%);
-            }
-##　５背景とロゴ
+ &--question {
+font-size: 25px;
+line-height: 1.69em;
+color: $siteGreen;
+font-weight: bold;
+&-text {
+background: linear-gradient(to bottom, rgb(255, 255, 217, 0) 65%, rgb(255, 255, 217, 0.57) 35%);
+} ##　５背景とロゴ
 背景とロゴを合わせた全体枠
-・100vw、100vhと指定する
-・のなかのコンテンツsourceはw100%,h100%
-・ロゴは大きさが大体アートボード1600に対して600pxぐらいなので
-レスポンシブを実現させるには、600/1600として37％ぐらいと率でサイズを指定しておく
+・100vw、100vh と指定する
+・のなかのコンテンツ source は w100%,h100%
+・ロゴは大きさが大体アートボード 1600 に対して 600px ぐらいなので
+レスポンシブを実現させるには、600/1600 として 37％ぐらいと率でサイズを指定しておく
 
-## 使いまわせる要素はc-
+## 使いまわせる要素は c-
+
 各セクションのタイトルは同じ文字サイズで色も同じなので使いまわせると判断し、c-を使用する
-・c-widthは、セクションの幅
-・c-section-titleは、セクションのタイトル
+・c-width は、セクションの幅
+・c-section-title は、セクションのタイトル
 
-## 7レスポンシブ対応可能にするc-width 
-中のコンテンツがデザインデータでは中央に横幅840pxで存在しているけれど
-そのまま840pxにするとデバイスサイズ840pxに時に左右の余白がなくなってしまい、キチキチのサイズになってしまうので、
+## 7 レスポンシブ対応可能にする c-width
+
+中のコンテンツがデザインデータでは中央に横幅 840px で存在しているけれど
+そのまま 840px にするとデバイスサイズ 840px に時に左右の余白がなくなってしまい、キチキチのサイズになってしまうので、
 margin 0 auto,
 padding 0 50px,
-max-width 940pxを指定するとよい
+max-width 940px を指定するとよい
 かつ、
-・p-sectionをpadding 0 50px／c-widthをmax-width940pxとmargin0autoに分けると良い
-・コンテンツサイズをmax-width940とmargin0 autoにして
-・余白指定を0 50pxのように別で指定すると、
+・p-section を padding 0 50px／c-width を max-width940px と margin0auto に分けると良い
+・コンテンツサイズを max-width940 と margin0 auto にして
+・余白指定を 0 50px のように別で指定すると、
 レイアウトが横幅いっぱいに指定されるセクションと
-余白３０％とか50pxとかのように余白サイズが違うセクションを簡単に存在させることができる
+余白３０％とか 50px とかのように余白サイズが違うセクションを簡単に存在させることができる
 セクションごとに余白サイズが違う時の指定の仕方
-１：Paddingだけのクラスを設定する
-２：marignと横幅を指定したクラスを設定する
-で、セクションごとに2と1のサイズを決めて組み合わせて1つのセクションと余白をセットでニコイチで完成させるとレイアウト組がしやすい
+１：Padding だけのクラスを設定する
+２：marign と横幅を指定したクラスを設定する
+で、セクションごとに 2 と 1 のサイズを決めて組み合わせて 1 つのセクションと余白をセットでニコイチで完成させるとレイアウト組がしやすい
+
 <section class="l-section" id="message">
                 <!-- 7　レスポンシブ対応できるc-width -->
                 <div class="p-section c-width">
@@ -199,19 +245,20 @@ scss設計
 }
 
 ## 行間と文字間
-行間line-height1.5
-XD行サイズ60/テキストサイズ40px=60/40=1.5
 
-文字間letter-spacing0.1
-XD文字間AV4px/テキストサイズ40px=4/40=0.1
+行間 line-height1.5
+XD 行サイズ 60/テキストサイズ 40px=60/40=1.5
 
-XDで横AVが1.5pxという表示になっていたら文字間1.5ということ
-文字のサイズ15pxとなっていたらサイズ15pxということ
-letter-spacingのemは、文字間÷サイズになるので
-1.5÷15として=0.1emとなる
+文字間 letter-spacing0.1
+XD 文字間 AV4px/テキストサイズ 40px=4/40=0.1
 
+XD で横 AV が 1.5px という表示になっていたら文字間 1.5 ということ
+文字のサイズ 15px となっていたらサイズ 15px ということ
+letter-spacing の em は、文字間 ÷ サイズになるので
+1.5÷15 として=0.1em となる
 
-## 8 grid 
+## 8 grid
+
 横に何枚並べるかの指定
 １列目が１枚、２列目が２枚、３列目が１枚の場合
 一番多い数字に合わせて、１枚の部分は結合するイメージで。
@@ -297,13 +344,13 @@ html では-- path の fill にカラー指定をせず、svg に sass コンパ
 
 電話アプリ起動をスマホのみ設定する
 @media (min-width: 768px) {
-    a[href^="tel:"] {
-      pointer-events: none;
-    }
+a[href^="tel:"] {
+pointer-events: none;
+}
 }
 
 テキストサイズの、最小、推奨、最大
- font-size: clamp(16px, 2.5vw, 23px);
+font-size: clamp(16px, 2.5vw, 23px);
 
 ゆっくり表示される
 transition: right 0.3s ease-in-out;
@@ -311,155 +358,155 @@ transition: right 0.3s ease-in-out;
 背景透過
 background-color: rgba(128, 128, 128, 0.5);
 
-影付きボタン、hover動き
+影付きボタン、hover 動き
 .aside-shadow {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 8px 0px 0px 8px;
-  transition: box-shadow 0.5s ease;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+border-radius: 8px 0px 0px 8px;
+transition: box-shadow 0.5s ease;
 }
 .aside-shadow:hover {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-  transform: translate(3px);
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+transform: translate(3px);
 }
-
 
 背景画像処理
 .sectionHero {
-  background-image: url("../image/bgimg_hero_pc.jpg");
-  width: 100%;
-  height: 964px;
-  background-size: cover;
-  background-position: right bottom;
-  overflow: hidden;
+background-image: url("../image/bgimg_hero_pc.jpg");
+width: 100%;
+height: 964px;
+background-size: cover;
+background-position: right bottom;
+overflow: hidden;
 }
 
-画像のサイズ600pxかまたは80%のどちらかで
+画像のサイズ 600px かまたは 80%のどちらかで
 しい裁縫に設定する
-  width: min(600px, 80%);
-
+width: min(600px, 80%);
 
 プラン表のコツ
-/*================================= 
-  plan
-================================= */
+/_=================================
+plan
+================================= _/
 .sectionPlanTitle::after {
-  content: "";
-  display: block;
-  width: 10%;
-  height: 2px;
-  background: #00a99d;
-  position: absolute;
-  left: calc(50% - (10% / 2));
-  margin-top: 10px;
+content: "";
+display: block;
+width: 10%;
+height: 2px;
+background: #00a99d;
+position: absolute;
+left: calc(50% - (10% / 2));
+margin-top: 10px;
 }
 .attention-plan {
-  list-style-type: "※";
-  list-style-position: inside;
-  text-indent: -16px !important;
-  padding-left: 20px !important;
-  line-height: 1.8rem;
+list-style-type: "※";
+list-style-position: inside;
+text-indent: -16px !important;
+padding-left: 20px !important;
+line-height: 1.8rem;
 }
 section[class*="section-py"] {
-  padding-top: 80px;
-  padding-bottom: 80px;
+padding-top: 80px;
+padding-bottom: 80px;
 }
 .section-content {
-  width: 100%;
-  padding: 0px 12%;
+width: 100%;
+padding: 0px 12%;
 }
 .sectionPlan {
-  width: 100%;
-  height: auto;
-  align-items: center;
+width: 100%;
+height: auto;
+align-items: center;
 }
 li[class^="planbox"] {
-  width: 100%;
-  height: 100px;
-  background: white;
-  padding: 8px 30px;
-  border-radius: 15px;
-  border: 4px solid;
-  box-sizing: border-box;
-  align-items: center;
+width: 100%;
+height: 100px;
+background: white;
+padding: 8px 30px;
+border-radius: 15px;
+border: 4px solid;
+box-sizing: border-box;
+align-items: center;
 }
 li[class^="planbox"] h1 {
-  font-size: 30px;
-  letter-spacing: 8px;
-  font-weight: 500;
-  min-width: 225px;
+font-size: 30px;
+letter-spacing: 8px;
+font-weight: 500;
+min-width: 225px;
 }
 li[class^="planbox"] .color3 {
-  padding: 0px 30px;
+padding: 0px 30px;
 }
 li[class^="planbox"] .amount {
-  font-size: 50px;
-  font-weight: 700;
-  align-self: center;
+font-size: 50px;
+font-weight: 700;
+align-self: center;
 }
 li[class^="planbox"] .yen {
-  font-weight: 700;
-  text-align: center;
-  font-size: 23px;
-  letter-spacing: 0.2rem;
-  align-self: center;
-  line-height: 25px;
-  padding-top: 10px;
+font-weight: 700;
+text-align: center;
+font-size: 23px;
+letter-spacing: 0.2rem;
+align-self: center;
+line-height: 25px;
+padding-top: 10px;
 }
 li[class^="planbox"] .tax {
-  font-weight: 500;
-  font-size: 16px;
+font-weight: 500;
+font-size: 16px;
 }
 li[class*="color1"] {
-  color: #59b5d2;
+color: #59b5d2;
 }
 li[class*="color2"] {
-  color: #9cbc3c;
+color: #9cbc3c;
 }
 p[class*="color3"] {
-  color: #000000;
+color: #000000;
 }
 
-
-途中挿入する横幅ワイドのdecoration 100vwライン
+途中挿入する横幅ワイドの decoration 100vw ライン
 .decoline1 {
-  position: relative;
-  height: auto;
+position: relative;
+height: auto;
 }
 .decoline1::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  z-index: 10;
-  background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
-    auto;
-  aspect-ratio: 1 / 0.1;
-  bottom: 0;
+content: "";
+width: 100%;
+position: absolute;
+z-index: 10;
+background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
+auto;
+aspect-ratio: 1 / 0.1;
+bottom: 0;
 }
 
-画像を中に入れて同じ高さなどに制御するbox
-
+画像を中に入れて同じ高さなどに制御する box
 
 レスポンシブ画像の設定
-pictureタグ
+picture タグ
+
 <!-- 3-a 画像設定sp767以下、pc768以上、他 -->
+
                         <div class="p-hd__logo-img">
                             <picture>
-                                <source media="(min-width:768px)" srcset="./images/common/hd_logo.png.webp 1x, 
+                                <source media="(min-width:768px)" srcset="./images/common/hd_logo.png.webp 1x,
                                 images/common/hd_logo@2x.png.webp 2x">
-                                <source media="(max-width:767px)" srcset="./images/common/hd_logo-sp.png.webp 1x, 
+                                <source media="(max-width:767px)" srcset="./images/common/hd_logo-sp.png.webp 1x,
                                 images/common/hd_logo-sp@2x.png.webp 2x">
                                 <img src="./images/common/hd_logo.png.webp" width=145 height="42" alt="ロゴ画像：佐渡の海鮮居酒屋 | うめえっちゃ" class="-img">
                             </picture>
                         </div>
-media属性：メディアクエリを使用して、どの条件でその画像を使用するかを指定します。
-srcset属性：条件に合致したときに表示する画像を指定します。複数の解像度の画像を提供する場合は、1xや2xといったスケールを指定します。
+
+media 属性：メディアクエリを使用して、どの条件でその画像を使用するかを指定します。
+srcset 属性：条件に合致したときに表示する画像を指定します。複数の解像度の画像を提供する場合は、1x や 2x といったスケールを指定します。
 <picture>タグ内の<img>要素は、フォールバック（バックアップ）として機能します。ブラウザが<picture>タグや<source>要素をサポートしていない場合や、指定した条件に一致する画像が見つからない場合に表示されます。
 ページのパフォーマンスを向上
 
 セクションごと余白が違う時
-１：Paddingだけのクラスを設定する
-２：marignと横幅を指定したクラスを設定する
-で、セクションごとに2と1のサイズを決めて組み合わせて1つのセクションと余白をセットでニコイチで完成させるとレイアウト組がしやすい
+１：Padding だけのクラスを設定する
+２：marign と横幅を指定したクラスを設定する
+で、セクションごとに 2 と 1 のサイズを決めて組み合わせて 1 つのセクションと余白をセットでニコイチで完成させるとレイアウト組がしやすい
+
 <section class="l-section" id="message">
                 <!-- 7　レスポンシブ対応できるc-width -->
                 <div class="p-section c-width">
@@ -492,22 +539,25 @@ scss設計
   margin: 0 auto;
 }
 
-行間line-height
-XDの行サイズ60でテキストサイズが40pxであれば
-60÷40で1.5なので、line-height1.5となる
+行間 line-height
+XD の行サイズ 60 でテキストサイズが 40px であれば
+60÷40 で 1.5 なので、line-height1.5 となる
 
-文字間letter-spacing
-XDの文字間AVが4pxでテキストサイズが40pxであれば
-4÷40で0.1なので、letter-spacing0.1emとなる
+文字間 letter-spacing
+XD の文字間 AV が 4px でテキストサイズが 40px であれば
+4÷40 で 0.1 なので、letter-spacing0.1em となる
+
 <!-- BEM -->
+
 https://zenn.dev/nagan/articles/dac6fa662f4dab
 
-## 画像やカラーの設定ができたら、余白（各セクションwidth）をFigmaに落とし込み
-そこまではtemplateを使用する
+## 画像やカラーの設定ができたら、余白（各セクション width）を Figma に落とし込み
+
+そこまでは template を使用する
 
 // .l-main {
-//   padding: 0 0 220px;
-//   @media only screen and (max-width: 767px) {
-//     padding: 0 0 96px;
-//   }
+// padding: 0 0 220px;
+// @media only screen and (max-width: 767px) {
+// padding: 0 0 96px;
+// }
 // }
