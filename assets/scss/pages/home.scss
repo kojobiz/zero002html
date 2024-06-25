@@ -148,38 +148,45 @@ section {
                 margin-top: 28px;
             }
             .p-item--01 {
-                background-image: url("../../../images/home/pc/img_reason01.png");
+                background-color: white;
+                background-image: url("../../../images/home/pc/ico_reason_031.png");
+                background-repeat: no-repeat;
                 width: auto;
                 height: auto;
-                background-size: cover;
-                background-position: right bottom;
+                background-position: right bottom -2px;
                 overflow: hidden;
                 border-radius: 20px;
                 padding: 40px 70px;
             }
             .p-item--02 {
-                background-image: url("../../../images/home/pc/img_reason02.png");
+                background-color: white;
+                background-image: url("../../../images/home/pc/ico_reason_032.png");
+                background-repeat: no-repeat;
                 width: auto;
                 height: auto;
-                background-size: cover;
-                background-position: right bottom;
+                background-position: right bottom -8px;
                 overflow: hidden;
                 border-radius: 20px;
                 padding: 40px 70px;
             }
             .p-item--03 {
-                background-image: url("../../../images/home/pc/img_reason03.png");
+                background-color: white;
+                background-image: url("../../../images/home/pc/ico_reason_033.png");
+                background-repeat: no-repeat;
                 width: auto;
                 height: auto;
-                background-size: cover;
-                background-position: right bottom;
+                background-position: right -3px bottom -2px;
                 overflow: hidden;
                 border-radius: 20px;
                 padding: 40px 70px;
             }
-            .p-item__title {
+            .p-item-reason__title {
                 font-weight: 700;
                 padding-bottom: 15px;
+            }
+            .p-item-reason__text {
+                font-weight: 400;
+                text-align: left;
             }
         }
     }  
