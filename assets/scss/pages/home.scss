@@ -367,6 +367,9 @@ section {
 // work
 .l-work-contents {
     max-width: 1200px;
+    &__text {
+        padding-top: 49px;
+    }
     &-itemsbox {
         max-width: 100%;
         height: auto;
