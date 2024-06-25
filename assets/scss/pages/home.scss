@@ -598,6 +598,11 @@ section {
         max-width: 850px;
     }
     .p-item-faq {  
+        img {
+            position: relative;
+            top: -3px;
+            left: 13px;
+        }
         &--question {
             font-size: 25px;
             line-height: 1.69em;
@@ -618,22 +623,20 @@ section {
             
         }
         &--answer {
-            padding-top: 20px;
-            padding-left: 50px;
             font-size: 16px;
             line-height: 1.5em;
             color: $siteBlack;
+            margin-left: 40px;
+            text-indent: -40px !important;
+            padding-left: 40px !important;
+            
+            
+            
             &-text::before {
                 content: "A";
+                font-weight: bold;
                 font-size: 35px;
                 padding-right: 13px;
-                background-image: url(../../../images/home/pc/faq_a.svg);
-                width: auto;
-                height: auto;
-                background-size: contain;
-                background-repeat: no-repeat;
-                display: inline-block;
-              
             }
         }
     }

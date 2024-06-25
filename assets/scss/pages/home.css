@@ -888,6 +888,11 @@ section {
 .l-faq-contents {
   max-width: 850px;
 }
+.l-faq .p-item-faq img {
+  position: relative;
+  top: -3px;
+  left: 13px;
+}
 .l-faq .p-item-faq--question {
   font-size: 25px;
   line-height: 1.69em;
@@ -907,22 +912,18 @@ section {
   position: relative;
 }
 .l-faq .p-item-faq--answer {
-  padding-top: 20px;
-  padding-left: 50px;
   font-size: 16px;
   line-height: 1.5em;
   color: #191919;
+  margin-left: 40px;
+  text-indent: -40px !important;
+  padding-left: 40px !important;
 }
 .l-faq .p-item-faq--answer-text::before {
   content: "A";
+  font-weight: bold;
   font-size: 35px;
   padding-right: 13px;
-  background-image: url(../../../images/home/pc/faq_a.svg);
-  width: auto;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
 }
 
 .l-company-info {
