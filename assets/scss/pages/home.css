@@ -915,15 +915,28 @@ section {
   font-size: 16px;
   line-height: 1.5em;
   color: #191919;
-  margin-left: 40px;
-  text-indent: -40px !important;
-  padding-left: 40px !important;
+  margin-left: 60px;
+  padding-top: 20px;
+  text-indent: -56px !important;
+  padding-left: 20px !important;
+}
+.l-faq .p-item-faq--answer-text {
+  line-height: 2rem;
+  font-weight: 500;
 }
 .l-faq .p-item-faq--answer-text::before {
   content: "A";
   font-weight: bold;
   font-size: 35px;
   padding-right: 13px;
+  position: relative;
+  top: 8px;
+}
+.l-faq .p-item-faq--answer::before {
+  content: url(../../../images/home/pc/faq_a.svg);
+  position: relative;
+  left: -12px;
+  top: -2px;
 }
 
 .l-company-info {
