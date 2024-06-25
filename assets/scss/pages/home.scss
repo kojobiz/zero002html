@@ -311,6 +311,15 @@ section {
             grid-template-columns: 48% 48%;
             column-gap: 4%;
         }
+        @media (max-width: 768px) {
+            .p-item-noreverse {
+            display: flex;
+            flex-direction: column;
+            }
+            .p-item-imgbox img {
+                padding-top: 40px;
+            }
+        }
         .p-item-reverse {
             .p-item-imgbox {
                 grid-area: imgbox;
@@ -322,6 +331,15 @@ section {
             grid-template-columns: 48% 48%;
             grid-template-areas: "imgbox pointbox";
             column-gap: 4%;
+        }
+        @media (max-width: 768px) {
+            .p-item-reverse {
+            display: flex;
+            flex-direction: column;
+            }
+            .p-item-imgbox img {
+                padding-top: 40px;
+            }
         }
         gap: 80px;
     }
