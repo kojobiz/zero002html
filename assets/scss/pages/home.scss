@@ -594,6 +594,9 @@ section {
     dl + dl {
         padding-top: 30px;
     }
+    &-contents {
+        max-width: 850px;
+    }
     .p-item-faq {  
         &--question {
             font-size: 25px;
