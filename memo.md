@@ -561,3 +561,8 @@ https://zenn.dev/nagan/articles/dac6fa662f4dab
 // padding: 0 0 96px;
 // }
 // }
+
+## ２行目インデント、改行、
+
+text-indent: -16px !important;
+padding-left: 20px !important;
