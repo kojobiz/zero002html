@@ -516,6 +516,7 @@ section {
 .l-reason-contents-itemsbox .p-item--01 {
   background-color: white;
   background-image: url("../../../images/home/pc/ico_reason_031.png");
+  background-size: 140px;
   background-repeat: no-repeat;
   width: auto;
   height: auto;
@@ -527,10 +528,11 @@ section {
 .l-reason-contents-itemsbox .p-item--02 {
   background-color: white;
   background-image: url("../../../images/home/pc/ico_reason_032.png");
+  background-size: 140px;
   background-repeat: no-repeat;
   width: auto;
   height: auto;
-  background-position: right bottom -8px;
+  background-position: right bottom -10px;
   overflow: hidden;
   border-radius: 20px;
   padding: 40px 70px;
@@ -538,10 +540,11 @@ section {
 .l-reason-contents-itemsbox .p-item--03 {
   background-color: white;
   background-image: url("../../../images/home/pc/ico_reason_033.png");
+  background-size: 140px;
   background-repeat: no-repeat;
   width: auto;
   height: auto;
-  background-position: right -3px bottom -2px;
+  background-position: right -3px bottom -5px;
   overflow: hidden;
   border-radius: 20px;
   padding: 40px 70px;
