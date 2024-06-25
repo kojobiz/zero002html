@@ -353,6 +353,7 @@ pointer-events: none;
 font-size: clamp(16px, 2.5vw, 23px);clamp(16px, 3vw, 30px);
 font-size: clamp(35px, 4vw, 51px);
 font-size: clamp(22px, 3.8vw, 30px);
+clamp(28px, 6.5vw, 50px);
 font-size: clamp(12px, 1.5vw, 24px);clamp(12px, 1.5vw, 16px);
 
 ゆっくり表示される
