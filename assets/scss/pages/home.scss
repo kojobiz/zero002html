@@ -583,7 +583,7 @@ section {
                 border: solid 10px;
                 height: auto;
                 &__title {
-                    font-size: 30px;
+                    font-size: clamp(16px, 3vw, 30px);
                     padding-bottom: 20px;
                     font-weight: bold;
                     &--orange {
@@ -594,9 +594,9 @@ section {
                     }
                 }
                 &__text {
-                    width: 80%;
+                    max-width: 90%;
                     margin: 0 auto;
-                    font-size: 16px;
+                    font-size: clamp(12px, 1.5vw, 16px);
                 }
                 &--orange {
                     border-color: $supportLineOrange;
@@ -614,21 +614,51 @@ section {
             grid-template-columns: 120px auto 120px;
             margin: 16px auto;
             max-width: calc(1145px * 0.65);
-            @media only screen and (max-width: 767px) {
-                display: none;
-            }
             &__img-pc {
                 position: absolute;
                 top: -55px;
                 left: 50%;
                 transform: translate(-50%);
-                img {
-                    max-width: 100%;
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 767px) {
+                &__img-pc {
+                    top: 110px;
                 }
             }
-           
         }
-    }    
+        @media only screen and (max-width: 767px) {
+            &-imgbox {
+                max-width: 400px;
+                & img {
+                    z-index: 3;
+                }
+            }
+            .p-item-support {
+                padding: 20px 20px;
+            }
+                
+        }
+        
+        @media (min-width: 893px) {
+            .l-contents__title::before {
+                height: 60%;
+            }
+            .l-contents__title::after {
+                height: 60%;
+            }
+            .l-contents__title {
+                .sp-only {
+                    display: none;
+                }
+            }
+            .p-item-support {
+                .sp-only {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 // faq

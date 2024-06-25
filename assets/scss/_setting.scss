@@ -360,3 +360,10 @@ component 余白
 .c-margin--b100px {
   margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 767px) {
+  .c-padding--x50px {
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+}

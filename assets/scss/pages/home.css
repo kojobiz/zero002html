@@ -303,6 +303,12 @@ component 余白
   margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 767px) {
+  .c-padding--x50px {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 /* 共通
 ======================================================= */
 /* header-layout
@@ -898,7 +904,7 @@ section {
   height: auto;
 }
 .l-support-contents-itemsbox .p-item-support__title {
-  font-size: 30px;
+  font-size: clamp(16px, 3vw, 30px);
   padding-bottom: 20px;
   font-weight: bold;
 }
@@ -909,9 +915,9 @@ section {
   color: #00A99D;
 }
 .l-support-contents-itemsbox .p-item-support__text {
-  width: 80%;
+  max-width: 90%;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: clamp(12px, 1.5vw, 16px);
 }
 .l-support-contents-itemsbox .p-item-support--orange {
   border-color: #FFBD7B;
@@ -928,19 +934,42 @@ section {
   margin: 16px auto;
   max-width: 744.25px;
 }
-@media only screen and (max-width: 767px) {
-  .l-support-contents-imgbox {
-    display: none;
-  }
-}
 .l-support-contents-imgbox__img-pc {
   position: absolute;
   top: -55px;
   left: 50%;
   transform: translate(-50%);
-}
-.l-support-contents-imgbox__img-pc img {
   max-width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .l-support-contents-imgbox__img-pc {
+    top: 110px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .l-support-contents-imgbox {
+    max-width: 400px;
+  }
+  .l-support-contents-imgbox img {
+    z-index: 3;
+  }
+  .l-support-contents .p-item-support {
+    padding: 20px 20px;
+  }
+}
+@media (min-width: 893px) {
+  .l-support-contents .l-contents__title::before {
+    height: 60%;
+  }
+  .l-support-contents .l-contents__title::after {
+    height: 60%;
+  }
+  .l-support-contents .l-contents__title .sp-only {
+    display: none;
+  }
+  .l-support-contents .p-item-support .sp-only {
+    display: none;
+  }
 }
 
 .l-faq {
