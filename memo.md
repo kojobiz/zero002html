@@ -566,3 +566,21 @@ https://zenn.dev/nagan/articles/dac6fa662f4dab
 
 text-indent: -16px !important;
 padding-left: 20px !important;
+.p-item-faq {  
+ &--question {
+font-size: 25px;
+line-height: 1.69em;
+color: $siteGreen;
+font-weight: bold;
+text-indent: -40px !important;
+padding-left: 40px !important;
+&-text {
+background: linear-gradient(to bottom, rgb(255, 255, 217, 0) 65%, rgb(255, 255, 217, 0.57) 35%);
+}
+&-text::before {
+content: "Q";
+font-size: 35px;
+padding-right: 13px;
+top: -5px;
+position: relative;
+}
