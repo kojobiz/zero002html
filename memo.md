@@ -97,7 +97,7 @@ $roboto: "Roboto Condensed", sans-serif;
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-</style>でも良い
+</style>でも良いが、linkの方が読み込みが早いのでlinkで作成して
 
 wordpress の場合は functions.php に変換して記述する方が良い
 
