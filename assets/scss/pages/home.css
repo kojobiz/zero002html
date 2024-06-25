@@ -402,7 +402,7 @@ section {
 }
 
 .l-firstview-contents {
-  width: 970px;
+  max-width: 970px;
   position: absolute;
   top: 95px;
   left: 8%;
@@ -429,6 +429,10 @@ section {
   flex-direction: row;
   justify-content: center;
   gap: 70px;
+  max-width: 100%;
+}
+.l-firstview-contents__icons svg {
+  max-width: 100%;
 }
 
 .p-responsive-picture {
