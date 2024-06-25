@@ -12,7 +12,7 @@ section {
     box-sizing: border-box;
 }
 .l-contents__title {
-    font-size: 50px;
+    font-size: clamp(28px, 6.5vw, 50px);
     letter-spacing: 0px;
     line-height: 1.4em;
     font-weight: bold;
@@ -23,12 +23,10 @@ section {
         font-size: 20px;
         letter-spacing: 0px;
         line-height: 1.65em;
-        
-
     }
 }
 .l-contents__title--black {
-    font-size: 50px;
+    font-size: clamp(28px, 6.5vw, 50px);
     letter-spacing: 0px;
     line-height: 1.4em;
     font-weight: bold;
@@ -356,7 +354,7 @@ section {
                 padding-left: 20px;
                 &--two {
                     color: $siteGreen;
-                    font-size: 35px;
+                    font-size: clamp(22px, 4vw, 35px);
                     letter-spacing: 0px;
                     line-height: 1.44em;
                     &-sub {
@@ -524,8 +522,6 @@ section {
         box-sizing: border-box;
         max-width: 790px;
         position: relative;
-        // border-left: solid 3px $titleDarkGreen;
-        // border-right: solid 3px $titleDarkGreen;
         margin: 0 auto;
         &::before {
             content: "";
@@ -636,6 +632,9 @@ section {
             }
             .p-item-support {
                 padding: 20px 20px;
+                __text {
+                    max-width: 90%;
+                }
             }
                 
         }

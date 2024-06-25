@@ -383,7 +383,7 @@ section {
 }
 
 .l-contents__title {
-  font-size: 50px;
+  font-size: clamp(28px, 6.5vw, 50px);
   letter-spacing: 0px;
   line-height: 1.4em;
   font-weight: bold;
@@ -398,7 +398,7 @@ section {
 }
 
 .l-contents__title--black {
-  font-size: 50px;
+  font-size: clamp(28px, 6.5vw, 50px);
   letter-spacing: 0px;
   line-height: 1.4em;
   font-weight: bold;
@@ -707,7 +707,7 @@ section {
 }
 .l-fivefeatures-contents .p-item-pointbox .p-item-point__title--two {
   color: #30554C;
-  font-size: 35px;
+  font-size: clamp(22px, 4vw, 35px);
   letter-spacing: 0px;
   line-height: 1.44em;
 }
@@ -955,6 +955,9 @@ section {
   }
   .l-support-contents .p-item-support {
     padding: 20px 20px;
+  }
+  .l-support-contents .p-item-support __text {
+    max-width: 90%;
   }
 }
 @media (min-width: 893px) {
