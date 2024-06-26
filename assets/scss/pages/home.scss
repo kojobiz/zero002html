@@ -474,6 +474,32 @@ section {
             }
         }
     }
+    @media (max-width: 750px) {
+        .p-item-plan {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            &__name {
+                font-size: 34px;
+                padding-bottom: 1rem;
+            }
+            &__recommend {
+                font-size: 25px;
+                padding-bottom: 1rem;
+                font-weight: 500;
+            }
+            &__amount {
+                font-size: 60px;
+                margin-top: -0.5rem;
+            }
+            &__tax {
+                font-size: 25px;
+                font-weight: 400;
+            }  
+        }
+    }
+
     .p-item {
         &--getsugaku {
             border-color: $planLineBlue;
@@ -486,6 +512,15 @@ section {
         }
         &--syokihiyou {
             border-color: $planLineGreen;
+        }
+    }
+    @media (max-width: 750px) {
+        .p-item {
+            &--getsugaku {
+                &-attention {
+                    top: -105px;
+                }
+            }
         }
     }
     &-contents-attentionlist {
@@ -715,23 +750,29 @@ section {
 }
 
 
-
 // companyinfo 
 .l-company-info {
     background-color: $siteRightGray;
     color: $siteGreen;
     &-contents {
+        max-width: 800px;
+        padding-bottom: 15px;
         padding-left: 6%;
         padding-right: 6%;
+        margin: 0 auto;
+        text-align: left;
         &__title {
-            padding-bottom: 15px;
+            padding-bottom: 35px;
         }
     }
-    
     .p-item--company-info {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        row-gap: 3px;
-        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        .c-infotitle {
+            min-width: 120px;
+        }
+        .c-infotext {
+            min-width: 370px ;
+        }
     }
 }

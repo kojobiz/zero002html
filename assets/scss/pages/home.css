@@ -823,6 +823,31 @@ section {
 .l-plan .p-item-plan__attention::before {
   content: "※";
 }
+@media (max-width: 750px) {
+  .l-plan .p-item-plan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .l-plan .p-item-plan__name {
+    font-size: 34px;
+    padding-bottom: 1rem;
+  }
+  .l-plan .p-item-plan__recommend {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+  .l-plan .p-item-plan__amount {
+    font-size: 60px;
+    margin-top: -0.5rem;
+  }
+  .l-plan .p-item-plan__tax {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
 .l-plan .p-item--getsugaku {
   border-color: #59B5D2;
   position: relative;
@@ -834,6 +859,11 @@ section {
 }
 .l-plan .p-item--syokihiyou {
   border-color: #9CBC3C;
+}
+@media (max-width: 750px) {
+  .l-plan .p-item--getsugaku-attention {
+    top: -105px;
+  }
 }
 .l-plan-contents-attentionlist {
   margin-top: 23px;
@@ -1048,15 +1078,23 @@ section {
   color: #30554C;
 }
 .l-company-info-contents {
+  max-width: 800px;
+  padding-bottom: 15px;
   padding-left: 6%;
   padding-right: 6%;
+  margin: 0 auto;
+  text-align: left;
 }
 .l-company-info-contents__title {
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 .l-company-info .p-item--company-info {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  row-gap: 3px;
-  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+.l-company-info .p-item--company-info .c-infotitle {
+  min-width: 120px;
+}
+.l-company-info .p-item--company-info .c-infotext {
+  min-width: 370px;
 }/*# sourceMappingURL=home.css.map */
