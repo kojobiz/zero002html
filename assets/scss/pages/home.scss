@@ -220,7 +220,7 @@ section {
         margin: 0 auto;
         margin-top: 22px;
         svg {
-            height: clamp(20px, 3vw, 32px);
+            height: clamp(20px, 5vw, 32px);
             margin-left: -3px;
             margin-right: -6px;
         }
@@ -666,7 +666,7 @@ section {
             left: 13px;
         }
         &--question {
-            font-size: clamp(16px, 2.5vw, 25px);
+            font-size: clamp(16px, 3.5vw, 25px);
             line-height: 1.69em;
             color: $siteGreen;
             font-weight: bold;
@@ -685,7 +685,7 @@ section {
             
         }
         &--answer {
-            font-size: clamp(12px, 2vw, 16px);
+            font-size: clamp(12px, 3vw, 16px);
             line-height: 1.8em;
             color: $siteBlack;
             margin-left: 60px;
@@ -720,4 +720,18 @@ section {
 .l-company-info {
     background-color: $siteRightGray;
     color: $siteGreen;
+    &-contents {
+        padding-left: 6%;
+        padding-right: 6%;
+        &__title {
+            padding-bottom: 15px;
+        }
+    }
+    
+    .p-item--company-info {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        row-gap: 3px;
+        font-size: 12px;
+    }
 }
