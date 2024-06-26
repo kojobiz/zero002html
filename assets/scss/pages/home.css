@@ -63,6 +63,9 @@ sp-only
   .sp-only--padding-top {
     display: none;
   }
+  .sp-only--br {
+    display: none;
+  }
 }
 @media (min-width: 893px) {
   .sp-only--support-title {
@@ -130,6 +133,10 @@ component テキスト
   line-height: 2.25em;
 }
 
+.c-text--16 {
+  font-size: 14px, 2vw, 16px;
+}
+
 .c-text--16-0-25 {
   font-size: 14px;
   letter-spacing: 0px;
@@ -167,13 +174,13 @@ component テキスト
 }
 
 .c-text--36-025-44 {
-  font-size: 30px;
-  letter-spacing: 0.25px;
+  font-size: clamp(15px, 2vw, 30px);
+  letter-spacing: 0.2px;
   line-height: 1.29em;
 }
 
 .c-text--47-0-57 {
-  font-size: 45px;
+  font-size: clamp(24px, 4vw, 45px);
   letter-spacing: 0px;
   line-height: 1.21em;
 }
@@ -191,25 +198,25 @@ component テキスト
 }
 
 .c-h3--34-0-49 {
-  font-size: 32px;
+  font-size: clamp(18px, 2vw, 32px);
   letter-spacing: 0px;
   line-height: 1.41em;
 }
 
 .c-h3--39-0-56 {
-  font-size: 39px;
+  font-size: clamp(20px, 6vw, 34px);
   letter-spacing: 0px;
   line-height: 1.4em;
 }
 
 .c-h3--50-0-61 {
-  font-size: clamp(30px, 3vw, 47px);
+  font-size: clamp(22px, 5vw, 47px);
   letter-spacing: 0px;
   line-height: 1.22em;
 }
 
 .c-h3--59-0-85 {
-  font-size: 54px;
+  font-size: clamp(28px, 4vw, 54px);
   letter-spacing: 0px;
   line-height: 1.57em;
 }
@@ -265,6 +272,11 @@ component 余白
 
 .c-mtb--60 {
   margin: 60px auto;
+}
+
+.c-padding--x10px {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .c-padding--x50px {
@@ -337,7 +349,7 @@ component 余白
   flex-direction: column;
   align-items: flex-end;
 }
-.l-header-inner__menu--pc .p-telinfo {
+.l-header-inner__menu--pc .p-telinfo--header {
   max-width: 243px;
   display: flex;
   flex-direction: column;
@@ -466,19 +478,18 @@ section {
 .l-attention-contents {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 105px 50px;
 }
 .l-attention-contents picture {
   display: flex;
   justify-content: center;
 }
 .l-attention-contents picture img {
-  max-width: 90%;
+  max-width: 100%;
 }
 .l-attention-contents__title {
   font-weight: 500;
 }
-.l-attention-contents__title span {
+.l-attention-contents__title--two {
   font-weight: 700;
   padding-left: 8px;
 }
@@ -586,16 +597,19 @@ section {
   margin-top: 22px;
 }
 .l-cta-pc .p-telinfo svg {
-  height: 32px;
+  height: clamp(20px, 3vw, 32px);
   margin-left: -3px;
   margin-right: -6px;
+}
+.l-cta-pc .p-telinfo .c-teltime {
+  text-indent: 0.8em;
 }
 
 .l-work {
   padding-bottom: 250px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .l-work {
     padding-bottom: 50px;
   }

@@ -97,17 +97,17 @@ section {
 .l-attention-contents {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 105px 50px;
+    // padding: 105px 50px;
     picture {
         display: flex;
         justify-content: center;
         img {
-            max-width: 90%;
+            max-width: 100%;
         }
     }
     &__title {
         font-weight: 500;
-        span {
+        &--two {
             font-weight: 700;
             padding-left: 8px;
         }
@@ -225,10 +225,14 @@ section {
         margin: 0 auto;
         margin-top: 22px;
         svg {
-            height: 32px;
+            height: clamp(20px, 3vw, 32px);
             margin-left: -3px;
             margin-right: -6px;
         }
+        .c-teltime {
+            text-indent: 0.8em;
+        }
+        
     }
     
 }
@@ -239,7 +243,8 @@ section {
 .l-work {
     padding-bottom: 250px;
 }
-@media (max-width: 768px) {
+// spの時
+@media (max-width: 767px) {
     .l-work {
       padding-bottom: 50px;
     }
