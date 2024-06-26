@@ -170,7 +170,9 @@ component テキスト
 }
 .c-text--16 {
   // p-telinfo>c-teltime
-  font-size: (14px, 2vw, 16px);
+  font-size: clamp(14px, 2vw, 16px);
+  letter-spacing:0px;
+  line-height: 1.85em;
 }
 
 .c-text--16-0-25 {
@@ -220,7 +222,7 @@ component テキスト
 .c-text--36-025-44 {
   // 調整(XD36→UI30,0.25,44/34em)
   // c-telnumber>p
-  font-size: clamp(15px, 2vw, 30px);
+  font-size: clamp(15px, 4.5vw, 30px);
   letter-spacing:0.2px;
   line-height: 1.29em;
 }
@@ -233,7 +235,7 @@ component テキスト
 .c-text--47-0-57 {
   // 調整(XD47→UI45,0,57/47em)
   // c-telnumber>span
-  font-size: clamp(24px, 4vw, 45px);
+  font-size: clamp(24px, 6.5vw, 45px);
   letter-spacing:0px;
   line-height: 1.21em;
 }

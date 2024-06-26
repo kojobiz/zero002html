@@ -666,7 +666,7 @@ section {
             left: 13px;
         }
         &--question {
-            font-size: 25px;
+            font-size: clamp(16px, 2.5vw, 25px);
             line-height: 1.69em;
             color: $siteGreen;
             font-weight: bold;
@@ -685,15 +685,14 @@ section {
             
         }
         &--answer {
-            font-size: 16px;
-            line-height: 1.5em;
+            font-size: clamp(12px, 2vw, 16px);
+            line-height: 1.8em;
             color: $siteBlack;
             margin-left: 60px;
             padding-top: 20px;
             text-indent: -56px !important;
             padding-left: 20px !important;
             &-text {
-                line-height: 2rem;
                 font-weight: 500;
             }
             &-text::before {
