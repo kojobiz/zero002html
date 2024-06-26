@@ -513,41 +513,28 @@ section {
 .l-reason-contents-itemsbox li + li {
   margin-top: 28px;
 }
-.l-reason-contents-itemsbox .p-item--01 {
+.l-reason-contents-itemsbox .p-item-reason {
   background-color: white;
+  background-size: 140px;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 2rem 3.8rem;
+  text-align: left;
+}
+.l-reason-contents-itemsbox .p-item-reason--01 {
   background-image: url("../../../images/home/pc/ico_reason_031.png");
-  background-size: 140px;
-  background-repeat: no-repeat;
-  width: auto;
-  height: auto;
   background-position: right bottom -2px;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 40px 70px;
 }
-.l-reason-contents-itemsbox .p-item--02 {
-  background-color: white;
+.l-reason-contents-itemsbox .p-item-reason--02 {
   background-image: url("../../../images/home/pc/ico_reason_032.png");
-  background-size: 140px;
-  background-repeat: no-repeat;
-  width: auto;
-  height: auto;
   background-position: right bottom -10px;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 40px 70px;
 }
-.l-reason-contents-itemsbox .p-item--03 {
-  background-color: white;
+.l-reason-contents-itemsbox .p-item-reason--03 {
   background-image: url("../../../images/home/pc/ico_reason_033.png");
-  background-size: 140px;
-  background-repeat: no-repeat;
-  width: auto;
-  height: auto;
   background-position: right -3px bottom -5px;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 40px 70px;
 }
 .l-reason-contents-itemsbox .p-item-reason__title {
   font-weight: 700;

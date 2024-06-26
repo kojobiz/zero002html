@@ -143,41 +143,29 @@ section {
             & li+li {
                 margin-top: 28px;
             }
-            .p-item--01 {
+            .p-item-reason {
+                // background-image共通指定含む
                 background-color: white;
-                background-image: url("../../../images/home/pc/ico_reason_031.png");
                 background-size: 140px;
                 background-repeat: no-repeat;
                 width: auto;
                 height: auto;
-                background-position: right bottom -2px;
                 overflow: hidden;
                 border-radius: 20px;
-                padding: 40px 70px;
-            }
-            .p-item--02 {
-                background-color: white;
-                background-image: url("../../../images/home/pc/ico_reason_032.png");
-                background-size: 140px;
-                background-repeat: no-repeat;
-                width: auto;
-                height: auto;
-                background-position: right bottom -10px;
-                overflow: hidden;
-                border-radius: 20px;
-                padding: 40px 70px;
-            }
-            .p-item--03 {
-                background-color: white;
-                background-image: url("../../../images/home/pc/ico_reason_033.png");
-                background-size: 140px;
-                background-repeat: no-repeat;
-                width: auto;
-                height: auto;
-                background-position: right -3px bottom -5px;
-                overflow: hidden;
-                border-radius: 20px;
-                padding: 40px 70px;
+                padding: 2rem 3.8rem;
+                text-align: left;
+                &--01 {
+                    background-image: url("../../../images/home/pc/ico_reason_031.png");
+                    background-position: right bottom -2px;
+                }
+                &--02 {
+                    background-image: url("../../../images/home/pc/ico_reason_032.png");
+                    background-position: right bottom -10px;
+                }
+                &--03 {
+                    background-image: url("../../../images/home/pc/ico_reason_033.png");
+                    background-position: right -3px bottom -5px;
+                }
             }
             .p-item-reason__title {
                 font-weight: 700;
