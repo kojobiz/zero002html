@@ -127,9 +127,7 @@ section {
     &-contents {
         display: flex;
         flex-direction: column;
-        max-width: 70%;
-        padding-left: 50px;
-        padding-right: 50px;
+        // max-width: 70%;
         margin: 0 auto;
         text-align: center;
         &__title {    
@@ -556,11 +554,11 @@ section {
         .l-contents__title::after {
             height: 60%;
         }
-        .l-contents__title {
-            .sp-only {
-                display: none;
-            }
-        }
+        // .l-contents__title {
+        //     .sp-only {
+        //         display: none;
+        //     }
+        // }
     }
     
     &-contents {

@@ -102,26 +102,26 @@ sp-only
     display: none;
   }
 }
-.c-title__hr--white {
-  width: 140px;
-  border-width: 2px;
-  border-style: solid;
-  margin-top: 20px;
-  color: $siteWhite;
+@media (min-width: 893px) {
+  .sp-only--support-title {
+    display: none;
+  } 
 }
-.c-title__hr--green {
-  width: 140px;
-  border-width: 2px;
-  border-style: solid;
-  margin-top: 20px;
-  color: $titleDarkGreen;
-}
-.c-title__hr--black {
-  width: 140px;
-  border-width: 2px;
-  border-style: solid;
-  margin-top: 20px;
-  color: $siteBlack;
+
+.c-title__hr {
+    width: 140px;
+    border-width: 1.5px;
+    border-style: solid;
+    margin-top: 20px;
+    &--white {
+      color: $siteWhite;
+    }
+    &--green {
+      color: $titleDarkGreen;
+    }
+    &--black {
+      color: $siteBlack;
+    }
 }
 
 /*******************************
@@ -265,8 +265,9 @@ component テキスト
   line-height: 1.4em;
 }
 .c-h3--50-0-61 {
-  // 調整(XD50→48,0,61/50em
-  font-size: 47px;
+  // 調整(XD50→47,0,61/50em
+  // l-reason-contents__title
+  font-size: clamp(30px, 3vw, 47px);
   letter-spacing: 0px;
   line-height: 1.22em;
 }

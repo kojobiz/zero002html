@@ -64,27 +64,24 @@ sp-only
     display: none;
   }
 }
-.c-title__hr--white {
+@media (min-width: 893px) {
+  .sp-only--support-title {
+    display: none;
+  }
+}
+.c-title__hr {
   width: 140px;
-  border-width: 2px;
+  border-width: 1.5px;
   border-style: solid;
   margin-top: 20px;
+}
+.c-title__hr--white {
   color: #FFFFFF;
 }
-
 .c-title__hr--green {
-  width: 140px;
-  border-width: 2px;
-  border-style: solid;
-  margin-top: 20px;
   color: #00A99D;
 }
-
 .c-title__hr--black {
-  width: 140px;
-  border-width: 2px;
-  border-style: solid;
-  margin-top: 20px;
   color: #191919;
 }
 
@@ -206,7 +203,7 @@ component テキスト
 }
 
 .c-h3--50-0-61 {
-  font-size: 47px;
+  font-size: clamp(30px, 3vw, 47px);
   letter-spacing: 0px;
   line-height: 1.22em;
 }
@@ -499,9 +496,6 @@ section {
 .l-reason-contents {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
-  padding-left: 50px;
-  padding-right: 50px;
   margin: 0 auto;
   text-align: center;
 }
@@ -882,9 +876,6 @@ section {
   }
   .l-support .l-contents__title::after {
     height: 60%;
-  }
-  .l-support .l-contents__title .sp-only {
-    display: none;
   }
 }
 .l-support-contents-itemsbox {
