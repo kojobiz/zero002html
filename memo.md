@@ -343,6 +343,8 @@ html では-- path の fill にカラー指定をせず、svg に sass コンパ
 <!-- memo3 -->
 
 電話アプリ起動をスマホのみ設定する
+最大767の時→max-width:767?
+最小768の時→768以上で
 @media (min-width: 768px) {
 a[href^="tel:"] {
 pointer-events: none;

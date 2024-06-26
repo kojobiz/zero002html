@@ -151,7 +151,7 @@ section {
                 width: auto;
                 height: auto;
                 overflow: hidden;
-                border-radius: 20px;
+                border-radius: 10px;
                 padding: 2rem 3.8rem;
                 text-align: left;
                 &--01 {
@@ -174,6 +174,12 @@ section {
             .p-item-reason__text {
                 font-weight: 400;
                 text-align: left;
+            }
+        }
+        // sp:最大767の時
+        @media (max-width: 767px) {
+            .p-item-reason {
+                padding: 1.3rem;
             }
         }
     }  
