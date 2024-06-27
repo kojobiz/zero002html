@@ -194,9 +194,10 @@ component テキスト
 }
 
 .c-h4--35-0-51 {
-  font-size: clamp(18px, 4.1vw, 32px);
-  letter-spacing: -1.4px;
+  font-size: clamp(13px, 4.4vw, 32px);
+  letter-spacing: -0.04em;
   line-height: 1.45em;
+  font-feature-settings: "palt";
 }
 
 .c-h4--42-0-61 {
@@ -558,7 +559,7 @@ section {
   background-position: right -3px bottom -5px;
 }
 .l-reason-contents-itemsbox .p-item-reason__title {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 15px;
 }
 .l-reason-contents-itemsbox .p-item-reason__text {

@@ -595,3 +595,4 @@ position: relative;
 ## 文字と画像のレスポンシブをばっと決めて
  clampとmax-widthで調整する
  pc--noneでpcの時にnoneする（pcのCSSに記述するのでsp-onlyとはしない）
+ 文字はデバイス400pxでためして文字を小さくする前にletter-swpacingも考慮する

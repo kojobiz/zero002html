@@ -257,9 +257,10 @@ component テキスト
 .c-h4--35-0-51 {
   // 調整(XD35→32,0,51/35em
   // p-item-reason__title
-  font-size: clamp(18px, 4.1vw, 32px);
-  letter-spacing: -1.4px;
+  font-size: clamp(13px, 4.4vw, 32px);
+  letter-spacing: -0.04em;
   line-height: 1.45em;
+  font-feature-settings: "palt";
 }
 .c-h4--42-0-61 {
   // 調整(XD42→42,0,61/42em
