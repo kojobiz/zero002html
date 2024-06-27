@@ -564,12 +564,12 @@ section {
   padding-bottom: 15px;
 }
 .l-reason-contents-itemsbox .p-item-reason__text {
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
 }
 @media (max-width: 767px) {
   .l-reason-contents .p-item-reason {
-    padding: 1.3rem;
+    padding: 1.3rem 1rem;
   }
 }
 

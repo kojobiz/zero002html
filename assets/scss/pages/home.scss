@@ -170,14 +170,14 @@ section {
                 padding-bottom: 15px;
             }
             .p-item-reason__text {
-                font-weight: 400;
+                font-weight: 500;
                 text-align: left;
             }
         }
         // sp:最大767の時
         @media (max-width: 767px) {
             .p-item-reason {
-                padding: 1.3rem;
+                padding: 1.3rem 1rem;
             }
         }
     }  
