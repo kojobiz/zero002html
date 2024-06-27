@@ -344,7 +344,7 @@ component 余白
   margin: 0 auto;
 }
 .c-width-86per {
-  width: 86%;
+  // width: 86%;
   margin: 0 auto;
 }
 .c-mtb--60 {
@@ -383,10 +383,18 @@ component 余白
 .c-margin--b100px {
   margin-bottom: 100px;
 }
-
+// スマホの場合
 @media only screen and (max-width: 767px) {
   .c-padding--x50px {
       padding-right: 20px;
       padding-left: 20px;
   }
+  .c-padding--y100px {
+      padding-right: 50px;
+      padding-left: 50px;
+  }
+  .c-mtb--60 {
+    margin: 15px auto;
+  }
+  
 }

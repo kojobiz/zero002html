@@ -268,7 +268,6 @@ component 余白
 }
 
 .c-width-86per {
-  width: 86%;
   margin: 0 auto;
 }
 
@@ -318,6 +317,13 @@ component 余白
   .c-padding--x50px {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .c-padding--y100px {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .c-mtb--60 {
+    margin: 15px auto;
   }
 }
 /* 共通
