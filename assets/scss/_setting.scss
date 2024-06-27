@@ -340,7 +340,7 @@ component 余白
   text-align: center;
 }
 .c-width-65per {
-  width: 65%;
+  // width: 65%;
   margin: 0 auto;
 }
 .c-width-86per {
@@ -383,18 +383,24 @@ component 余白
 .c-margin--b100px {
   margin-bottom: 100px;
 }
-// スマホの場合
+// spの場合
 @media only screen and (max-width: 767px) {
   .c-padding--x50px {
       padding-right: 20px;
       padding-left: 20px;
   }
   .c-padding--y100px {
-      padding-right: 50px;
-      padding-left: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
   }
   .c-mtb--60 {
-    margin: 15px auto;
+      margin: 15px auto;
   }
-  
+}
+// PCの場合
+@media only screen and (min-width: 768px) {
+  // 非表示にする
+  .pc--none {
+      display: none;
+  }
 }
