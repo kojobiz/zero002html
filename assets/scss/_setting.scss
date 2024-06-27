@@ -168,8 +168,15 @@ component テキスト
   letter-spacing:0.46px;
   line-height: 2.25em;
 }
+.c-text--12-companyinfo {
+  // l-company-info-contents-itemsbox
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing:0px;
+  line-height: 1.89em;
+}
 .c-text--16 {
   // p-telinfo>c-teltime
+  // l-company-info-contents-itemsbox
   font-size: clamp(14px, 2vw, 16px);
   letter-spacing:0px;
   line-height: 1.85em;
