@@ -178,9 +178,16 @@ section {
         @media (max-width: 767px) {
             .p-item-reason {
                 padding: 1.3rem 1rem;
+                background-size: 95px;
             }
         }
     }  
+}
+// spの場合
+@media only screen and (max-width: 767px) {
+    .l-reason {
+      padding-bottom: 120px;
+    }
 }
 
 // decoration cta
@@ -253,6 +260,7 @@ section {
     // background-color:#cbcbcb;
     &__title {
         font-weight: bold;
+        padding-bottom: 10px;
     }
     &__title--orange {
         color: $siteOrange;
@@ -683,11 +691,7 @@ section {
     background-size: cover;
     background-position: center center;
     padding-bottom: 250px;
-    @media (max-width: 768px) {
-        .l-faq {
-          padding-bottom: 50px;
-        }
-    }
+    
     dl + dl {
         padding-top: 30px;
     }
@@ -746,6 +750,12 @@ section {
             }
         }
         
+    }
+}
+// spの場合
+@media only screen and (max-width: 767px) {
+    .l-faq {
+      padding-bottom: 70px;
     }
 }
 

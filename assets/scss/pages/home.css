@@ -18,7 +18,7 @@
 body {
   overflow-x: hidden;
   font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 body,
@@ -212,7 +212,7 @@ component テキスト
 }
 
 .c-h3--50-0-61 {
-  font-size: clamp(22px, 5vw, 47px);
+  font-size: clamp(22px, 6.5vw, 47px);
   letter-spacing: 0px;
   line-height: 1.22em;
 }
@@ -260,14 +260,6 @@ component 余白
 
 .c-x-center {
   text-align: center;
-}
-
-.c-width-65per {
-  margin: 0 auto;
-}
-
-.c-width-86per {
-  margin: 0 auto;
 }
 
 .c-mtb--60 {
@@ -322,7 +314,7 @@ component 余白
     padding-bottom: 50px;
   }
   .c-mtb--60 {
-    margin: 15px auto 18px;
+    margin: 8px auto 18px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -570,9 +562,15 @@ section {
 @media (max-width: 767px) {
   .l-reason-contents .p-item-reason {
     padding: 1.3rem 1rem;
+    background-size: 95px;
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .l-reason {
+    padding-bottom: 120px;
+  }
+}
 .l-divider-deco {
   position: relative;
   height: auto;
@@ -635,6 +633,7 @@ section {
 }
 .l-fivefeatures-contents__title {
   font-weight: bold;
+  padding-bottom: 10px;
 }
 .l-fivefeatures-contents__title--orange {
   color: #FF8000;
@@ -1022,11 +1021,6 @@ section {
   background-position: center center;
   padding-bottom: 250px;
 }
-@media (max-width: 768px) {
-  .l-faq .l-faq {
-    padding-bottom: 50px;
-  }
-}
 .l-faq dl + dl {
   padding-top: 30px;
 }
@@ -1083,6 +1077,11 @@ section {
   top: -2px;
 }
 
+@media only screen and (max-width: 767px) {
+  .l-faq {
+    padding-bottom: 70px;
+  }
+}
 .l-company-info {
   background-color: #F2F2F2;
   color: #30554C;
