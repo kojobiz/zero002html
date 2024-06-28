@@ -225,18 +225,19 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
     .p-cta--pc {
-        max-width: 800px;
+        max-width: 80%;
         margin: 0 auto;
         text-align: center;
         & a {
-            padding-left: 20px;
-            padding-right: 20px;
+            svg {
+                max-width: 100%;
+            }
         }
     }
     .p-telinfo {
         text-align: center;
         margin: 0 auto;
-        margin-top: 22px;
+        margin-top: 18px;
         svg {
             height: clamp(20px, 5vw, 32px);
             margin-left: -3px;
@@ -610,12 +611,13 @@ section {
                 padding: 50px 30px;
                 box-sizing: border-box;
                 border-radius: 20px;
-                border: solid 10px;
+                border: solid 6px;
                 height: auto;
                 &__title {
-                    font-size: clamp(16px, 3vw, 30px);
+                    font-size: clamp(10px, 4vw, 30px);
                     padding-bottom: 20px;
                     font-weight: bold;
+                    letter-spacing: -0.8px;
                     &--orange {
                         color: $siteOrange;
                     }
@@ -665,7 +667,7 @@ section {
                 }
             }
             .p-item-support {
-                padding: 20px 20px;
+                padding: 0.5rem 0.5rem 1rem;
                 __text {
                     max-width: 90%;
                 }
