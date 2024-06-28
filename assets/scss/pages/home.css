@@ -477,8 +477,8 @@ section {
   height: calc(100vh - 117px);
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom right;
-     object-position: bottom right;
+  -o-object-position: bottom center;
+     object-position: bottom center;
 }
 
 .p-cta--firstview a + a {
