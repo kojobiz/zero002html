@@ -237,9 +237,9 @@ component テキスト
 }
 
 .c-h2--65-0-121 {
-  font-size: 63px;
+  font-size: clamp(25px, 3.4vw, 63px);
   letter-spacing: 0px;
-  line-height: 2.08em;
+  padding-bottom: 1.9rem;
 }
 
 .c-h3--88-0-127 {
@@ -431,12 +431,14 @@ section {
   height: calc(100vh - 117px);
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
 .l-firstview-contents {
-  max-width: 970px;
+  max-width: clamp(53%, 3vw, 970px);
   position: absolute;
-  top: 95px;
+  top: 50%;
+  transform: translate(0, -60%);
   left: 8%;
   z-index: 100;
 }
@@ -456,11 +458,12 @@ section {
   padding-right: 4%;
 }
 .l-firstview-contents__icons {
-  margin: 30px 0 40px 0;
+  margin-top: clamp(-20px, 3vw, 120px);
+  margin-bottom: clamp(20px, 5vw, 120px);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 70px;
+  gap: 50px;
   max-width: 100%;
 }
 .l-firstview-contents__icons svg {
