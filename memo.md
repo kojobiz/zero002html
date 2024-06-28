@@ -343,8 +343,8 @@ html では-- path の fill にカラー指定をせず、svg に sass コンパ
 <!-- memo3 -->
 
 電話アプリ起動をスマホのみ設定する
-最大767の時→max-width:767?
-最小768の時→768以上で
+最大 767 の時 →max-width:767?
+最小 768 の時 →768 以上で
 @media (min-width: 768px) {
 a[href^="tel:"] {
 pointer-events: none;
@@ -591,8 +591,13 @@ top: -5px;
 position: relative;
 }
 
-
 ## 文字と画像のレスポンシブをばっと決めて
- clampとmax-widthで調整する
- pc--noneでpcの時にnoneする（pcのCSSに記述するのでsp-onlyとはしない）
- 文字はデバイス400pxでためして文字を小さくする前にletter-swpacingも考慮する
+
+clamp と max-width で調整する
+pc--none で pc の時に none する（pc の CSS に記述するので sp-only とはしない）
+文字はデバイス 400px でためして文字を小さくする前に letter-swpacing も考慮する
+
+## 0628Git 　 pull がうまくいかず？
+
+push を元に戻す作業をした
+6/28 の作業を削除し、6/27 の時点に戻した
