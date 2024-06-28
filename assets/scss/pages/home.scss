@@ -91,7 +91,15 @@ section {
 }
 .p-cta--firstview a+a {
     padding-left: 22px;
+}
+.p-cta--firstview {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    svg {
+        max-width: 90%;
+    }
 }
 
 // attention 
