@@ -140,9 +140,9 @@ component テキスト
 }
 
 .c-text--16 {
-  font-size: clamp(14px, 2vw, 16px);
-  letter-spacing: 0px;
-  line-height: 1.85em;
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing: 0.3px;
+  line-height: 2em;
 }
 
 .c-text--16-0-25 {
@@ -412,7 +412,7 @@ section {
 }
 .l-contents__title-text {
   padding: 70px 0;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   letter-spacing: 0px;
   line-height: 1.65em;
 }
@@ -438,7 +438,7 @@ section {
   max-width: clamp(53%, 3vw, 970px);
   position: absolute;
   top: 50%;
-  transform: translate(0, -60%);
+  transform: translate(0, -40%);
   left: 8%;
   z-index: 100;
 }
@@ -790,6 +790,12 @@ section {
 .l-flow picture img {
   max-width: 100%;
 }
+@media (max-width: 750px) {
+  .l-flow .l-contents__title-text {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
 
 .l-plan {
   text-align: center;
@@ -854,25 +860,22 @@ section {
   .l-plan .p-item-plan {
     display: flex;
     flex-direction: column;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .l-plan .p-item-plan__name {
-    font-size: 34px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   .l-plan .p-item-plan__recommend {
-    font-size: 25px;
-    padding-bottom: 1rem;
+    font-size: clamp(13px, 2vw, 20px);
+    padding-bottom: 0.5rem;
     font-weight: 500;
   }
   .l-plan .p-item-plan__amount {
-    font-size: 60px;
     margin-top: -0.5rem;
   }
   .l-plan .p-item-plan__tax {
-    font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 .l-plan .p-item--getsugaku {
@@ -889,16 +892,21 @@ section {
 }
 @media (max-width: 750px) {
   .l-plan .p-item--getsugaku-attention {
-    top: -105px;
+    top: -40px;
+    width: 90px;
   }
 }
 .l-plan-contents-attentionlist {
-  margin-top: 23px;
   text-align: left;
-  font-size: 16px;
-  line-height: 1.6em;
   max-width: 1145px;
-  margin: 23px auto 0px;
+  margin: 20px auto 0px;
+  font-weight: 400;
+}
+@media (max-width: 750px) {
+  .l-plan .l-contents__title-text {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
 }
 
 .l-support {
