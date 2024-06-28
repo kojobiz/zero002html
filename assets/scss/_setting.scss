@@ -310,7 +310,8 @@ component テキスト
 }
 .c-h3--60-0-87 {
   // 調整(XD60→60,0,87/60em
-  font-size: 60px;
+  // fivefeatures>つの
+  font-size: clamp(40px, 5vw, 60px);
   letter-spacing: 0px;
   line-height: 1.45em;
 }
@@ -323,13 +324,15 @@ component テキスト
 }
 .c-h3--88-0-127 {
   // 調整(XD88→88,0,127/88em)
-  font-size: 88px;
+  // fivefeatures>機能
+  font-size: clamp(60px, 5vw, 88px);
   letter-spacing: 0px;
   line-height: 1.44em;
 }
-.c-h3-102-0-147 {
+.c-h3--102-0-147 {
   // 調整(XD102→102,0,147/102em)
-  font-size: 102px;
+  // fivefeatures>5
+  font-size: clamp(70px, 5vw, 102px);
   letter-spacing: 0px;
   line-height: 1.44em;
 }

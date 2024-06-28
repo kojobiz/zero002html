@@ -231,7 +231,7 @@ component テキスト
 }
 
 .c-h3--60-0-87 {
-  font-size: 60px;
+  font-size: clamp(40px, 5vw, 60px);
   letter-spacing: 0px;
   line-height: 1.45em;
 }
@@ -243,13 +243,13 @@ component テキスト
 }
 
 .c-h3--88-0-127 {
-  font-size: 88px;
+  font-size: clamp(60px, 5vw, 88px);
   letter-spacing: 0px;
   line-height: 1.44em;
 }
 
-.c-h3-102-0-147 {
-  font-size: 102px;
+.c-h3--102-0-147 {
+  font-size: clamp(70px, 5vw, 102px);
   letter-spacing: 0px;
   line-height: 1.44em;
 }
@@ -471,7 +471,7 @@ section {
 }
 
 .p-responsive-picture {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 117px);
 }
 
