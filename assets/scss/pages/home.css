@@ -498,7 +498,7 @@ section {
   justify-content: center;
 }
 .l-firstview-contents__icons img {
-  width: 80%;
+  width: 75%;
   margin-left: -4%;
 }
 
@@ -643,6 +643,7 @@ section {
     width: calc(100% + 16vw);
   }
   .l-firstview-contents__icons img {
+    width: 95%;
     margin-left: 0%;
     margin-top: 2%;
   }
