@@ -353,7 +353,7 @@ component 余白
   z-index: 200;
 }
 .l-header-inner__logo img {
-  width: clamp(220px, 100%, 430px);
+  width: clamp(250px, 100%, 430px);
 }
 .l-header-inner__menu--pc {
   display: flex;
@@ -379,7 +379,25 @@ component 余白
   line-height: 1.81em;
   text-wrap: nowrap;
 }
+.l-header-inner__menu--pc .p-nav-listbox__title a {
+  color: #191919;
+}
 
+.l-header-inner__menu--sp img {
+  max-width: 80%;
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+  .l-header-inner__menu--pc {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .l-header-inner__menu--sp {
+    display: none;
+  }
+}
 /* footer-layout
 ======================================================= */
 .l-footer {

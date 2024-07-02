@@ -23,7 +23,7 @@
     z-index: 200;
     &__logo img {
         // max-width: 100%;
-        width: clamp(220px, 100%, 430px);
+        width: clamp(250px, 100%, 430px);
     }
     &__menu--pc {
         display: flex;
@@ -47,10 +47,30 @@
                     letter-spacing: 1px;
                     line-height: 1.81em;
                     text-wrap: nowrap;
+                    a {
+                        color: $siteBlack;
+                    }
                 }
             }
         }
     } 
 }
+// ハンバーガーメニュー
+.l-header-inner__menu--sp {
+    img {
+        max-width: 80%;
+        margin-left: 20%;
+    }
+}
 
 
+@media only screen and (max-width: 767px) {
+    .l-header-inner__menu--pc {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .l-header-inner__menu--sp {
+        display: none;
+    }
+}
