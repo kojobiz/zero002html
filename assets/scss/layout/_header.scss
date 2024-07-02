@@ -63,12 +63,20 @@
     }
 }
 
-
+// sp
 @media only screen and (max-width: 767px) {
     .l-header-inner__menu--pc {
         display: none;
     }
+    .l-header {
+        height: 70px;
+    }
+    .l-header-inner {
+        height: 70px;
+    }
 }
+
+// pc
 @media only screen and (min-width: 768px) {
     .l-header-inner__menu--sp {
         display: none;

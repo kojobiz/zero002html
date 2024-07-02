@@ -779,6 +779,26 @@ section {
     .l-faq {
       padding-bottom: 70px;
     }
+    .l-firstview {
+        height: calc(100vh - 70px);
+    }
+    .p-responsive-picture {
+        height: calc(100vh - 70px);
+        img {
+            height: calc(100vh - 70px);
+        }
+    }
+    .l-firstview-contents {
+        top: 0px;
+        margin-top: 20px;
+        transform: translate(0, 0);
+        max-width: 92%;
+        right: 8%;
+        height: clamp(30%, 60%, 90%);
+    }
+    .c-text--16-0-40 {
+        line-height: 1.8em;
+    }
 }
 
 
