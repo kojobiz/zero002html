@@ -19,13 +19,27 @@
     }
 }
 .l-cta-asidefooter {
-    display: none;
+    width: 100%;
     position: fixed;
-    top: 0;
+    bottom: 0;
     z-index: 250;
     .p-cta-aside--sp {
+        width: 100%;
         display: flex;
         flex-direction: row;
+        img {
+            // width: 376px;
+            // height: 84px;
+            max-width: 50vw;
+            height: auto;
+            aspect-ratio: auto;
+            position: absolute;
+            bottom: -1px;
+        }
+        &-trial {
+            left: 50vw;
+
+        }
     }
 }
 // spの場合

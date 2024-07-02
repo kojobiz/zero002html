@@ -417,3 +417,10 @@ component 余白
       display: none;
   }
 }
+// spの場合
+@media only screen and (max-width: 767px) {
+  // 非表示にする
+  .sp--none {
+      display: none;
+  }
+}
