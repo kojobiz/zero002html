@@ -549,8 +549,6 @@ component 余白
 ======================================================= */
 .l-cta-aside {
   display: none;
-  max-width: 138px;
-  height: 64px;
   position: fixed;
   top: 210px;
   right: 0;
@@ -559,6 +557,10 @@ component 余白
 .l-cta-aside .p-cta-aside--pc {
   display: flex;
   flex-direction: column;
+}
+.l-cta-aside .p-cta-aside--pc img {
+  max-width: 64px;
+  height: 138px;
 }
 .l-cta-aside .p-cta-aside--pc img + img {
   padding-top: 20px;
