@@ -233,12 +233,13 @@ component テキスト
   letter-spacing:0.2px;
   line-height: 1.29em;
 }
-// .c-text--36-054-52 {
-//   // 調整(XD36→UI30,0.54,52/34em)
-//   font-size: 30px;
-//   letter-spacing:0.25px;
-//   line-height: 1.52em;
-// }
+.c-text--36-054-52 {
+  // 調整(XD36→UI30,0.54,52/34em)
+  // spnav>p-telinfo
+  font-size: 30px;
+  letter-spacing:0.25px;
+  line-height: 1.52em;
+}
 .c-text--47-0-57 {
   // 調整(XD47→UI45,0,57/47em)
   // c-telnumber>span

@@ -31,26 +31,57 @@
         width: 100%;
         height: auto;
         .spnav-close {
-            width: 18px;
+            width: 16px;
             padding-top: 8%;
-            padding-left: calc((100% - 18px) - 8%);
-
-
+            padding-left: calc((100% - 16px) - 8%);
+        }
+        &--logo {
+            text-align: center;
+            padding-top: 5px;
+            padding-left: 2%;
+            padding-right: 2%;
+            img {
+                max-width: 80%;
+            }
         }
         &--nav {
+            margin-left: 20%;
+            margin-top: 20px;
+            margin-bottom: 30px;
             .p-spnav-listbox {
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                gap: 25px;
                 &__title {
-                    a{
+                    border-bottom: 2px solid $titleBrightGreen;
+                    a {
                         text-decoration: none;
                         color: $siteBlack;
-                        
-
+                        font-size: 20px;
                     }
                 }
             }
         }
+    }
+    .p-telinfo {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+.p-cta--spnav {
+    a+a {
+        padding-left: 0px;
+        padding-top: 2%;
+    }
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    svg {
+        max-width: 80%;
+        height: auto;
+    }
+    &-round-trial {
+        margin-left: -4%;
     }
 }
