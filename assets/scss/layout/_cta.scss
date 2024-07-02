@@ -9,12 +9,23 @@
     position: fixed;
     top: 210px;
     right: 0;
+    z-index: 300;
     .p-cta-aside--pc {
         display: flex;
         flex-direction: column;
         img+img {
             padding-top: 30px;
         }
+    }
+}
+.l-cta-asidefooter {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 250;
+    .p-cta-aside--sp {
+        display: flex;
+        flex-direction: row;
     }
 }
 // spの場合

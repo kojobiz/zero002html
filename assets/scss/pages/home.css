@@ -544,6 +544,7 @@ component 余白
   position: fixed;
   top: 210px;
   right: 0;
+  z-index: 300;
 }
 .l-cta-aside .p-cta-aside--pc {
   display: flex;
@@ -551,6 +552,17 @@ component 余白
 }
 .l-cta-aside .p-cta-aside--pc img + img {
   padding-top: 30px;
+}
+
+.l-cta-asidefooter {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 250;
+}
+.l-cta-asidefooter .p-cta-aside--sp {
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (max-width: 767px) {
