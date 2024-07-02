@@ -353,7 +353,7 @@ component 余白
   z-index: 200;
 }
 .l-header-inner__logo img {
-  width: clamp(250px, 100%, 430px);
+  width: clamp(220px, 100%, 430px);
 }
 .l-header-inner__menu--pc {
   display: flex;
@@ -462,7 +462,7 @@ section {
   max-width: clamp(53%, 3vw, 970px);
   position: absolute;
   top: 50%;
-  transform: translate(0, -40%);
+  transform: translate(0, -45%);
   left: 8%;
   z-index: 100;
 }

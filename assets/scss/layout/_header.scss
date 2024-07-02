@@ -22,8 +22,7 @@
     position: fixed;
     z-index: 200;
     &__logo img {
-        // max-width: 100%;
-        width: clamp(250px, 100%, 430px);
+        width: clamp(220px, 100%, 430px);
     }
     &__menu--pc {
         display: flex;
