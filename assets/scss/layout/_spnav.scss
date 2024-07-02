@@ -34,10 +34,10 @@
         .spnav-close {
             // アクセシビリティクリックスペース
             width: 16px;
-            padding-top: 8%;
-            margin-left: calc((100% - 16px) - 16%);
-            padding-right: 8%;
-            padding-left: 8%;
+            padding-top: 20px;
+            margin-left: calc((100% - 16px) - 10%);
+            padding-right: 5%;
+            padding-left: 5%;
         }
         &--logo {
             text-align: center;

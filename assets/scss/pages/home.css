@@ -379,6 +379,7 @@ component 余白
   max-width: 243px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .l-header-inner__menu--pc .p-nav {
   max-width: auto;
@@ -458,10 +459,10 @@ component 余白
 }
 .l-spnav-inner .spnav-close {
   width: 16px;
-  padding-top: 8%;
-  margin-left: calc(100% - 16px - 16%);
-  padding-right: 8%;
-  padding-left: 8%;
+  padding-top: 20px;
+  margin-left: calc(100% - 16px - 10%);
+  padding-right: 5%;
+  padding-left: 5%;
 }
 .l-spnav-inner--logo {
   text-align: center;
