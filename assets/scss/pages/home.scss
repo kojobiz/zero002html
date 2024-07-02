@@ -70,12 +70,16 @@ section {
         margin-top: clamp(-20px, 3vw, 120px);
         margin-bottom: clamp(20px, 5vw, 120px);
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         justify-content: center;
-        gap: 50px;
-        max-width: 100%;
-        svg {
-            max-width: 100%;
+        // gap: 50px;
+        // max-width: 100%;
+        // svg {
+        //     max-width: 100%;
+        // }
+        img {
+            width: 90%;
+            margin-left: -4%;
         }
     }
 }
@@ -198,6 +202,11 @@ section {
 @media only screen and (max-width: 767px) {
     .l-reason {
       padding-bottom: 120px;
+    }
+    .l-firstview-contents__icons {
+        img {
+            margin-left: 0%;
+        }
     }
 }
 
