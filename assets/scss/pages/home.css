@@ -358,6 +358,9 @@ component 余白
   position: fixed;
   z-index: 200;
 }
+.l-header-inner__logo {
+  display: flex;
+}
 .l-header-inner__logo img {
   width: clamp(220px, 100%, 430px);
 }
@@ -389,6 +392,9 @@ component 余白
   color: #191919;
 }
 
+.l-header-inner__menu--sp {
+  display: flex;
+}
 .l-header-inner__menu--sp img {
   max-width: 80%;
   margin-left: 20%;
