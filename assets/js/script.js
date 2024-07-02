@@ -60,7 +60,7 @@ document.querySelectorAll('.p-spnav-listbox__title').forEach(function(item) {
 // スクロール位置を監視して条件を満たしたら .l-cta-aside を表示する
 window.addEventListener('scroll', function() {
     const ctaAside = document.getElementById('l-cta-aside');
-    if (window.scrollY >= 1080) {
+    if (window.scrollY >= 600 && window.innerWidth >= 768) {
         ctaAside.style.display = 'block';
     } else {
         ctaAside.style.display = 'none';
