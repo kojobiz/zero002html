@@ -459,7 +459,9 @@ component 余白
 .l-spnav-inner .spnav-close {
   width: 16px;
   padding-top: 8%;
-  padding-left: calc(100% - 16px - 8%);
+  margin-left: calc(100% - 16px - 16%);
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .l-spnav-inner--logo {
   text-align: center;
@@ -509,6 +511,13 @@ component 余白
 }
 .p-cta--spnav-round-trial {
   margin-left: -4%;
+}
+
+.spnav-open {
+  cursor: pointer;
+}
+.spnav-close {
+  cursor: pointer;
 }
 
 /* footer-layout
