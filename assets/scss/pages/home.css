@@ -537,6 +537,27 @@ component 余白
   text-align: center;
 }
 
+/* cta-layout
+======================================================= */
+.l-cta-aside {
+  display: none;
+  position: fixed;
+  top: 210px;
+  right: 0;
+}
+.l-cta-aside .p-cta-aside--pc {
+  display: flex;
+  flex-direction: column;
+}
+.l-cta-aside .p-cta-aside--pc img + img {
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .l-cta-aside {
+    display: none;
+  }
+}
 /* トップページ
 ======================================================= */
 section {

@@ -1,0 +1,25 @@
+// cta
+@charset "utf-8";
+@use "../setting" as *;
+
+/* cta-layout
+======================================================= */
+.l-cta-aside {
+    display: none;
+    position: fixed;
+    top: 210px;
+    right: 0;
+    .p-cta-aside--pc {
+        display: flex;
+        flex-direction: column;
+        img+img {
+            padding-top: 30px;
+        }
+    }
+}
+// spの場合
+@media only screen and (max-width: 767px) {
+    .l-cta-aside {
+        display: none;
+    } 
+}
