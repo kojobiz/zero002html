@@ -429,6 +429,7 @@ component 余白
 /* spnav-layout
 ======================================================= */
 .l-spnav {
+  display: none;
   width: 100%;
   overflow: hidden;
   height: 100vh;
