@@ -420,6 +420,50 @@ component 余白
     display: none;
   }
 }
+/* spnav-layout
+======================================================= */
+.l-spnav {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: 300;
+}
+.l-spnav-contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.l-spnav-contents--left {
+  background-color: #000;
+  opacity: 0.5;
+  width: 15%;
+}
+.l-spnav-contents--right {
+  background-color: #fff;
+  width: 85%;
+}
+.l-spnav-inner {
+  width: 100%;
+  height: auto;
+}
+.l-spnav-inner .spnav-close {
+  width: 18px;
+  padding-top: 8%;
+  padding-left: calc(100% - 18px - 8%);
+}
+.l-spnav-inner--nav .p-spnav-listbox {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.l-spnav-inner--nav .p-spnav-listbox__title a {
+  text-decoration: none;
+  color: #191919;
+}
+
 /* footer-layout
 ======================================================= */
 .l-footer {
