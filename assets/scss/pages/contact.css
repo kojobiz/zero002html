@@ -374,6 +374,11 @@ component 余白
   margin-bottom: 60px;
 }
 
+.c-padding-y--contact__breadcrumb {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 767px) {
   .c-padding--y30px {
     padding-top: 10px;
@@ -635,8 +640,6 @@ component 余白
 }
 
 .l-breadcrumb ul {
-  padding-left: 4%;
-  padding-right: 4%;
   display: inline-flex;
 }
 .l-breadcrumb ul li {
