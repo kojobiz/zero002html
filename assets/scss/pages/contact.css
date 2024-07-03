@@ -648,6 +648,7 @@ component 余白
   background-color: #F2F2F2;
   padding: 1.3rem 1.8rem;
   border-radius: 18px;
+  margin-bottom: 60px;
 }
 .l-attention--info .p-info-titlebox {
   max-width: 100%;
@@ -681,4 +682,38 @@ component 余白
   .p-info-numberbox {
     flex-direction: column;
   }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 3fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.grid-item-dt {
+  display: flex;
+  align-items: flex-start;
+}
+.grid-item--radio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.grid-item--require {
+  background-color: #2FC996;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding-bottom: 0.1em;
+}
+.grid-item label {
+  margin-bottom: 0.1em;
+}
+.grid-item input[type=radio] {
+  margin-right: 0.5em;
 }/*# sourceMappingURL=contact.css.map */

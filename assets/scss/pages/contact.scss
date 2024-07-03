@@ -51,6 +51,7 @@
         background-color: $siteRightGray;
         padding: 1.3rem 1.8rem;
         border-radius: 18px;
+        margin-bottom: 60px;
         .p-info-titlebox {
             max-width: 100%;
             background-color: $titleBrightGreen;
@@ -86,3 +87,39 @@
         flex-direction: column;
     }
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 3fr;
+    gap: 10px; 
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    &-dt {
+        display: flex;
+        align-items: flex-start;
+    }
+    &--radio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &--require {
+        background-color: $titleBrightGreen;
+        color: $siteWhite;
+        border-radius: 5px;
+        padding-bottom: 0.1em;
+    }
+
+    & label {
+        margin-bottom: 0.1em;
+    }
+    & input[type="radio"] {
+        margin-right: 0.5em;
+    }
+  }
+  
