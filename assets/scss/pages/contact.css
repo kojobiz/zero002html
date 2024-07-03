@@ -1,1 +1,601 @@
-/*# sourceMappingURL=contact.css.map */
+@charset "UTF-8";
+/***************************
+テストカラー
+****************************/
+/***************************
+カラー
+****************************/
+/*****************************
+フォント
+******************************/
+.bold {
+  font-weight: bold;
+}
+
+/*******************************
+構造
+********************************/
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  font-weight: 500;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+table,
+th,
+td,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*******************************
+sp-only
+********************************/
+.sp-only--paddingtop {
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .sp-only--padding-top {
+    display: none;
+  }
+  .sp-only--br {
+    display: none;
+  }
+}
+@media (min-width: 893px) {
+  .sp-only--support-title {
+    display: none;
+  }
+}
+.c-title__hr {
+  width: 140px;
+  border-width: 1.5px;
+  border-style: solid;
+  margin-top: 20px;
+}
+.c-title__hr--white {
+  color: #FFFFFF;
+}
+.c-title__hr--green {
+  color: #00A99D;
+}
+.c-title__hr--black {
+  color: #191919;
+}
+
+/*******************************
+component テキスト
+********************************/
+.c-textcolor--orange {
+  color: #FF8000;
+}
+
+.c-textcolor--black {
+  color: #191919;
+}
+
+.c-textcolor--white {
+  color: #FFFFFF;
+}
+
+.c-textcolor--green {
+  color: #30554C;
+}
+
+.c-titlecolor--brightgreen {
+  color: #2FC996;
+}
+
+.c-titlecolor--darkgreen {
+  color: #00A99D;
+}
+
+.c-textcolor--planblue {
+  color: #59B5D2;
+}
+
+.c-textcolor--plangreen {
+  color: #9CBC3C;
+}
+
+.c-text--12 {
+  font-size: 12px;
+}
+
+.c-text--13-046-27 {
+  font-size: 12px;
+  letter-spacing: 0.46px;
+  line-height: 2.25em;
+}
+
+.c-text--12-companyinfo {
+  font-size: clamp(10px, 2.8vw, 16px);
+  letter-spacing: -0.2px;
+  line-height: 1.89em;
+}
+
+.c-text--16 {
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing: 0.3px;
+  line-height: 2em;
+}
+
+.c-text--16-0-25 {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 1.56em;
+}
+
+.c-text--16-096-30 {
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing: 0.96px;
+  line-height: 1.8em;
+}
+
+.c-text--16-0-40 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 2.5em;
+}
+
+.c-text--20-07-27 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.68em;
+}
+
+.c-text--20-1-29 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.61em;
+}
+
+.c-text--28-0-40 {
+  font-size: 23px;
+  letter-spacing: 0px;
+  line-height: 1.42em;
+}
+
+.c-text--36-025-44 {
+  font-size: clamp(15px, 4.5vw, 30px);
+  letter-spacing: 0.2px;
+  line-height: 1.29em;
+}
+
+.c-text--36-054-52 {
+  font-size: 30px;
+  letter-spacing: 0.25px;
+  line-height: 1.52em;
+}
+
+.c-text--47-0-57 {
+  font-size: clamp(20px, 5vw, 45px);
+  letter-spacing: 0px;
+  line-height: 1.21em;
+}
+
+.c-h4--35-0-51 {
+  font-size: clamp(13px, 4.4vw, 32px);
+  letter-spacing: -0.04em;
+  line-height: 1.45em;
+  font-feature-settings: "palt";
+}
+
+.c-h4--42-0-61 {
+  font-size: 42px;
+  letter-spacing: 0px;
+  line-height: 1.45em;
+}
+
+.c-h3--34-0-49 {
+  font-size: clamp(18px, 2vw, 32px);
+  letter-spacing: 0px;
+  line-height: 1.41em;
+}
+
+.c-h3--39-0-56 {
+  font-size: clamp(20px, 6vw, 34px);
+  letter-spacing: 0px;
+  line-height: 1.4em;
+}
+
+.c-h3--50-0-61 {
+  font-size: clamp(22px, 6.5vw, 47px);
+  letter-spacing: 0px;
+  line-height: 1.22em;
+}
+
+.c-h3--59-0-85 {
+  font-size: clamp(28px, 4vw, 54px);
+  letter-spacing: 0px;
+  line-height: 1.57em;
+}
+
+.c-h3--60-0-87 {
+  font-size: clamp(40px, 5vw, 60px);
+  letter-spacing: 0px;
+  line-height: 1.45em;
+}
+
+.c-h2--65-0-121 {
+  font-size: clamp(25px, 3.4vw, 63px);
+  letter-spacing: 0px;
+  padding-bottom: 1.9rem;
+}
+
+.c-h3--88-0-127 {
+  font-size: clamp(60px, 5vw, 88px);
+  letter-spacing: 0px;
+  line-height: 1.44em;
+}
+
+.c-h3--102-0-147 {
+  font-size: clamp(70px, 5vw, 102px);
+  letter-spacing: 0px;
+  line-height: 1.44em;
+}
+
+.c-weight--bold {
+  font-weight: 700;
+}
+
+/*******************************
+component 余白
+********************************/
+.c-mright--minus10 {
+  margin-right: -10px;
+}
+
+.c-x-center {
+  text-align: center;
+}
+
+.c-mtb--60 {
+  margin: 60px auto;
+}
+
+.c-padding--x4per {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.c-padding--x10px {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c-padding--x50px {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.c-padding--y70px {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.c-padding--y30px {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.c-padding--y100px {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.c-padding--t140b0px {
+  padding-top: 140px;
+  padding-bottom: 0px;
+}
+
+.c-padding--t140b150px {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+
+.c-margin--0auto {
+  margin: 0 auto;
+}
+
+.c-margin--b100px {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-padding--y30px {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .c-padding--x50px {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .c-padding--y100px {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .c-mtb--60 {
+    margin: 8px auto 18px;
+  }
+  .c-text--16-0-40 {
+    font-size: 12px;
+  }
+  .c-h2--65-0-121 {
+    font-size: 20px;
+  }
+  .c-margin--b100px {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pc--none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sp--none {
+    display: none;
+  }
+}
+/* header-layout
+======================================================= */
+.l-header {
+  width: 100%;
+  height: 117px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px -4px #848484;
+}
+
+.l-header-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 92%;
+  height: 117px;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: fixed;
+  z-index: 200;
+}
+.l-header-inner__logo {
+  display: flex;
+}
+.l-header-inner__logo a {
+  display: inline-flex;
+}
+.l-header-inner__logo img {
+  width: clamp(220px, 100%, 430px);
+}
+.l-header-inner__menu--pc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.l-header-inner__menu--pc .p-telinfo--header {
+  max-width: 243px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.l-header-inner__menu--pc .p-nav {
+  max-width: auto;
+}
+.l-header-inner__menu--pc .p-nav-listbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.l-header-inner__menu--pc .p-nav-listbox__title {
+  font-size: clamp(14px, 2.5vw, 16px);
+  letter-spacing: 1px;
+  line-height: 1.81em;
+  text-wrap: nowrap;
+}
+.l-header-inner__menu--pc .p-nav-listbox__title a {
+  color: #191919;
+}
+
+.l-header-inner__menu--sp {
+  display: flex;
+}
+.l-header-inner__menu--sp img {
+  max-width: 80%;
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+  .l-header-inner__menu--pc {
+    display: none;
+  }
+  .l-header {
+    height: 70px;
+  }
+  .l-header-inner {
+    height: 70px;
+  }
+  .l-header-inner__logo img {
+    width: 340px;
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .l-header-inner__menu--sp {
+    display: none;
+  }
+}
+/* spnav-layout
+======================================================= */
+.l-spnav {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  z-index: 300;
+}
+.l-spnav-contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.l-spnav-contents--left {
+  background-color: #000;
+  opacity: 0.5;
+  width: 15%;
+}
+.l-spnav-contents--right {
+  background-color: #fff;
+  width: 85%;
+}
+.l-spnav-inner {
+  width: 100%;
+  height: auto;
+}
+.l-spnav-inner .spnav-close {
+  width: 16px;
+  padding-top: 20px;
+  margin-left: calc(100% - 16px - 10%);
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.l-spnav-inner--logo {
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.l-spnav-inner--logo img {
+  max-width: 80%;
+}
+.l-spnav-inner--nav {
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.l-spnav-inner--nav .p-spnav-listbox {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.l-spnav-inner--nav .p-spnav-listbox__title {
+  border-bottom: 2px solid #2FC996;
+}
+.l-spnav-inner--nav .p-spnav-listbox__title a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 20px;
+}
+.l-spnav .p-telinfo {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.p-cta--spnav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+}
+.p-cta--spnav a + a {
+  padding-left: 0px;
+  padding-top: 2%;
+}
+.p-cta--spnav svg {
+  max-width: 80%;
+  height: auto;
+}
+.p-cta--spnav-round-trial {
+  margin-left: -4%;
+}
+
+.spnav-open {
+  cursor: pointer;
+}
+.spnav-close {
+  cursor: pointer;
+}
+
+/* footer-layout
+======================================================= */
+.l-footer {
+  width: 100%;
+  height: auto;
+  background-color: #30554C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-footer-inner--copy {
+  display: inline-flex;
+  width: auto;
+  height: 42px;
+  text-align: center;
+  align-items: center;
+}
+.l-footer-inner--ctaposition {
+  width: auto;
+  height: 11vw;
+  text-align: center;
+}
+
+/* 問い合わせページ
+======================================================= */
+.l-form {
+  padding: 50px 20px;
+  margin: 0 auto;
+  background-color: #2FC996;
+  height: 82px;
+}
+.l-form .l-form-contents__title {
+  color: white;
+  text-align: center;
+}
+
+.l-breadcrumb ul {
+  padding-left: 4%;
+  padding-right: 4%;
+  display: inline-flex;
+}
+.l-breadcrumb ul li {
+  font-size: clamp(12px, 2vw, 20px);
+  letter-spacing: 0.96px;
+  line-height: 1.8em;
+}
+.l-breadcrumb li + li::before {
+  content: ">";
+  font-size: clamp(12px, 2vw, 20px);
+  padding-left: 20px;
+  padding-right: 20px;
+}/*# sourceMappingURL=contact.css.map */

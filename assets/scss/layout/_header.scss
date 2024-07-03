@@ -24,6 +24,9 @@
     z-index: 200;
     &__logo {
         display: flex;
+        a {
+            display: inline-flex;
+        }
     }
     &__logo img {
         width: clamp(220px, 100%, 430px);

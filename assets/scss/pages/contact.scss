@@ -1,0 +1,37 @@
+@charset "utf-8";
+@use "../setting.scss" as *;
+@use "../layout/header.scss" as *;
+@use "../layout/spnav.scss" as *;
+@use "../layout/footer.scss" as *;
+
+
+/* 問い合わせページ
+======================================================= */
+.l-form {
+    padding: 50px 20px;
+    margin: 0 auto;
+    background-color: $titleBrightGreen;
+    height: 82px;
+    .l-form-contents__title {
+        color: white;
+        text-align: center;
+    }
+}
+.l-breadcrumb {
+    ul {
+        padding-left: 4%;
+        padding-right: 4%;
+        display: inline-flex;
+        li {
+            font-size: clamp(12px, 2vw, 20px);
+            letter-spacing:0.96px;
+            line-height: 1.8em;
+        }
+    }
+    li+li::before {
+        content: ">";
+        font-size: clamp(12px, 2vw, 20px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
