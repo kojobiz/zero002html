@@ -571,8 +571,8 @@ component 余白
   max-width: 64px;
   height: 138px;
 }
-.l-cta-aside .p-cta-aside--pc img + img {
-  padding-top: 20px;
+.l-cta-aside .p-cta-aside--pc a + a {
+  padding-top: 30px;
 }
 
 .l-cta-asidefooter {
