@@ -305,6 +305,11 @@ component 余白
   padding-right: 10px;
 }
 
+.c-padding--x20px {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .c-padding--x30px {
   padding-left: 30px;
   padding-right: 30px;

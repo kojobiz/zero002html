@@ -185,7 +185,6 @@ component テキスト
   letter-spacing: 0.3px;
   line-height: 2em;
 }
-
 .c-text--16-0-25 {
   // 調整(XD16→UI14,0,25/16em)
   font-size: 14px;
@@ -384,6 +383,10 @@ component 余白
 .c-padding--x10px {
   padding-left: 10px;
   padding-right: 10px;
+}
+.c-padding--x20px {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .c-padding--x30px {
   padding-left: 30px;
