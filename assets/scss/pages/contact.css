@@ -305,6 +305,11 @@ component 余白
   padding-right: 10px;
 }
 
+.c-padding--x30px {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .c-padding--x50px {
   padding-left: 50px;
   padding-right: 50px;
@@ -690,6 +695,13 @@ component 余白
   padding: 20px;
 }
 
+.l-formbox-inner .p-formitems {
+  border-top: 1px dashed #707070;
+}
+.l-formbox-inner .p-formitems--last {
+  border-bottom: 1px dashed #707070;
+}
+
 .grid-item {
   background-color: #fff;
   padding: 20px;
@@ -710,10 +722,21 @@ component 余白
   color: #FFFFFF;
   border-radius: 5px;
   padding-bottom: 0.1em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
 }
 .grid-item label {
   margin-bottom: 0.1em;
 }
 .grid-item input[type=radio] {
   margin-right: 0.5em;
+}
+
+.p-formitems .p-input-space {
+  max-width: 100%;
+  padding: 1.1rem 0.84em;
+  border: 1px solid #000;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  font-size: 16px;
 }/*# sourceMappingURL=contact.css.map */

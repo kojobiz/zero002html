@@ -26,6 +26,7 @@ $planLineGreen:#9CBC3C;
 $supportLineOrange:#FFBD7B;
 $supportLineGreen:#83DCBF;
 $faqBgGreen:#91FF00;
+$formLineGray: #707070;
 
 
 /*****************************
@@ -383,6 +384,10 @@ component 余白
 .c-padding--x10px {
   padding-left: 10px;
   padding-right: 10px;
+}
+.c-padding--x30px {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .c-padding--x50px {
   // sp→20px
