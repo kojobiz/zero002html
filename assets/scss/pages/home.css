@@ -186,7 +186,7 @@ component テキスト
 }
 
 .c-text--27-0-45 {
-  font-size: clamp(12px, 2vw, 25px);
+  font-size: clamp(14px, 2vw, 25px);
   letter-spacing: 0px;
   line-height: 1.6em;
 }
@@ -394,8 +394,6 @@ component 余白
     display: none;
   }
 }
-/* 共通
-======================================================= */
 /* header-layout
 ======================================================= */
 .l-header {

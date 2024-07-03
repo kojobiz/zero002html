@@ -673,3 +673,18 @@ window.addEventListener('scroll', function() {
         ctaAside.style.display = 'none';
     }
 });
+
+// PCの場合
+@media only screen and (min-width: 768px) {
+  // 非表示にする
+  .pc--none {
+      display: none;
+  }
+}
+// spの場合
+@media only screen and (max-width: 767px) {
+  // 非表示にする
+  .sp--none {
+      display: none;
+  }
+}

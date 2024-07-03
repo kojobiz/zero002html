@@ -186,7 +186,7 @@ component テキスト
 }
 
 .c-text--27-0-45 {
-  font-size: clamp(12px, 2vw, 25px);
+  font-size: clamp(14px, 2vw, 25px);
   letter-spacing: 0px;
   line-height: 1.6em;
 }
@@ -604,10 +604,14 @@ component 余白
 /* 問い合わせページ
 ======================================================= */
 .l-form {
-  padding: 50px 20px;
+  padding: 2rem 1rem;
   margin: 0 auto;
   background-color: #2FC996;
-  height: 82px;
+  height: clamp(43px, 7vw, 132px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .l-form .l-form-contents__title {
   color: white;

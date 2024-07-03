@@ -8,10 +8,14 @@
 /* 問い合わせページ
 ======================================================= */
 .l-form {
-    padding: 50px 20px;
+    padding: 2rem 1rem;
     margin: 0 auto;
     background-color: $titleBrightGreen;
-    height: 82px;
+    height: clamp(43px, 7vw, 132px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     .l-form-contents__title {
         color: white;
         text-align: center;
