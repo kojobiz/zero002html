@@ -123,6 +123,10 @@ component テキスト
   color: #9CBC3C;
 }
 
+.c-bgcolor--gray {
+  color: #F2F2F2;
+}
+
 .c-text--12 {
   font-size: 12px;
 }
@@ -151,12 +155,6 @@ component テキスト
   line-height: 1.56em;
 }
 
-.c-text--27-0-45 {
-  font-size: clamp(12px, 2vw, 23px);
-  letter-spacing: 0px;
-  line-height: 1.6em;
-}
-
 .c-text--16-096-30 {
   font-size: clamp(12px, 2vw, 16px);
   letter-spacing: 0.96px;
@@ -179,6 +177,18 @@ component テキスト
   font-size: 17px;
   letter-spacing: 1px;
   line-height: 1.61em;
+}
+
+.c-text--25-200-38 {
+  font-size: clamp(12px, 2vw, 25px);
+  letter-spacing: 8px;
+  line-height: 1.6em;
+}
+
+.c-text--27-0-45 {
+  font-size: clamp(12px, 2vw, 25px);
+  letter-spacing: 0px;
+  line-height: 1.6em;
 }
 
 .c-text--28-0-40 {
@@ -310,6 +320,11 @@ component 余白
   padding-bottom: 30px;
 }
 
+.c-padding--y2px {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 .c-padding--y100px {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -331,6 +346,11 @@ component 余白
 
 .c-margin--b100px {
   margin-bottom: 100px;
+}
+
+.c-margin--y40px {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .c-margin--y60px {
@@ -612,9 +632,25 @@ component 余白
 }
 
 .l-attention {
-  max-width: 500px;
   font-size: 23px;
 }
 .l-attention--text {
+  margin: auto;
+  max-width: 700px;
   padding-bottom: 30px;
+}
+.l-attention--info {
+  max-width: 844px;
+  background-color: #F2F2F2;
+  padding: 20px 48px;
+  border-radius: 22px;
+}
+.l-attention .p-info-titlebox {
+  max-width: 100%;
+  background-color: #2FC996;
+  color: #FFFFFF;
+  border-radius: 99px;
+}
+.l-attention .p-info-titlebox__title {
+  padding-left: 8px;
 }/*# sourceMappingURL=contact.css.map */
