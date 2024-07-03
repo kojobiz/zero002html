@@ -533,15 +533,24 @@ component 余白
 ======================================================= */
 .l-footer {
   width: 100%;
-  height: 42px;
+  height: auto;
   background-color: #30554C;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.l-footer-inner {
+.l-footer-inner--copy {
+  display: inline-flex;
   width: auto;
+  height: 42px;
+  text-align: center;
+  align-items: center;
+}
+.l-footer-inner--ctaposition {
+  width: auto;
+  height: 11vw;
   text-align: center;
 }
 
