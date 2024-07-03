@@ -179,14 +179,14 @@ component テキスト
   line-height: 1.61em;
 }
 
-.c-text--25-200-38 {
-  font-size: clamp(12px, 2vw, 25px);
-  letter-spacing: 8px;
+.c-text--27-200-38 {
+  font-size: clamp(12px, 5vw, 27px);
+  letter-spacing: 0.2em;
   line-height: 1.6em;
 }
 
 .c-text--27-0-45 {
-  font-size: clamp(14px, 2vw, 25px);
+  font-size: clamp(14px, 3.5vw, 25px);
   letter-spacing: 0px;
   line-height: 1.6em;
 }
@@ -348,8 +348,8 @@ component 余白
   margin-bottom: 100px;
 }
 
-.c-margin--y40px {
-  margin-top: 40px;
+.c-margin--y2040px {
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
@@ -646,15 +646,39 @@ component 余白
 .l-attention--info {
   max-width: 844px;
   background-color: #F2F2F2;
-  padding: 20px 48px;
-  border-radius: 22px;
+  padding: 1.3rem 1.8rem;
+  border-radius: 18px;
 }
-.l-attention .p-info-titlebox {
+.l-attention--info .p-info-titlebox {
   max-width: 100%;
   background-color: #2FC996;
   color: #FFFFFF;
   border-radius: 99px;
 }
-.l-attention .p-info-titlebox__title {
+.l-attention--info .p-info-titlebox__title {
   padding-left: 8px;
+}
+.l-attention--info .p-info-numberbox {
+  display: flex;
+  flex-direction: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 15px;
+}
+.l-attention--info .p-info-numberbox-inner {
+  display: flex;
+  align-items: flex-end;
+}
+.l-attention--info .p-info-numberbox .c-info-numberbox__icon {
+  padding-right: 10px;
+}
+.l-attention--info .p-info-numberbox .c-info__teltime {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 930px) {
+  .p-info-numberbox {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -179,14 +179,14 @@ component テキスト
   line-height: 1.61em;
 }
 
-.c-text--25-200-38 {
-  font-size: clamp(12px, 2vw, 25px);
-  letter-spacing: 8px;
+.c-text--27-200-38 {
+  font-size: clamp(12px, 5vw, 27px);
+  letter-spacing: 0.2em;
   line-height: 1.6em;
 }
 
 .c-text--27-0-45 {
-  font-size: clamp(14px, 2vw, 25px);
+  font-size: clamp(14px, 3.5vw, 25px);
   letter-spacing: 0px;
   line-height: 1.6em;
 }
@@ -348,8 +348,8 @@ component 余白
   margin-bottom: 100px;
 }
 
-.c-margin--y40px {
-  margin-top: 40px;
+.c-margin--y2040px {
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
