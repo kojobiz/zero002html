@@ -185,6 +185,12 @@ component テキスト
   letter-spacing: 0.3px;
   line-height: 2em;
 }
+.c-text--21 {
+  // form>check
+  font-size: clamp(12px, 2vw, 22px);
+  letter-spacing: 0.3px;
+  line-height: 2em;
+}
 .c-text--16-0-25 {
   // 調整(XD16→UI14,0,25/16em)
   font-size: 14px;

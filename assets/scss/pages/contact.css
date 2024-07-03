@@ -149,6 +149,12 @@ component テキスト
   line-height: 2em;
 }
 
+.c-text--21 {
+  font-size: clamp(12px, 2vw, 22px);
+  letter-spacing: 0.3px;
+  line-height: 2em;
+}
+
 .c-text--16-0-25 {
   font-size: 14px;
   letter-spacing: 0px;
@@ -781,7 +787,7 @@ component 余白
   border: 1px solid #000;
   border-radius: 16px;
   background-color: #FFFFFF;
-  font-size: clamp(12px, 3vw, 21px);
+  font-size: clamp(10px, 3vw, 21px);
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 2em;
@@ -796,4 +802,24 @@ component 余白
     flex-direction: column;
     align-items: flex-start;
   }
+}
+.l-form-about--link {
+  margin-top: 40px;
+  max-width: 1110px;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.l-form-about--link a + a {
+  margin-left: 3em;
+}
+.l-form-about--link a::after {
+  content: "";
+  background-image: url(../../../images/common/icon_sgclink.svg);
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 10px;
 }/*# sourceMappingURL=contact.css.map */
