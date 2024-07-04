@@ -73,11 +73,12 @@ sp-only
   }
 }
 
-@media (min-width: 893px) {
-  .sp-only--support-title {
+@media (width >= 895px) {
+  .pc--none-895 {
     display: none;
   }
 }
+
 .c-title__hr {
   width: 140px;
   border-width: 1.5px;
@@ -178,6 +179,11 @@ component テキスト
   letter-spacing: 0px;
   line-height: 2.5em;
 }
+@media (width <= 767px) {
+  .c-text--16-0-40 {
+    font-size: 12px;
+  }
+}
 
 .c-text--20-07-27 {
   font-size: 16px;
@@ -275,6 +281,11 @@ component テキスト
   letter-spacing: 0px;
   padding-bottom: 1.9rem;
 }
+@media (width <= 767px) {
+  .c-h2--65-0-121 {
+    font-size: 20px;
+  }
+}
 
 .c-h3--88-0-127 {
   font-size: clamp(60px, 5vw, 88px);
@@ -288,6 +299,9 @@ component テキスト
   line-height: 1.44em;
 }
 
+/*******************************
+component 文字太さ
+********************************/
 .c-weight--bold {
   font-weight: 700;
 }
@@ -305,6 +319,11 @@ component 余白
 
 .c-mtb--60 {
   margin: 60px auto;
+}
+@media (width <= 767px) {
+  .c-mtb--60 {
+    margin: 8px auto 18px;
+  }
 }
 
 .c-padding--x4per {
@@ -331,6 +350,12 @@ component 余白
   padding-left: 50px;
   padding-right: 50px;
 }
+@media (width <= 767px) {
+  .c-padding--x50px {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 
 .c-padding--y70px {
   padding-top: 70px;
@@ -351,6 +376,12 @@ component 余白
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (width <= 767px) {
+  .c-padding--y100px {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 .c-padding--t140b0px {
   padding-top: 140px;
@@ -369,6 +400,11 @@ component 余白
 .c-margin--b100px {
   margin-bottom: 100px;
 }
+@media (width <= 767px) {
+  .c-margin--b100px {
+    margin-bottom: 30px;
+  }
+}
 
 .c-margin--y2040px {
   margin-top: 20px;
@@ -385,42 +421,18 @@ component 余白
   padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  .c-padding--y30px {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .c-padding--x50px {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .c-padding--y100px {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .c-mtb--60 {
-    margin: 8px auto 18px;
-  }
-  .c-text--16-0-40 {
-    font-size: 12px;
-  }
-  .c-h2--65-0-121 {
-    font-size: 20px;
-  }
-  .c-margin--b100px {
-    margin-bottom: 30px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .pc--none {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
+@media (width <= 767px) {
   .sp--none {
     display: none;
   }
 }
+
+@media (width >= 768px) {
+  .pc--none {
+    display: none;
+  }
+}
+
 /* header-layout
 ======================================================= */
 .l-header {
@@ -428,6 +440,11 @@ component 余白
   height: 117px;
   background: #FFFFFF;
   box-shadow: 0 2px 4px -4px #848484;
+}
+@media (width <= 767px) {
+  .l-header {
+    height: 70px;
+  }
 }
 
 .l-header-inner {
@@ -451,6 +468,12 @@ component 余白
 }
 .l-header-inner__logo img {
   width: clamp(220px, 100%, 430px);
+}
+@media (width <= 767px) {
+  .l-header-inner__logo img {
+    width: 340px;
+    max-width: 90%;
+  }
 }
 .l-header-inner__menu--pc {
   display: flex;
@@ -480,6 +503,16 @@ component 余白
 .l-header-inner__menu--pc .p-nav-listbox__title a {
   color: #191919;
 }
+@media (width <= 767px) {
+  .l-header-inner__menu--pc {
+    display: none;
+  }
+}
+@media (width <= 767px) {
+  .l-header-inner {
+    height: 70px;
+  }
+}
 
 .l-header-inner__menu--sp {
   display: flex;
@@ -488,27 +521,12 @@ component 余白
   max-width: 80%;
   margin-left: 20%;
 }
-
-@media only screen and (max-width: 767px) {
-  .l-header-inner__menu--pc {
-    display: none;
-  }
-  .l-header {
-    height: 70px;
-  }
-  .l-header-inner {
-    height: 70px;
-  }
-  .l-header-inner__logo img {
-    width: 340px;
-    max-width: 90%;
-  }
-}
-@media only screen and (min-width: 768px) {
+@media (width >= 768px) {
   .l-header-inner__menu--sp {
     display: none;
   }
 }
+
 /* spnav-layout
 ======================================================= */
 .l-spnav {
@@ -780,8 +798,12 @@ section {
 .p-cta--firstview-round-trial {
   margin-left: -4%;
 }
-
-@media only screen and (max-width: 767px) {
+@media (width <= 767px) {
+  .p-cta--firstview-round-trial {
+    margin-left: 0%;
+  }
+}
+@media (width <= 767px) {
   .p-cta--firstview {
     flex-direction: column;
     margin-left: 0%;
@@ -790,10 +812,8 @@ section {
     padding-left: 0px;
     padding-top: 2%;
   }
-  .p-cta--firstview-round-trial {
-    margin-left: 0%;
-  }
 }
+
 .l-attention-contents {
   max-width: 1200px;
   margin: 0 auto;

@@ -103,14 +103,12 @@ sp-only
     padding-top: 0px;
   }
 }
-
-// 893以上
-@media (min-width: 893px) {
-  .sp-only--support-title {
+.pc--none-895 {
+  @include min(895) {
     display: none;
-  } 
-}
+  }
 
+}
 
 
 .c-title__hr {
@@ -207,6 +205,9 @@ component テキスト
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 2.5em;
+  @include max(767) {
+    font-size: 12px;
+  }
 }
 .c-text--20-07-27 {
   // 調整(XD20→UI16,0.47,27/16em)
@@ -344,6 +345,9 @@ component テキスト
   font-size: clamp(25px, 3.4vw, 63px);
   letter-spacing: 0px;
   padding-bottom: 1.9rem;
+  @include max(767) {
+    font-size: 20px;
+  }
 }
 .c-h3--88-0-127 {
   // 調整(XD88→88,0,127/88em)
@@ -360,6 +364,9 @@ component テキスト
   line-height: 1.44em;
 }
 
+/*******************************
+component 文字太さ
+********************************/
 .c-weight--bold {
   font-weight: 700;
 }
@@ -376,6 +383,9 @@ component 余白
 }
 .c-mtb--60 {
   margin: 60px auto;
+  @include max(767) {
+    margin: 8px auto 18px;
+  }
 }
 
 // セクションコンテンツ余白セット
@@ -399,6 +409,10 @@ component 余白
   // sp→20px
   padding-left: 50px;
   padding-right: 50px;
+  @include max(767) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 .c-padding--y70px {
   padding-top: 70px;
@@ -416,6 +430,10 @@ component 余白
 .c-padding--y100px {
   padding-top: 100px;
   padding-bottom: 100px;
+  @include max(767) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .c-padding--t140b0px {
   padding-top: 140px;
@@ -430,6 +448,9 @@ component 余白
 }
 .c-margin--b100px {
   margin-bottom: 100px;
+  @include max(767) {
+    margin-bottom: 30px;
+  }
 }
 .c-margin--y2040px {
   // contact>l-attention
@@ -446,44 +467,15 @@ component 余白
 }
 
 // spの場合
-@media only screen and (max-width: 767px) {
-  .c-padding--y30px {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .c-padding--x50px {
-      padding-right: 20px;
-      padding-left: 20px;
-  }
-  .c-padding--y100px {
-      padding-top: 50px;
-      padding-bottom: 50px;
-  }
-  .c-mtb--60 {
-      margin: 8px auto 18px;
-  }
-  .c-text--16-0-40 {
-    font-size: 12px;
-  }
-  .c-h2--65-0-121 {
-    font-size: 20px;
-  }
-  .c-margin--b100px {
-    margin-bottom: 30px;
+.sp--none {
+  @include max(767) {
+    display: none;
   }
 }
 
 // PCの場合
-@media only screen and (min-width: 768px) {
-  // 非表示にする
-  .pc--none {
-      display: none;
-  }
-}
-// spの場合
-@media only screen and (max-width: 767px) {
-  // 非表示にする
-  .sp--none {
-      display: none;
+.pc--none {
+  @include min(768) {
+    display: none;
   }
 }

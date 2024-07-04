@@ -1,6 +1,7 @@
 // header
 @charset "utf-8";
 @use "../setting" as *;
+@use "../layout/mediaQuery" as *;
 
 /* header-layout
 ======================================================= */
@@ -9,6 +10,9 @@
     height: 117px;
     background: $siteWhite;
     box-shadow: 0 2px 4px -4px #848484;
+    @include max(767) {
+        height: 70px;
+    }
 }
 .l-header-inner {
     display: flex;
@@ -30,6 +34,10 @@
     }
     &__logo img {
         width: clamp(220px, 100%, 430px);
+        @include max(767) {
+            width: 340px;
+            max-width: 90%;
+        }
     }
     &__menu--pc {
         display: flex;
@@ -60,7 +68,13 @@
                 }
             }
         }
-    } 
+        @include max(767) {
+            display: none;
+        }
+    }
+    @include max(767) {
+        height: 70px;
+    }
 }
 // ハンバーガーメニュー
 .l-header-inner__menu--sp {
@@ -69,28 +83,7 @@
         max-width: 80%;
         margin-left: 20%;
     }
-}
-
-// sp
-@media only screen and (max-width: 767px) {
-    .l-header-inner__menu--pc {
-        display: none;
-    }
-    .l-header {
-        height: 70px;
-    }
-    .l-header-inner {
-        height: 70px;
-        &__logo img {
-            width: 340px;
-            max-width: 90%;
-        }
-    }
-}
-
-// pc
-@media only screen and (min-width: 768px) {
-    .l-header-inner__menu--sp {
+    @include min(768) {
         display: none;
     }
 }
