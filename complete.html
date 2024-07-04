@@ -7,7 +7,7 @@
     <title>test complete | test</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./assets/scss/pages/confirm.css">
+    <link rel="stylesheet" href="./assets/scss/pages/complete.css">
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -130,7 +130,7 @@
         form
         ----------------------------------->
         <section class="l-form">
-            <h2 class="l-form-contents__title c-h3--50-0-61">送信内容確認</h2>
+            <h2 class="l-form-contents__title c-h3--50-0-61">送信完了</h2>
             <hr class="c-title__hr c-title__hr--white">
         </section>
         <section class="l-breadcrumb c-padding--x4per c-margin--0auto c-padding-y--contact__breadcrumb">
@@ -139,85 +139,24 @@
                 <li>申し込み</li>
             </ul>
         </section>
-        <section class="l-attention c-margin--0auto c-padding--x50px c-x-center c-margin--y2040px">
-            <p class="l-attention--text c-text--27-0-45">送信内容に誤りがないか、ご確認ください。
-            </p>
-        </section>
-        <section class="l-formbox">
-            <div class="l-formbox-inner c-padding--x20px c-margin--0auto">
-                <form class="l-formbox-inner-formitems">
-                    <!-- form -->
-                    <div class="p-formitems">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt">
-                                ご用件
-                            </dt>
-                            <dd class="grid-item grid-item--radio">
-                                無料トライアルを希望
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="p-formitems">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt">
-                                会社名
-                            </dt>
-                            <dd class="grid-item grid-item--center">
-                                株式会社システムサポート
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="p-formitems">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt">
-                                氏名
-                            </dt>
-                            <dd class="grid-item grid-item--center">
-                                シス田 サポ郎
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="p-formitems">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt">
-                                メールアドレス
-                            </dt>
-                            <dd class="grid-item grid-item--center">
-                                ×××＠×××.com
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="p-formitems">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt">
-                                電話番号
-                            </dt>
-                            <dd class="grid-item grid-item--center">
-                                03-3342-9620
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="p-formitems p-formitems--last">
-                        <dl class="grid-container">
-                            <dt class="grid-item grid-item--dt-textarea">
-                                お申し込み内容
-                            </dt>
-                            <dd class="grid-item grid-item--center">
-                                文章はダミーです文章はダミーです文章はダミーです
-                            </dd>
-                        </dl>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section class="l-form-btnarea c-padding--x50px c-margin--0auto c-x-center">
-            <a href="./confirm.html">
-                <img src="./images/common/btn_back.png" alt="" >
-            </a>
-            <a href="./confirm.html">
-                <img src="./images/common/btn_sent.png" alt="" >
-            </a>
-        </section>
+        <div class="l-form-complete">
+            <section class="l-attention c-margin--0auto c-padding--x50px c-x-center c-margin--y2040px">
+                <p class="l-attention--text c-text--27-0-45">この度はお申し込み頂き誠にありがとうございます。<br>
+                    <br>ご入力いただきましたメールアドレス宛に
+                    <br>確認メールを送付しております。
+                </p>
+                <p class="l-attention--text c-text--27-0-45">※ご指定いただいたメールアドレスへ
+                    <br>届いていない場合は
+                    <br>お手数をおかけいたしますが、
+                    <br>再度、お申し込みフォームにて必要な情報をご入力ください。
+                </p>
+            </section>
+            <section class="l-form-btnarea c-padding--x50px c-margin--0auto c-x-center">
+                <a href="./index.html">
+                    <img src="./images/common/btn_totop.png" alt="" >
+                </a>
+            </section>
+        </div>
     </main>
     <!----------------------------------
     footer

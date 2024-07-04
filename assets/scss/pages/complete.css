@@ -688,7 +688,7 @@ component 余白
   text-align: center;
 }
 
-/* 問い合わせページ
+/* 送信完了ページ
 ======================================================= */
 main {
   min-height: calc(100vh - 112px);
@@ -742,7 +742,7 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1.2fr 0.6fr 2.5fr;
+  grid-template-columns: 1.2fr 2.2fr;
   gap: 10px;
 }
 
@@ -779,6 +779,7 @@ main {
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 2em;
+  background-color: #D6F6EC;
 }
 .grid-item--dt-textarea {
   display: flex;
@@ -814,90 +815,15 @@ main {
   margin-right: 0.5em;
 }
 
-.p-formitems .p-input-space {
-  width: 100%;
-  padding: 0.4em;
-  padding-left: 0.8rem;
-  border: 1px solid #000;
-  border-radius: 0.3em;
-  background-color: #FFFFFF;
-  font-size: clamp(10px, 3vw, 21px);
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  line-height: 2em;
-  box-sizing: border-box;
-}
-.p-formitems .p-input-space::-moz-placeholder {
-  color: #d0d0d0;
-  font-weight: 500;
-}
-.p-formitems .p-input-space::placeholder {
-  color: #d0d0d0;
-  font-weight: 500;
-}
-.p-formitems .p-input-space--textarea {
-  width: 100%;
-  min-height: 12rem;
-  padding: 0.4em;
-  padding-left: 0.8rem;
-  border: 1px solid #000;
-  border-radius: 0.5em;
-  background-color: #FFFFFF;
-  font-size: clamp(10px, 3vw, 21px);
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  line-height: 2em;
-  box-sizing: border-box;
-}
-.p-formitems .p-input-space--textarea::-moz-placeholder {
-  color: #d0d0d0;
-  font-weight: 500;
-  text-wrap: wrap;
-}
-.p-formitems .p-input-space--textarea::placeholder {
-  color: #d0d0d0;
-  font-weight: 500;
-  text-wrap: wrap;
-}
-.p-formitems .p-radio__text {
-  font-size: clamp(10px, 3vw, 21px);
-  font-weight: 400;
-}
-
-.l-form-about--link {
-  margin-top: 40px;
-  max-width: 1110px;
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.l-form-about--link a {
-  color: #1a7959;
-}
-.l-form-about--link a + a {
-  margin-left: 3em;
-}
-.l-form-about--link a::after {
-  content: "";
-  background-image: url(../../../images/common/icon_sgclink.svg);
-  background-size: cover;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.l-form-about--check {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .l-form-btnarea {
   max-width: 100%;
   padding-bottom: 80px;
 }
 .l-form-btnarea img {
   max-width: 50%;
-}/*# sourceMappingURL=contact.css.map */
+}
+
+.l-form-complete {
+  margin-top: 20%;
+  min-width: 100%;
+}/*# sourceMappingURL=complete.css.map */
