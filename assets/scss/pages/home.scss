@@ -536,8 +536,6 @@ section {
             padding-bottom: 0.5rem;
         }
     }
-  
-
     .p-item {
         &--getsugaku {
             border-color: $planLineBlue;
@@ -546,30 +544,25 @@ section {
                 position: absolute;
                 top: -120px;
                 right: -20px;
+                @include max(750) {
+                    top: -40px;
+                    width: 90px;
+                }
             }
         }
         &--syokihiyou {
             border-color: $planLineGreen;
         }
     }
-    @media (max-width: 750px) {
-        .p-item {
-            &--getsugaku {
-                &-attention {
-                    top: -40px;
-                    width: 90px;
-                }
-            }
-        }
-    }
+
     &-contents-attentionlist {
         text-align: left;
         max-width: 1145px;
         margin: 20px auto 0px;
         font-weight: 400;
     }
-    @media (max-width: 750px) {
-        .l-contents__title-text {
+    .l-contents__title-text {
+        @include max(750) {
             padding-top: 25px;
             padding-bottom: 30px;
         }
@@ -597,6 +590,9 @@ section {
             border-left: solid 4px $titleDarkGreen;
             transform: rotate(-20deg); 
             transform-origin: bottom;
+            @include min(895) {
+                height: 60%;
+            }
         }        
         &::after {
             content: "";
@@ -609,17 +605,12 @@ section {
             border-left: solid 4px $titleDarkGreen;
             transform: rotate(20deg); 
             transform-origin: bottom;
-        }
-             
+            @include min(895) {
+                height: 60%;
+            }
+        }     
     }
-    @media (min-width: 893px) {
-        .l-contents__title::before {
-            height: 60%;
-        }
-        .l-contents__title::after {
-            height: 60%;
-        }
-    }
+    
     
     &-contents {
         &-itemsbox {
@@ -675,9 +666,7 @@ section {
                 left: 50%;
                 transform: translate(-50%);
                 max-width: 100%;
-            }
-            @media only screen and (max-width: 767px) {
-                &__img-pc {
+                @include max(767) {
                     top: 110px;
                 }
             }
@@ -699,12 +688,7 @@ section {
         }
         
         @media (min-width: 893px) {
-            .l-contents__title::before {
-                height: 60%;
-            }
-            .l-contents__title::after {
-                height: 60%;
-            }
+            
             .l-contents__title {
                 .sp-only {
                     display: none;

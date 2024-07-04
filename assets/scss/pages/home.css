@@ -1226,14 +1226,14 @@ section {
   top: -120px;
   right: -20px;
 }
-.l-plan .p-item--syokihiyou {
-  border-color: #9CBC3C;
-}
-@media (max-width: 750px) {
+@media (width <= 750px) {
   .l-plan .p-item--getsugaku-attention {
     top: -40px;
     width: 90px;
   }
+}
+.l-plan .p-item--syokihiyou {
+  border-color: #9CBC3C;
 }
 .l-plan-contents-attentionlist {
   text-align: left;
@@ -1241,7 +1241,7 @@ section {
   margin: 20px auto 0px;
   font-weight: 400;
 }
-@media (max-width: 750px) {
+@media (width <= 750px) {
   .l-plan .l-contents__title-text {
     padding-top: 25px;
     padding-bottom: 30px;
@@ -1270,6 +1270,11 @@ section {
   transform: rotate(-20deg);
   transform-origin: bottom;
 }
+@media (width >= 895px) {
+  .l-support .l-contents__title::before {
+    height: 60%;
+  }
+}
 .l-support .l-contents__title::after {
   content: "";
   display: block;
@@ -1282,10 +1287,7 @@ section {
   transform: rotate(20deg);
   transform-origin: bottom;
 }
-@media (min-width: 893px) {
-  .l-support .l-contents__title::before {
-    height: 60%;
-  }
+@media (width >= 895px) {
   .l-support .l-contents__title::after {
     height: 60%;
   }
@@ -1345,7 +1347,7 @@ section {
   transform: translate(-50%);
   max-width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media (width <= 767px) {
   .l-support-contents-imgbox__img-pc {
     top: 110px;
   }
@@ -1365,12 +1367,6 @@ section {
   }
 }
 @media (min-width: 893px) {
-  .l-support-contents .l-contents__title::before {
-    height: 60%;
-  }
-  .l-support-contents .l-contents__title::after {
-    height: 60%;
-  }
   .l-support-contents .l-contents__title .sp-only {
     display: none;
   }
