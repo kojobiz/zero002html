@@ -1029,11 +1029,6 @@ section {
     flex-direction: column;
   }
 }
-@media (max-width: 767px) {
-  .l-fivefeatures-contents-itemsbox .p-item-imgbox img {
-    padding-top: 40px;
-  }
-}
 .l-fivefeatures-contents-itemsbox .p-item-reverse {
   display: grid;
   grid-template-columns: 48% 48%;
@@ -1051,6 +1046,11 @@ section {
   .l-fivefeatures-contents-itemsbox .p-item-reverse {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (width <= 767px) {
+  .l-fivefeatures-contents-itemsbox .p-item-imgbox img {
+    padding-top: 40px;
   }
 }
 .l-fivefeatures-contents .p-item-pointbox {
@@ -1161,11 +1161,23 @@ section {
 .l-plan .p-item-plan__name--tight {
   letter-spacing: 0.1rem;
 }
+@media (width <= 750px) {
+  .l-plan .p-item-plan__name {
+    padding-bottom: 0.5rem;
+  }
+}
 .l-plan .p-item-plan__recommend {
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 1.52em;
   text-align: center;
+}
+@media (width <= 750px) {
+  .l-plan .p-item-plan__recommend {
+    font-size: clamp(13px, 2vw, 20px);
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+  }
 }
 .l-plan .p-item-plan__amount {
   font-size: clamp(35px, 4vw, 51px);
@@ -1174,11 +1186,21 @@ section {
   text-align: end;
   font-weight: bold;
 }
+@media (width <= 750px) {
+  .l-plan .p-item-plan__amount {
+    margin-top: -0.5rem;
+  }
+}
 .l-plan .p-item-plan__tax {
   font-size: clamp(13px, 1.5vw, 24px);
   letter-spacing: 1.2px;
   line-height: 1.45em;
   font-weight: bold;
+}
+@media (width <= 750px) {
+  .l-plan .p-item-plan__tax {
+    font-weight: 500;
+  }
 }
 .l-plan .p-item-plan__attention {
   text-indent: -16px;
@@ -1187,26 +1209,12 @@ section {
 .l-plan .p-item-plan__attention::before {
   content: "※";
 }
-@media (max-width: 750px) {
+@media (width <= 750px) {
   .l-plan .p-item-plan {
     display: flex;
     flex-direction: column;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-  .l-plan .p-item-plan__name {
-    padding-bottom: 0.5rem;
-  }
-  .l-plan .p-item-plan__recommend {
-    font-size: clamp(13px, 2vw, 20px);
-    padding-bottom: 0.5rem;
-    font-weight: 500;
-  }
-  .l-plan .p-item-plan__amount {
-    margin-top: -0.5rem;
-  }
-  .l-plan .p-item-plan__tax {
-    font-weight: 500;
   }
 }
 .l-plan .p-item--getsugaku {
