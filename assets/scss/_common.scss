@@ -1,0 +1,45 @@
+//_common.scss
+@charset "utf-8";
+@use "./layout/mediaQuery" as *;
+@use "./setting" as *;
+
+/* 共通
+======================================================= */
+.l-form {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: $titleBrightGreen;
+    height: clamp(43px, 7vw, 132px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .l-form-contents__title {
+        color: white;
+        text-align: center;
+    }
+}
+.l-breadcrumb {
+    ul {
+        display: inline-flex;
+        li {
+            font-size: clamp(12px, 2vw, 20px);
+            letter-spacing:0.96px;
+            line-height: 1.8em;
+        }
+    }
+    li+li::before {
+        content: ">";
+        font-size: clamp(12px, 2vw, 20px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.l-attention {
+    font-size: 23px;
+    &--text {
+        margin: auto;
+        max-width: 700px;
+        padding-bottom: 30px;
+    }
+}
