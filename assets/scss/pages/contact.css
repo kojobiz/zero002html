@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* responsive setting
+======================================================= */
+/* sample
+880以下で
+    @include max(880) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+*/
 /***************************
 テストカラー
 ****************************/
@@ -58,17 +67,12 @@ sp-only
 .sp-only--paddingtop {
   padding-top: 15px;
 }
-
-@media (min-width: 895px) {
+@media (width >= 895px) {
   .sp-only--paddingtop {
     padding-top: 0px;
   }
 }
-@media (min-width: 768px) {
-  .sp-only--br {
-    display: none;
-  }
-}
+
 @media (min-width: 893px) {
   .sp-only--support-title {
     display: none;
@@ -417,15 +421,6 @@ component 余白
     display: none;
   }
 }
-/* responsive setting
-======================================================= */
-/* sample
-880以下で
-@include max(880) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-*/
 /* header-layout
 ======================================================= */
 .l-header {

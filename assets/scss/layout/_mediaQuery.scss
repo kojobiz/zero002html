@@ -8,6 +8,7 @@ $breakpoints: (
     400: 400px,
     768: 768px,
     880: 880px,
+    895: 895px,
     930: 930px
 );
 
@@ -23,8 +24,8 @@ $breakpoints: (
 }
 /* sample
 880以下で
-@include max(880) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
+    @include max(880) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 */
