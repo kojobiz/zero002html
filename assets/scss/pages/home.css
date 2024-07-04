@@ -1389,6 +1389,16 @@ section {
 .l-faq-contents {
   max-width: 850px;
 }
+@media (width <= 767px) and (min-width: 391px) {
+  .l-faq-contents {
+    margin-top: 27vw;
+  }
+}
+@media (width <= 390px) {
+  .l-faq-contents {
+    margin-top: 10vw;
+  }
+}
 .l-faq .p-item-faq img {
   position: relative;
   top: -3px;

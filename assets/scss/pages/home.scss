@@ -717,6 +717,14 @@ section {
     }
     &-contents {
         max-width: 850px;
+        @include max(767) {
+            @media (min-width: 391px) {
+                margin-top: 27vw;
+            }
+        }
+        @include max(390) {
+            margin-top: 10vw;
+        }
     }
     .p-item-faq {  
         img {
