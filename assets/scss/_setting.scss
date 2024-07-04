@@ -100,11 +100,13 @@ sp-only
 .sp-only--paddingtop {
   padding-top: 15px;
 }
-// 768以上
-@media (min-width: 768px) {
-  .sp-only--padding-top {
-    display: none;
+
+@media (min-width: 895px) {
+  .sp-only--paddingtop {
+    padding-top: 0px;
   }
+}
+  @media (min-width: 768px) {
   .sp-only--br {
     display: none;
   }
