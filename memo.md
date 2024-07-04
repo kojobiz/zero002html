@@ -688,3 +688,44 @@ window.addEventListener('scroll', function() {
       display: none;
   }
 }
+## responsive @media
+①_mediaQuery.scss作成し＠mediaを設定しておき読み込みファイル②は@use "ルート/_mediaQuery" as *;
+①
+// mediaQuery
+@charset "utf-8";
+
+
+/* responsive setting
+======================================================= */
+$breakpoints: (
+    400: 400px,
+    768: 768px,
+    880: 880px,
+    930: 930px
+);
+
+@mixin min($breakpoint) {
+    @media (width >= #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+    }
+}
+@mixin max($breakpoint) {
+    @media (width <= #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+    }
+}
+/* sample
+880以下で
+@include max(880) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+*/
+②.p-info-numberbox {
+    flex-direction: nowrap;
+    align-items: flex-end;
+    @include max(880) {
+                flex-direction: column;
+                align-items: center;
+            }
+}でOK

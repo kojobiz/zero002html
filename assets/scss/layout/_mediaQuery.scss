@@ -22,8 +22,9 @@ $breakpoints: (
     }
 }
 /* sample
- @include max(880) {
+880以下で
+@include max(880) {
             flex-direction: column;
             align-items: flex-start;
         }
- */
+*/
