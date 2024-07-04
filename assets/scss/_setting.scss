@@ -202,11 +202,13 @@ component テキスト
 }
 .c-text--16-0-40 {
   // 調整(XD16→⚪︎,0,40/16em)
+  // l-firstview-contents__text
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 2.5em;
   @include max(767) {
     font-size: 12px;
+    line-height: 1.8em;
   }
 }
 .c-text--20-07-27 {

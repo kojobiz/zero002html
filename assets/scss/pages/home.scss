@@ -43,6 +43,9 @@ section {
     overflow: hidden;
     position: relative;
     display: flex;
+    @include max(767) {
+        height: calc(100vh - 70px);
+    }
 }
 .l-firstview-contents {
     max-width: clamp(53%, 3vw, 970px);
@@ -89,16 +92,30 @@ section {
             }
         }
     }
+    @include max(767) {
+        top: 0px;
+        margin-top: 20px;
+        transform: translate(0, 0);
+        max-width: 92%;
+        right: 8%;
+        height: clamp(30%, 60%, 90%);
+    }
 }
 .p-responsive-picture {
     width: 100%;
     height: calc(100vh - 117px);
+    @include max(767) {
+        height: calc(100vh - 70px);
+    }
 }
 .p-responsive-picture img {
     width: 100%;
     height: calc(100vh - 117px);
     object-fit: cover;
     object-position: bottom center;
+    @include max(767) {
+        height: calc(100vh - 70px);
+    }
 }
 .p-cta--firstview a+a {
     padding-left: 22px;
@@ -403,7 +420,6 @@ section {
                         content: "●";
                     }
                 }
-
             }
         }
     }
@@ -608,7 +624,12 @@ section {
             @include min(895) {
                 height: 60%;
             }
-        }     
+        } 
+        .sp-only {
+            @include min(895) {
+                display: none;
+            }
+        }    
     }
     
     
@@ -650,6 +671,14 @@ section {
                 &--green {
                     border-color: $supportLineGreen;
                 }
+                @include max(767) {
+                    padding: 0.5rem 0.5rem 1rem;
+                }
+                .sp-only {
+                    @include min(895) {
+                        display: none;
+                    }
+                }
             }
         }
         &-position {
@@ -670,38 +699,18 @@ section {
                     top: 110px;
                 }
             }
-        }
-        @media only screen and (max-width: 767px) {
-            &-imgbox {
-                max-width: 400px;
-                & img {
+            & img {
+                @include max(767) {
                     z-index: 3;
                 }
             }
-            .p-item-support {
-                padding: 0.5rem 0.5rem 1rem;
-                __text {
-                    max-width: 90%;
-                }
-            }
-                
-        }
-        
-        @media (min-width: 893px) {
-            
-            .l-contents__title {
-                .sp-only {
-                    display: none;
-                }
-            }
-            .p-item-support {
-                .sp-only {
-                    display: none;
-                }
+            @include max(767) {
+                max-width: 400px;
             }
         }
     }
 }
+
 
 // faq
 .l-faq {
@@ -777,33 +786,9 @@ section {
                 top: -2px;
             }
         }
-        
     }
-}
-// spの場合
-@media only screen and (max-width: 767px) {
-    .l-faq {
-      padding-bottom: 70px;
-    }
-    .l-firstview {
-        height: calc(100vh - 70px);
-    }
-    .p-responsive-picture {
-        height: calc(100vh - 70px);
-        img {
-            height: calc(100vh - 70px);
-        }
-    }
-    .l-firstview-contents {
-        top: 0px;
-        margin-top: 20px;
-        transform: translate(0, 0);
-        max-width: 92%;
-        right: 8%;
-        height: clamp(30%, 60%, 90%);
-    }
-    .c-text--16-0-40 {
-        line-height: 1.8em;
+    @include max(767) {
+        padding-bottom: 70px;
     }
 }
 
@@ -824,7 +809,6 @@ section {
             font-size: 22px;
         }
     }
-
     .p-item--company-info {
         display: flex;
         flex-direction: row;

@@ -182,6 +182,7 @@ component テキスト
 @media (width <= 767px) {
   .c-text--16-0-40 {
     font-size: 12px;
+    line-height: 1.8em;
   }
 }
 
