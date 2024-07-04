@@ -60,6 +60,9 @@ section {
         border-style: solid;
         padding-right: -8%;
         margin-top: -15px;
+        @include max(767) {
+            width: calc(100% + 16vw);
+        }
     }
     &__title {
         // bold(700)
@@ -67,6 +70,9 @@ section {
     }
     &__text {
         padding-right: 4%;
+        @include max(767) {
+            padding-right: 0%;
+        }
     }
     &__icons {
         margin-top: clamp(-20px, 3vw, 120px);
@@ -76,6 +82,11 @@ section {
         img {
             width: 75%;
             margin-left: -4%;
+            @include max(767) {
+                width: 95%;
+                margin-left: 0%;
+                margin-top: 2%;
+            }
         }
     }
 }
@@ -191,6 +202,10 @@ section {
                     background-image: url("../../../images/home/pc/ico_reason_033.png");
                     background-position: right -3px bottom -5px;
                 }
+                @include max(767) {
+                    padding: 1.3rem 1rem;
+                    background-size: 95px;
+                }
             }
             .p-item-reason__title {
                 font-weight: 800;
@@ -201,34 +216,12 @@ section {
                 text-align: left;
             }
         }
-        // sp:最大767の時
-        @media (max-width: 767px) {
-            .p-item-reason {
-                padding: 1.3rem 1rem;
-                background-size: 95px;
-            }
-        }
-    }  
+    }
+    @include max(767) {
+        padding-bottom: 120px;
+    } 
 }
-// spの場合
-@media only screen and (max-width: 767px) {
-    .l-reason {
-      padding-bottom: 120px;
-    }
-    .l-firstview-contents hr {
-        width: calc(100% + 16vw);
-    }
-    .l-firstview-contents__icons {
-        img {
-            width: 95%;
-            margin-left: 0%;
-            margin-top: 2%;
-        }
-    }
-    .l-firstview-contents__text {
-        padding-right: 0%;
-    }
-}
+
 
 // decoration cta
 .l-divider-deco {
@@ -283,13 +276,11 @@ section {
 // @mediaによるctaまでの距離の可変が必要
 .l-work {
     padding-bottom: 250px;
-}
-// spの時
-@media (max-width: 767px) {
-    .l-work {
-      padding-bottom: 50px;
+    @include max(767) {
+        padding-bottom: 50px;
     }
 }
+
 
 // fivefeatures
 .l-fivefeatures {
@@ -347,12 +338,12 @@ section {
             display: grid;
             grid-template-columns: 48% 48%;
             column-gap: 4%;
-        }
-        @media (max-width: 768px) {
-            .p-item-noreverse {
-            display: flex;
-            flex-direction: column;
+            @include max(767) {
+                display: flex;
+                flex-direction: column;
             }
+        }
+        @media (max-width: 767px) {
             .p-item-imgbox img {
                 padding-top: 40px;
             }
@@ -368,14 +359,9 @@ section {
             grid-template-columns: 48% 48%;
             grid-template-areas: "imgbox pointbox";
             column-gap: 4%;
-        }
-        @media (max-width: 768px) {
-            .p-item-reverse {
-            display: flex;
-            flex-direction: column;
-            }
-            .p-item-imgbox img {
-                padding-top: 40px;
+            @include max(767) {
+                display: flex;
+                flex-direction: column;
             }
         }
         gap: 80px;
@@ -462,12 +448,12 @@ section {
             max-width: 100%;
         }
     }
-    @media (max-width: 750px) {
-        .l-contents__title-text {
+    .l-contents__title-text {
+        @include max(750) {
             padding-top: 25px;
             padding-bottom: 30px;
         }
-      }
+    }
 }
 
 
