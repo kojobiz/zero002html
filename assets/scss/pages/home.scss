@@ -302,7 +302,6 @@ section {
 // fivefeatures
 .l-fivefeatures {
     text-align: center;
-
 }
 .l-fivefeatures-contents {
     max-width: 1200px;
@@ -428,6 +427,25 @@ section {
             max-width: 100%;
             height: auto;
         }
+    }
+    .video-pc {
+        position: relative;
+    }
+    .video-point2 {
+        max-width: 78%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50.5%, -50%);
+    }
+    .video-point5 {
+        max-width: 78%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50.1%, -50%);
     }
 }
 

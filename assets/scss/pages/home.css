@@ -1115,6 +1115,25 @@ section {
   max-width: 100%;
   height: auto;
 }
+.l-fivefeatures-contents .video-pc {
+  position: relative;
+}
+.l-fivefeatures-contents .video-point2 {
+  max-width: 78%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.5%, -50%);
+}
+.l-fivefeatures-contents .video-point5 {
+  max-width: 78%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.1%, -50%);
+}
 
 .l-work-contents {
   max-width: 1200px;
