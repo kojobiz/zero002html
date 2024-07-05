@@ -743,7 +743,6 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 1.2fr 2.2fr;
-  gap: 10px;
 }
 
 .l-formbox-inner-formitems {
@@ -778,8 +777,9 @@ main {
   font-size: clamp(10px, 3vw, 21px);
   font-weight: 400;
   letter-spacing: 0.3px;
-  line-height: 2em;
   background-color: #D6F6EC;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .grid-item--dt-textarea {
   display: flex;
@@ -795,8 +795,11 @@ main {
 }
 .grid-item--center {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: clamp(10px, 3vw, 21px);
+  font-weight: 400;
 }
 .grid-item--require__text {
   background-color: #2FC996;
