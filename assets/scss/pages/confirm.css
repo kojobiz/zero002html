@@ -821,14 +821,20 @@ main {
 .l-form-btnarea {
   max-width: 100%;
   padding-bottom: 80px;
-  padding-top: 35px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .l-form-btnarea a + a {
   padding-left: 2rem;
 }
 @media (width <= 767px) {
   .l-form-btnarea a + a {
-    padding-left: 0rem;
-    padding-top: 35px;
+    padding-top: 0px;
+    padding-left: 1rem;
   }
+}
+.l-form-btnarea svg {
+  max-width: 100%;
 }/*# sourceMappingURL=confirm.css.map */

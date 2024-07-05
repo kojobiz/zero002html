@@ -900,4 +900,9 @@ main {
 }
 .l-form-btnarea img {
   max-width: 50%;
+}
+@media (width <= 767px) {
+  .l-form-btnarea img {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=contact.css.map */
