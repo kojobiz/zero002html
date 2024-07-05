@@ -17,14 +17,6 @@
 /*****************************
 フォント
 ******************************/
-.bold {
-  font-weight: bold;
-}
-
-.font-weight--primary {
-  font-weight: 500;
-}
-
 /*******************************
 構造
 ********************************/
@@ -66,42 +58,20 @@ a {
 }
 
 /*******************************
-sp-only
-********************************/
-.sp-only--paddingtop {
-  padding-top: 15px;
-}
-@media (width >= 895px) {
-  .sp-only--paddingtop {
-    padding-top: 0px;
-  }
-}
-
-@media (width >= 895px) {
-  .pc--none-895 {
-    display: none;
-  }
-}
-
-.c-title__hr {
-  width: 140px;
-  border-width: 1.5px;
-  border-style: solid;
-  margin-top: 20px;
-}
-.c-title__hr--white {
-  color: #FFFFFF;
-}
-.c-title__hr--green {
-  color: #00A99D;
-}
-.c-title__hr--black {
-  color: #191919;
-}
-
-/*******************************
 component テキスト
 ********************************/
+.bold {
+  font-weight: bold;
+}
+
+.font-weight--primary {
+  font-weight: 500;
+}
+
+.c-weight--bold {
+  font-weight: 700;
+}
+
 .c-textcolor--orange {
   color: #FF8000;
 }
@@ -305,13 +275,6 @@ component テキスト
 }
 
 /*******************************
-component 文字太さ
-********************************/
-.c-weight--bold {
-  font-weight: 700;
-}
-
-/*******************************
 component 余白
 ********************************/
 .c-mright--minus10 {
@@ -367,11 +330,6 @@ component 余白
   padding-bottom: 70px;
 }
 
-.c-padding--y30px {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .c-padding--y2px {
   padding-top: 2px;
   padding-bottom: 2px;
@@ -424,6 +382,40 @@ component 余白
 .c-padding-y--contact__breadcrumb {
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+/*******************************
+sp pc
+********************************/
+.sp-only--paddingtop {
+  padding-top: 15px;
+}
+@media (width >= 895px) {
+  .sp-only--paddingtop {
+    padding-top: 0px;
+  }
+}
+
+@media (width >= 895px) {
+  .pc--none-895 {
+    display: none;
+  }
+}
+
+.c-title__hr {
+  width: 140px;
+  border-width: 1.5px;
+  border-style: solid;
+  margin-top: 20px;
+}
+.c-title__hr--white {
+  color: #FFFFFF;
+}
+.c-title__hr--green {
+  color: #00A99D;
+}
+.c-title__hr--black {
+  color: #191919;
 }
 
 @media (width <= 767px) {

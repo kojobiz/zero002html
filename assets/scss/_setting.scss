@@ -56,12 +56,7 @@ $formConfirmGreen: #D6F6EC;
 // $roboto: "Roboto Condensed", sans-serif;
 
 
-.bold {
-  font-weight: bold;
-}
-.font-weight--primary {
-  font-weight: 500;
-}
+
 /*******************************
 構造
 ********************************/
@@ -98,41 +93,21 @@ body,
   a {
     text-decoration: none;
   }
-/*******************************
-sp-only
-********************************/
-.sp-only--paddingtop {
-  padding-top: 15px;
-  @include min(895) {
-    padding-top: 0px;
-  }
-}
-.pc--none-895 {
-  @include min(895) {
-    display: none;
-  }
-}
-
-
-.c-title__hr {
-    width: 140px;
-    border-width: 1.5px;
-    border-style: solid;
-    margin-top: 20px;
-    &--white {
-      color: $siteWhite;
-    }
-    &--green {
-      color: $titleDarkGreen;
-    }
-    &--black {
-      color: $siteBlack;
-    }
-}
 
 /*******************************
 component テキスト
 ********************************/
+// weight
+.bold {
+  font-weight: bold;
+}
+.font-weight--primary {
+  font-weight: 500;
+}
+.c-weight--bold {
+  font-weight: 700;
+}
+// color
 .c-textcolor--orange {
   color: $siteOrange;
 }
@@ -160,7 +135,7 @@ component テキスト
 .c-bgcolor--gray {
   color: $siteRightGray;
 }
-
+// size
 .c-text--12 {
   font-size: 12px;
 }
@@ -227,12 +202,6 @@ component テキスト
   letter-spacing: 1px;
   line-height: 1.61em;
 }
-// .c-text--23-0-38 {
-//   // 調整(XD23→UI20,0,38/23em)
-//   font-size: 20px;
-//   letter-spacing: 0px;
-//   line-height: 1.65em;
-// }
 .c-text--27-200-38 {
   // 調整(XD25,0,1.6em)
   // contact>c-info-titlebox__title
@@ -274,14 +243,6 @@ component テキスト
   letter-spacing:0px;
   line-height: 1.21em;
 }
-
-// hタグ
-// .c-h5--16-08-24 {
-//   // 調整(XD16→16,0.8,24/16em)
-//   font-size: 16px;
-//   letter-spacing:0.8px;
-//   line-height: 1.5em;
-// }
 .c-h4--35-0-51 {
   // 調整(XD35→32,0,51/35em
   // p-item-reason__title
@@ -296,12 +257,6 @@ component テキスト
   letter-spacing: 0px;
   line-height: 1.45em;
 }
-// .c-h4--45-45-65 {
-//   // 調整(XD45→45,0,65/45em
-//   font-size: 45px;
-//   letter-spacing: 0px;
-//   line-height: 1.44em;
-// }
 .c-h3--34-0-49 {
   // 調整(XD34→32,0,49/34em)
   // l-attention-contents>h3
@@ -324,12 +279,6 @@ component テキスト
   letter-spacing: 0px;
   line-height: 1.22em;
 }
-// .c-h3--50-0-70 {
-//   // 調整(XD50→50,0,70/50em
-//   font-size: 50px;
-//   letter-spacing: 0px;
-//   line-height: 1.4em;
-// }
 .c-h3--59-0-85 {
   // 調整(XD59→⚪54,0,85/54em
   // l-attention-contents>h3>span
@@ -370,14 +319,6 @@ component テキスト
 }
 
 /*******************************
-component 文字太さ
-********************************/
-.c-weight--bold {
-  font-weight: 700;
-}
-
-
-/*******************************
 component 余白
 ********************************/
 .c-mright--minus10 {
@@ -411,7 +352,6 @@ component 余白
   padding-right: 30px;
 }
 .c-padding--x50px {
-  // sp→20px
   padding-left: 50px;
   padding-right: 50px;
   @include max(767) {
@@ -422,11 +362,6 @@ component 余白
 .c-padding--y70px {
   padding-top: 70px;
   padding-bottom: 70px;
-}
-.c-padding--y30px {
-  // sp→10px
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .c-padding--y2px {
   padding-top: 2px;
@@ -471,13 +406,41 @@ component 余白
   padding-bottom: 10px;
 }
 
+/*******************************
+sp pc
+********************************/
+.sp-only--paddingtop {
+  padding-top: 15px;
+  @include min(895) {
+    padding-top: 0px;
+  }
+}
+.pc--none-895 {
+  @include min(895) {
+    display: none;
+  }
+}
+.c-title__hr {
+    width: 140px;
+    border-width: 1.5px;
+    border-style: solid;
+    margin-top: 20px;
+    &--white {
+      color: $siteWhite;
+    }
+    &--green {
+      color: $titleDarkGreen;
+    }
+    &--black {
+      color: $siteBlack;
+    }
+}
 // spの場合
 .sp--none {
   @include max(767) {
     display: none;
   }
 }
-
 // PCの場合
 .pc--none {
   @include min(768) {
