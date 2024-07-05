@@ -755,3 +755,15 @@ $(function() {
         });
     });
 });
+.text80 {
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2s;
+  transform: translateY(100px);
+}
+.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
