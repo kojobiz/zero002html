@@ -676,14 +676,14 @@ sp pc
   flex-direction: row;
 }
 .l-cta-asidefooter .p-cta-aside--sp img {
-  max-width: 50vw;
+  max-width: 50%;
   height: auto;
   aspect-ratio: auto;
   position: absolute;
   bottom: -1px;
 }
 .l-cta-asidefooter .p-cta-aside--sp-trial {
-  left: 50vw;
+  left: 50%;
 }
 
 @media only screen and (max-width: 767px) {
