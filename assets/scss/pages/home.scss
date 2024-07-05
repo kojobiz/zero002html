@@ -447,6 +447,15 @@ section {
         left: 50%;
         transform: translate(-50.1%, -50%);
     }
+    .p-item-video-control {
+        .p-item-video-control__btn {
+            background-color: transparent;
+            border-style: none;
+        }
+        .p-btn-plus {
+            background-color: $titleDarkGreen;
+        }
+    }
 }
 
 

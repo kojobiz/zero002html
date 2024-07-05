@@ -307,7 +307,7 @@
                         <div class="p-item-imgbox">
                             <div class="video-pc">
                                 <img src="./images/video/img_notepc.png" alt="" >
-                                <video width="552" height="358" controls autoplay loop muted poster="./images/video/v_scenario_poster.png" class="video-point2">
+                                <video id="videoPoint2" width="552" height="358" controls autoplay loop muted poster="./images/video/v_scenario_poster.png" class="video-point2">
                                     <source src="./images/video/v_scenario.mp4" type="video/mp4">
                                 </video>
                             </div>
@@ -358,10 +358,16 @@
                         <div class="p-item-imgbox">
                             <div class="video-pc">
                                 <img src="./images/video/img_notepc.png" alt="" >
-                                <video width="552" height="358" controls autoplay loop muted poster="./images/video/v_assistantapi_poster.png" class="video-point5">
+                                <video id="videoPoint5" width="552" height="358" controls autoplay loop muted poster="./images/video/v_assistantapi_poster.png" class="video-point5">
                                     <source src="./images/video/v_assistantapi.mp4" type="video/mp4">
                                 </video>
                             </div>
+                        </div>
+                        <div class="p-item-video-control">
+                            <button type="button" id="btnFullscreen" data-target="videoPoint5" class="p-item-video-control__btn">
+                                <span class="c-textcolor--white p-btn-plus">+</span>
+
+                            </button>
                         </div>
                     </li>
                 </ul>

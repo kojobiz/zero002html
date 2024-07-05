@@ -1134,6 +1134,13 @@ section {
   left: 50%;
   transform: translate(-50.1%, -50%);
 }
+.l-fivefeatures-contents .p-item-video-control .p-item-video-control__btn {
+  background-color: transparent;
+  border-style: none;
+}
+.l-fivefeatures-contents .p-item-video-control .p-btn-plus {
+  background-color: #00A99D;
+}
 
 .l-work-contents {
   max-width: 1200px;
