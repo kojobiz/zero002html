@@ -13,136 +13,19 @@ main {
     @include min(768) {
         min-height: calc(100vh - 159px);
     }
-  }
-.l-attention {
-    &--info {
-        max-width: 844px;
-        background-color: $siteRightGray;
-        padding: 1.3rem 1.8rem;
-        border-radius: 18px;
-        margin-bottom: 60px;
-        .p-info-titlebox {
-            max-width: 100%;
-            background-color: $titleBrightGreen;
-            color: $siteWhite;
-            border-radius: 99px;
-            &__title {
-                // letter-spacing end delete
-                padding-left: 8px; 
-            }
-        }
-        .p-info-numberbox {
-            display: flex;
-            flex-direction: nowrap;
-            justify-content: center;
-            align-items: flex-end;
-            padding-top: 15px;
-            &-inner {
-                display: flex;
-                align-items: flex-end;
-            }
-            .c-info-numberbox__icon {
-                padding-right: 10px;
-            }
-            .c-info__teltime {
-                font-size: 20px;
-                margin-left: 15px;
-            }
-            @include max(880) {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    } 
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 1.2fr 2.2fr;
-    gap: 10px; 
-  }
-  
-
-
-// form
-.l-formbox-inner {
-    &-formitems {
-        max-width: 1145px;
-        margin: 0 auto;
-    }
-    .p-formitems {
-        border-top: 1px dashed #707070;
-        &--last {
-            border-bottom: 1px dashed #707070;
-        }
-    }
-}
-.grid-item {
-    background-color: #fff;
-    padding: 20px 0px;
-    text-align: center;
-    &--radio {
-        display: flex;
-        flex-direction: row;
-        @include max(880) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-    &--dt {
-        display: flex;
-        align-items: center;
-        font-size: clamp(10px, 3vw, 21px);
-        font-weight: 400;
-        letter-spacing: 0.3px;
-        line-height: 2em;
-        background-color: $formConfirmGreen;
-    }
-    &--dt-textarea {
-        display: flex;
-        font-size: clamp(10px, 3vw, 21px);
-        font-weight: 400;
-        letter-spacing: 0.3px;
-        line-height: 2em;
-
-    }
-    &--require {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &--center {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    &--require__text {
-        background-color: $titleBrightGreen;
-        color: $siteWhite;
-        border-radius: 5px;
-        padding-bottom: 0.1em;
-        padding-left: 0.8em;
-        padding-right: 0.8em;
-        font-size: clamp(10px, 3vw, 21px);
-        font-weight: 400;
-        
-    }
-    & label {
-        margin-bottom: 0.1em;
-    }
-    & input[type="radio"] {
-        margin-right: 0.5em;
-    }
-    
-}
-
 .l-form-btnarea {
     max-width: 100%;
     padding-bottom: 80px;
     img {
         max-width: 50%;
+        @include max(767) {
+            max-width: 80%;
+        }
     }
 }
 .l-form-complete {
     margin-top: 20%;
     min-width: 100%;
+    font-weight: 400; 
 }

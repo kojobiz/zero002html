@@ -13,7 +13,7 @@ main {
     @include min(768) {
         min-height: calc(100vh - 159px);
     }
-  }
+}
 .l-attention {
     &--info {
         max-width: 844px;
@@ -58,9 +58,8 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: 1.2fr 2.2fr;
-  }
+}
   
-
 
 // form
 .l-formbox-inner {
@@ -127,7 +126,6 @@ main {
         padding-right: 0.8em;
         font-size: clamp(10px, 3vw, 21px);
         font-weight: 400;
-        
     }
     & label {
         margin-bottom: 0.1em;
@@ -137,8 +135,6 @@ main {
     }
     
 }
-
-
 .l-form-btnarea {
     max-width: 100%;
     padding-bottom: 80px;
@@ -156,8 +152,4 @@ main {
     svg {
         max-width: 100%;
     }
-    // @include max(767) {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
 }

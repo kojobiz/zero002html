@@ -59,6 +59,9 @@ $formConfirmGreen: #D6F6EC;
 .bold {
   font-weight: bold;
 }
+.font-weight--primary {
+  font-weight: 500;
+}
 /*******************************
 構造
 ********************************/
@@ -108,7 +111,6 @@ sp-only
   @include min(895) {
     display: none;
   }
-
 }
 
 
