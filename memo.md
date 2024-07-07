@@ -603,105 +603,107 @@ push を元に戻す作業をした
 6/28 の作業を削除し、6/27 の時点に戻した
 
 ## ハンバーガーメニュー,cta
-_spnav.scssファイル
+
+\_spnav.scss ファイル
 js
 //////////////////////////////////////
-// pcとspメニュー切り替え
+// pc と sp メニュー切り替え
 //////////////////////////////////////
 // sp-open
 document.getElementById('spnav-open').addEventListener('click', function() {
-    document.querySelector('.l-spnav').style.display = 'block';
+document.querySelector('.l-spnav').style.display = 'block';
 });
 document.getElementById('spnav-open').addEventListener('click', function() {
-    document.querySelector('.l-spnav').style.display = 'block';
+document.querySelector('.l-spnav').style.display = 'block';
 });
 // sp-close
 document.getElementById('spnav-close').addEventListener('click', function() {
-    document.querySelector('.l-spnav').style.display = 'none';
+document.querySelector('.l-spnav').style.display = 'none';
 });
-
 
 //////////////////////////////////////
 // 遷移時にオフセットと非表示
 //////////////////////////////////////
 // pc
-document.querySelectorAll('.p-nav-listbox__title').forEach(function(item) {
-    item.addEventListener('click', function(event) {
-        event.preventDefault(); // デフォルトのアンカー動作を防ぐ
-        const targetId = this.querySelector('a').getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId); 
+document.querySelectorAll('.p-nav-listbox\_\_title').forEach(function(item) {
+item.addEventListener('click', function(event) {
+event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+const targetId = this.querySelector('a').getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
             const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 117; // 117pxオフセット
             window.scrollTo({
                 top: offsetTop,
-                behavior: 'smooth' 
+                behavior: 'smooth'
             });
         }
         document.querySelector('.l-spnav').style.display = 'none';
     });
+
 });
 
 // sp
-document.querySelectorAll('.p-spnav-listbox__title').forEach(function(item) {
-    item.addEventListener('click', function(event) {
-        event.preventDefault(); // デフォルトのアンカー動作を防ぐ
-        const targetId = this.querySelector('a').getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId); 
+document.querySelectorAll('.p-spnav-listbox\_\_title').forEach(function(item) {
+item.addEventListener('click', function(event) {
+event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+const targetId = this.querySelector('a').getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
             const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 70; // 70pxオフセット
             window.scrollTo({
                 top: offsetTop,
-                behavior: 'smooth' 
+                behavior: 'smooth'
             });
         }
         document.querySelector('.l-spnav').style.display = 'none';
     });
+
 });
 
-
 //////////////////////////////////////
-// ctaボタン設定
+// cta ボタン設定
 //////////////////////////////////////
 // スクロール位置を監視して条件を満たしたら .l-cta-aside を表示する
 window.addEventListener('scroll', function() {
-    const ctaAside = document.getElementById('l-cta-aside');
-    if (window.scrollY >= 600 && window.innerWidth >= 768) {
-        ctaAside.style.display = 'block';
-    } else {
-        ctaAside.style.display = 'none';
-    }
+const ctaAside = document.getElementById('l-cta-aside');
+if (window.scrollY >= 600 && window.innerWidth >= 768) {
+ctaAside.style.display = 'block';
+} else {
+ctaAside.style.display = 'none';
+}
 });
 
-// PCの場合
+// PC の場合
 @media only screen and (min-width: 768px) {
-  // 非表示にする
-  .pc--none {
-      display: none;
-  }
+// 非表示にする
+.pc--none {
+display: none;
 }
-// spの場合
+}
+// sp の場合
 @media only screen and (max-width: 767px) {
-  // 非表示にする
-  .sp--none {
-      display: none;
-  }
+// 非表示にする
+.sp--none {
+display: none;
 }
+}
+
 ## responsive @media
-①_mediaQuery.scss作成し＠mediaを設定しておき読み込みファイル②は@use "ルート/_mediaQuery" as *;
+
+①_mediaQuery.scss 作成し＠media を設定しておき読み込みファイル ② は@use "ルート/\_mediaQuery" as \*;
 ①
 // mediaQuery
 @charset "utf-8";
 
-
-/* responsive setting
-======================================================= */
+/_ responsive setting
+======================================================= _/
 $breakpoints: (
-    400: 400px,
-    768: 768px,
-    880: 880px,
-    930: 930px
+400: 400px,
+768: 768px,
+880: 880px,
+930: 930px
 );
 
 @mixin min($breakpoint) {
@@ -710,26 +712,25 @@ $breakpoints: (
     }
 }
 @mixin max($breakpoint) {
-    @media (width <= #{map-get($breakpoints, $breakpoint)}) {
-        @content;
-    }
+@media (width <= #{map-get($breakpoints, $breakpoint)}) {
+@content;
 }
-/* sample
-880以下で
+}
+/_ sample
+880 以下で
 @include max(880) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-*/
+flex-direction: column;
+align-items: flex-start;
+}
+_/
 ②.p-info-numberbox {
-    flex-direction: nowrap;
-    align-items: flex-end;
-    @include max(880) {
-                flex-direction: column;
-                align-items: center;
-            }
-}でOK
-
+flex-direction: nowrap;
+align-items: flex-end;
+@include max(880) {
+flex-direction: column;
+align-items: center;
+}
+}で OK
 
 ##　表示タイミング
 //////////////////////////////////////
@@ -737,33 +738,37 @@ $breakpoints: (
 //////////////////////////////////////
 
 $(function() {
-    $(window).scroll(function() {
-        // スクロール量を取得
-        const scroll = $(window).scrollTop();
-        // 画面の高さを取得
-        const windowHeight = $(window).height();
-        // 各.boxに対して処理を行う
-        $(".box, .text, .text80").each(function() {
-            // それぞれの.boxの上端の座標を取得
-            const boxTop = $(this).offset().top;
-            // 条件を満たす場合はis-activeクラスを付与し、そうでない場合は削除する
-            if (scroll + windowHeight > boxTop + 300) {
-                $(this).addClass("is-active");
-            } else {
-                // $(this).removeClass("is-active");
-            }
-        });
-    });
+$(window).scroll(function() {
+// スクロール量を取得
+const scroll = $(window).scrollTop();
+// 画面の高さを取得
+const windowHeight = $(window).height();
+// 各.box に対して処理を行う
+$(".box, .text, .text80").each(function() {
+// それぞれの.box の上端の座標を取得
+const boxTop = $(this).offset().top;
+// 条件を満たす場合は is-active クラスを付与し、そうでない場合は削除する
+if (scroll + windowHeight > boxTop + 300) {
+$(this).addClass("is-active");
+} else {
+// $(this).removeClass("is-active");
+}
+});
+});
 });
 .text80 {
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 2s;
-  transform: translateY(100px);
+overflow: hidden;
+opacity: 0;
+visibility: hidden;
+transition: all 2s;
+transform: translateY(100px);
 }
 .is-active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
 }
+
+## WordPress 管理画面テーマイメージ画像
+
+screenshot.png として 880x600 の画像をルートディレクトリに作成する
