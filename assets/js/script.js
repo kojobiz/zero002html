@@ -95,5 +95,3 @@ setTimeout(function() {
         $(this).addClass("is-active");
     });
 }, 1300);
-
-
