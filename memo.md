@@ -772,3 +772,57 @@ transform: translateY(0);
 ## WordPress 管理画面テーマイメージ画像
 
 screenshot.png として 880x600 の画像をルートディレクトリに作成する
+
+## 導入実績カスタムフィールド html から php 変換 → ショートコード、WP 関数変換
+
+        <section class="l-work c-x-center" id="work">
+            <div class="l-work-contents c-padding--x50px c-padding--y100px c-margin--0auto">
+                <h3 class="l-contents__title">導入実績</h3>
+                <hr class="c-title__hr c-title__hr--green c-margin--b100px">
+                <ul class="l-work-contents-itemsbox text80">
+                    <li class="p-item">
+                        <img src="./images/home/pc/img_worklogo.png" alt="">
+                    </li>
+                    <li class="p-item">
+                        <img src="./images/home/pc/img_worklogo.png" alt="">
+                    </li>
+                    <li class="p-item">
+                        <img src="./images/home/pc/img_worklogo.png" alt="">
+                    </li>
+                </ul>
+                <p class="l-work-contents__text c-text--16-0-25">※企業ロゴの掲載は順不同です</p>
+            </div>
+        </section>
+        から、phpに変換後、ショートコードへ
+
+<?php
+$args = Array(
+    			 'post_type' => 'record_banner',
+     			'posts_per_page' => -1,
+  				);
+   				$the_query = new WP_Query($args);
+if($the_query -> have_posts()):
+?>
+<section class="l-work c-x-center" id="work">
+<div class="l-work-contents c-padding--x50px c-padding--y100px c-margin--0auto">
+<h3 class="l-contents__title">導入実績</h3>
+<hr class="c-title__hr c-title__hr--green c-margin--b100px">
+<ul class="l-work-contents-itemsbox text80">
+<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<?php if ( get_field( 'record_img' ) ): ?>
+<li class="p-item">
+<?php if ( get_field( 'record_link' ) ): ?>
+<a href="<?php echo get_field( 'record_link' ) ;?>" target="_blank">
+<?php endif; ?>
+<img src="<?php echo get_field( 'record_img' ) ;?>" alt="<?php the_title(); ?>">
+<?php if ( get_field( 'record_link' ) ): ?>
+</a>
+<?php endif; ?>
+</li>
+<?php endif; ?>
+<?php endwhile; ?>
+</ul>
+<p class="l-work-contents__text c-text--16-0-25">※企業ロゴの掲載は順不同です</p>
+</div>
+</section>
+<?php  endif; wp_reset_postdata(); ?>
