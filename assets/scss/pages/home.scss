@@ -479,6 +479,9 @@ section {
                 max-width: 100%;
             }
         }
+        @include max(767) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 

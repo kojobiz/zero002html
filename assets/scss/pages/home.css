@@ -1192,6 +1192,11 @@ section {
 .l-work-contents-itemsbox .p-item img {
   max-width: 100%;
 }
+@media (width <= 767px) {
+  .l-work-contents-itemsbox {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .l-flow {
   text-align: center;
