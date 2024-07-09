@@ -826,3 +826,12 @@ if($the_query -> have_posts()):
 </div>
 </section>
 <?php  endif; wp_reset_postdata(); ?>
+
+## WordPRess変換には
+・メディア_プラグインで登録(mediasync でファイル登録可能、またはFTPでもOK)
+　　ー登録、ーリンクコード変換
+・遷移先パス_パスの変換（WPのURLが発行されるのでそれに書き換え）
+・ディレクトリ構造
+・SCSSの読み込み
+・WPカスタムテーマに必須なファイル（index.php、style.css、front-page.phpなど）
+
