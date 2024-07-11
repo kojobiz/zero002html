@@ -20,7 +20,7 @@ document.getElementById('spnav-close').addEventListener('click', function() {
 // pc
 document.querySelectorAll('.p-nav-listbox__title').forEach(function(item) {
     item.addEventListener('click', function(event) {
-        event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+        // event.preventDefault(); // デフォルトのアンカー動作を防ぐ
         const targetId = this.querySelector('a').getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId); 
 
