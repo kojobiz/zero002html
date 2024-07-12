@@ -835,3 +835,22 @@ if($the_query -> have_posts()):
 ・SCSSの読み込み
 ・WPカスタムテーマに必須なファイル（index.php、style.css、front-page.phpなど）
 
+
+## ページごとに違うheaderやfooterを読み込ませるためには
+◾️hedaer-lp.phpを読み込ませるページの
+<?php get_header(); ?>の部分を、<?php get_header('lp'); ?>にすると読み込むことができる
+
+◾️テンプレートファイルを固定ページとして使用したいときは
+例：固定ページ名（LPサイト）としたいとき、phpのファイル名はpage-service_lp.phpとして
+リンクさせる必要がある
+①固定ページ名（LPsite）
+②page-service_lp.phpを作成する
+③page-service_lp.phpの冒頭にコメントアウトで、<?php
+/*
+Template Name: LPsite Page
+*/
+get_header('lp');
+?>と実装
+④FTPでthemesにheader-lp.phpとpage-service_lp.phpを入れてから
+⑤管理画面の固定ページ編集でテンプレートを選択すると、LPsiteが選択できる=このページではpage-service_lp.phpファイルを使用するということになりリンク設定が完了する、header-lp.phpも読み込まれている
+
