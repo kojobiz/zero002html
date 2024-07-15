@@ -17,28 +17,41 @@ document.getElementById('spnav-close').addEventListener('click', function() {
 //////////////////////////////////////
 // 遷移時にオフセットと非表示
 //////////////////////////////////////
-function updateHeaderHeight() {
-    var headerHeight = $(".l-header-inner").outerHeight();
-    // $(".l-main").css("padding-top", headerHeight + "px");
-}
+// pc
+document.querySelectorAll('.p-nav-listbox__title').forEach(function(item) {
+    item.addEventListener('click', function(event) {
+        // event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+        const targetId = this.querySelector('a').getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId); 
 
-function scrollToSection(event) {
-    event.preventDefault();
-    var targetId = $(this).attr("href");
-    var targetOffset = $(targetId).offset().top;
-    var headerHeight = $(".l-header-inner").outerHeight();
-    $('html, body').animate({
-        scrollTop: targetOffset - headerHeight
-    }, 500);
-}
-
-$(document).ready(function() {
-    updateHeaderHeight();
-    $(window).resize(updateHeaderHeight);
-    $('a[href^="#"]').on('click', scrollToSection);
-    // $('.l-header a[href^="#"]').on('click', scrollToSection);
+        if (targetElement) {
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 117; // 117pxオフセット
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth' 
+            });
+        }
+        document.querySelector('.l-spnav').style.display = 'none';
+    });
 });
 
+// sp
+document.querySelectorAll('.p-spnav-listbox__title').forEach(function(item) {
+    item.addEventListener('click', function(event) {
+        // event.preventDefault(); // デフォルトのアンカー動作を防ぐ
+        const targetId = this.querySelector('a').getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId); 
+
+        if (targetElement) {
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 70; // 70pxオフセット
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth' 
+            });
+        }
+        document.querySelector('.l-spnav').style.display = 'none';
+    });
+});
 
 //////////////////////////////////////
 // ctaボタン設定

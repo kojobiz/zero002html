@@ -827,30 +827,56 @@ if($the_query -> have_posts()):
 </section>
 <?php  endif; wp_reset_postdata(); ?>
 
-## WordPRess変換には
-・メディア_プラグインで登録(mediasync でファイル登録可能、またはFTPでもOK)
+## WordPRess 変換には
+
+・メディア*プラグインで登録(mediasync でファイル登録可能、または FTP でも OK)
 　　ー登録、ーリンクコード変換
-・遷移先パス_パスの変換（WPのURLが発行されるのでそれに書き換え）
+・遷移先パス*パスの変換（WP の URL が発行されるのでそれに書き換え）
 ・ディレクトリ構造
-・SCSSの読み込み
-・WPカスタムテーマに必須なファイル（index.php、style.css、front-page.phpなど）
+・SCSS の読み込み
+・WP カスタムテーマに必須なファイル（index.php、style.css、front-page.php など）
 
+## ページごとに違う header や footer を読み込ませるためには
 
-## ページごとに違うheaderやfooterを読み込ませるためには
-◾️hedaer-lp.phpを読み込ませるページの
+◾️hedaer-lp.php を読み込ませるページの
+
 <?php get_header(); ?>の部分を、<?php get_header('lp'); ?>にすると読み込むことができる
 
-◾️テンプレートファイルを固定ページとして使用したいときは
-例：固定ページ名（LPサイト）としたいとき、phpのファイル名はpage-service_lp.phpとして
+◾️ テンプレートファイルを固定ページとして使用したいときは
+例：固定ページ名（LP サイト）としたいとき、php のファイル名は page-service_lp.php として
 リンクさせる必要がある
-①固定ページ名（LPsite）
-②page-service_lp.phpを作成する
-③page-service_lp.phpの冒頭にコメントアウトで、<?php
-/*
+① 固定ページ名（LPsite）
+②page-service_lp.php を作成する
+③page-service_lp.php の冒頭にコメントアウトで、<?php
+/_
 Template Name: LPsite Page
-*/
+_/
 get_header('lp');
 ?>と実装
-④FTPでthemesにheader-lp.phpとpage-service_lp.phpを入れてから
-⑤管理画面の固定ページ編集でテンプレートを選択すると、LPsiteが選択できる=このページではpage-service_lp.phpファイルを使用するということになりリンク設定が完了する、header-lp.phpも読み込まれている
+④FTP で themes に header-lp.php と page-service_lp.php を入れてから
+⑤ 管理画面の固定ページ編集でテンプレートを選択すると、LPsite が選択できる=このページでは page-service_lp.php ファイルを使用するということになりリンク設定が完了する、header-lp.php も読み込まれている
 
+## header の高さ分、スクロールさせる方法
+
+js
+function updateHeaderHeight() {
+var headerHeight = $(".l-header-inner").outerHeight();
+// $(".l-main").css("padding-top", headerHeight + "px");
+}
+
+function scrollToSection(event) {
+event.preventDefault();
+var targetId = $(this).attr("href");
+var targetOffset = $(targetId).offset().top;
+var headerHeight = $(".l-header-inner").outerHeight();
+$('html, body').animate({
+scrollTop: targetOffset - headerHeight
+}, 500);
+}
+
+$(document).ready(function() {
+updateHeaderHeight();
+$(window).resize(updateHeaderHeight);
+$('a[href^="#"]').on('click', scrollToSection);
+// $('.l-header a[href^="#"]').on('click', scrollToSection);
+});
