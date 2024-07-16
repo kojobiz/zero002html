@@ -843,14 +843,14 @@ if($the_query -> have_posts()):
 <?php get_header(); ?>の部分を、<?php get_header('lp'); ?>にすると読み込むことができる
 
 ◾️ テンプレートファイルを固定ページとして使用したいときは
-例：固定ページ名（LP サイト）としたいとき、php のファイル名は page-service_lp.php として
+例：固定ページ名（LP サイト）としたいとき、php のファイル名は page-service*lp.php として
 リンクさせる必要がある
 ① 固定ページ名（LPsite）
 ②page-service_lp.php を作成する
 ③page-service_lp.php の冒頭にコメントアウトで、<?php
-/_
+/*
 Template Name: LPsite Page
-_/
+\_/
 get_header('lp');
 ?>と実装
 ④FTP で themes に header-lp.php と page-service_lp.php を入れてから
@@ -858,25 +858,39 @@ get_header('lp');
 
 ## header の高さ分、スクロールさせる方法
 
-js
+script.js
+$(document).ready(function() {
 function updateHeaderHeight() {
 var headerHeight = $(".l-header-inner").outerHeight();
-// $(".l-main").css("padding-top", headerHeight + "px");
+$(".l-section").css("padding-top", headerHeight + "px");
 }
 
-function scrollToSection(event) {
-event.preventDefault();
-var targetId = $(this).attr("href");
-var targetOffset = $(targetId).offset().top;
-var headerHeight = $(".l-header-inner").outerHeight();
-$('html, body').animate({
-scrollTop: targetOffset - headerHeight
-}, 500);
-}
+    function scrollToHash() {
+        var hash = window.location.hash;
+        if (hash) {
+            setTimeout(function() { // ページが完全にロードされた後に少し遅れて実行
+                var targetOffset = $(hash).offset().top;
+                var headerHeight = $(".l-header-inner").outerHeight();
+                $('html, body').animate({
+                    scrollTop: targetOffset - headerHeight
+                }, 500);
+            }, 3000);
+        }
+    }
 
-$(document).ready(function() {
-updateHeaderHeight();
-$(window).resize(updateHeaderHeight);
-$('a[href^="#"]').on('click', scrollToSection);
-// $('.l-header a[href^="#"]').on('click', scrollToSection);
+    updateHeaderHeight();
+    scrollToHash(); // ハッシュに基づいてスクロール
+
+    $(window).resize(updateHeaderHeight);
+
+    $('.l-header-inner a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+        var targetId = $(this).attr("href");
+        var targetOffset = $(targetId).offset().top;
+        var headerHeight = $(".l-header-inner").outerHeight();
+        $('html, body').animate({
+            scrollTop: targetOffset - headerHeight
+        }, 500);
+    });
+
 });
